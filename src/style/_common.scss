@@ -1,4 +1,25 @@
 .body{
-    padding: 0;
+    padding-left: 240px;
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: black;
     margin: 0;
 }
+
+.page-header{
+    background-image: url(/src/img/backgroundheader.jpg);
+
+}
+
+.flex-grow-1{
+    margin-left: 240px;
+}
+
+.flex-grow-2{
+    margin-left: 35%;
+    margin-top: 100px;
+}
+
