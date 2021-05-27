@@ -1,0 +1,17 @@
+.btn-lg{
+    font-weight: $btn-font-weight-lg;
+}
+.btn-link{
+    font-weight: $btn-font-weight-link;
+}
+.btn-link:hover{
+    border: 1px $btn-link-border-color solid;
+}   
+
+.item-yellow{
+    color: $btn-link-addit-color;
+}
+.item-yellow:hover{
+    color: $btn-link-addit-hover-color;
+    border: 1px $btn-link-addit-border-color solid;
+}
