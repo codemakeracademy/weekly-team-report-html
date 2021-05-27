@@ -1,3 +1,23 @@
 html, body{
     height: 100%;
 }
+//doublecheck, may cause troubles ^
+.page-header {
+    background-image: url(/src/img/header-bg.png);
+    height: $header-height;
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: $header-logo-height;
+}
+
+.launch-guide-item-img{
+    // height: $launch-guide-item-img-height;
+    height: 30px;
+}
+>>>>>>> b10e270dfc3d60c5d4452c91692301e6594cc34a

@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sigma-UP/weekly-team-report-html.git"
+    "url": "git+https://github.com/codemakeracademy/weekly-team-report-html.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sigma-UP/weekly-team-report-html/issues"
+    "url": "https://github.com/codemakeracademy/weekly-team-report-html/issues"
   },
-  "homepage": "https://github.com/Sigma-UP/weekly-team-report-html#readme",
+  "homepage": "https://github.com/codemakeracademy/weekly-team-report-html#readme",
   "dependencies": {
     "bootstrap": "^5.0.1",
     "bootstrap-icons": "^1.5.0"

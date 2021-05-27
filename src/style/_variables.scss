@@ -2,24 +2,12 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
-$dark:     #1f2426;
-$gray-800: #333a3d;
-$white:    #fff;
-$yellow:  #ffc107;
-
-$aside-width: 250px;
-$btn-font-weight-lg: 800;
-$btn-font-weight-link: 500;
 $btn-padding-y-lg: 14px;
-$btn-link-hover-color: $white;
-$btn-link-color: $white;
-$btn-link-border-color: $white;
-$btn-link-addit-hover-color: $yellow;
-$btn-link-addit-color: $yellow;
-$btn-link-addit-border-color: $yellow;
+
 $btn-font-size-lg: 18px;
 $link-decoration: unset;
 
+// Colors.
 $theme-colors: (
     "primary":    $yellow,
     "secondary":  $secondary,
@@ -30,6 +18,31 @@ $theme-colors: (
     "light":      $light,
     "dark":       $dark
 );
+
+$dark:     #1f2426;
+$gray-800: #333a3d;
+$white:    #fff;
+$yellow:  #ffc107;
+
+$btn-link-hover-color: $white;
+$btn-link-color: $white;
+$btn-link-border-color: $white;
+$btn-link-addit-hover-color: $yellow;
+$btn-link-addit-color: $yellow;
+$btn-link-addit-border-color: $yellow;
+
+// Font.
+$btn-font-weight-lg: 800;
+$btn-font-weight-link: 500;
+
+// Width & height.
+$header-height: 200px;
+$header-logo-height: 50px;
+
+$aside-width: 250px;
+
+
+$launch-guide-item-img-height: 30px;
 
 /*
 // Variables
