@@ -1,0 +1,12 @@
+.btn-lg{
+  font-weight:$btn-font-weight-lg;
+}
+.btn-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-link:hover{
+  border: 1px $btn-link-border-color solid;
+  color: #fff;
+}
