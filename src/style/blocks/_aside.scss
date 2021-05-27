@@ -1,0 +1,18 @@
+.nav-link {
+  color: $white;
+  font-weight: $font-weight-bold;
+  border-radius: 0.5rem;
+
+  &:hover {
+    color: $white;
+    background-color: rgba($black, 0.3);
+  }
+
+  &.active {
+    background-color: rgba($black, 0.4);
+  }
+
+  &--special, &--special:hover {
+    color: $yellow;
+  }
+}
