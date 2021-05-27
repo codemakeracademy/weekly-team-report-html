@@ -1,3 +1,24 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 @import "./variables";
+
+@import "./blocks/page-header";
+
+body {
+    background-color: $page-background;
+}
+
+// img {
+//     width: $page-img-width;
+// }
+
+// .img-fluid {
+//     width: $header-img-width;
+// }
+
+.btn {
+    font-weight: $btn-font-weight;
+}
+
+
+
