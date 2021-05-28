@@ -21,9 +21,13 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "index.html",
     }),
-
+    new HtmlWebpackPlugin({
+      filename: "team_reports.html",
+      template: "team_reports.html",
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

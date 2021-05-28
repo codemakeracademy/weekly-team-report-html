@@ -3,10 +3,11 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-$border-radius: 30px;
 
 $primary: #333a3d;
 $info: #FFD700;
+$warning: #c7c7c7;
+$enable-negative-margins: true;
 
 $theme-colors: (
         "primary":    $primary,
