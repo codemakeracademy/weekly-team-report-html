@@ -5,11 +5,18 @@
         <title>Webpack App</title>
     </head>
     <body class="mh-100 w-100 p-0 m-0">
-        <div class="container-fluid">
+        <div class="container-fluid p-0 m-0">
             <div class="row p-0 m-0">
             ${require("./src/components/aside.html")}
                 <div class="col-10 p-0">
-                    ${require("./src/components/header.html")}
+                    <div>
+                        <div class="page-header p-4">
+                            <div class="text-center">
+                                <img src="/src/img/logo.png" alt="Logo" />
+                            </div>
+                            <h2 class="text-light text-center">Launch Guide</h2>
+                        </div>
+                    </div>
                     <div class="m-5">
                         <div class="row m-5">
                             <div class="col-6 p-5">
