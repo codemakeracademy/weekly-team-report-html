@@ -1,5 +1,18 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
+$info: #FFD700;
+$border-radius:               30px;
 
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
