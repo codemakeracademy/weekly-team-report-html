@@ -3,16 +3,18 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+$border-radius: 30px;
+
+$primary: #333a3d;
 $info: #FFD700;
-$border-radius:               30px;
 
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+)
