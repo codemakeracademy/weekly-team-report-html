@@ -40,6 +40,14 @@ const config = {
       filename: "edit_info.html",
       template: "edit_info.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "team_members.html",
+      template: "team_members.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "weekly_report_history.html",
+      template: "weekly_report_history.html",
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
