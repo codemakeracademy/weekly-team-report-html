@@ -3,6 +3,8 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+$modal-backdrop-bg: $white;
+$modal-backdrop-opacity: .8;
 
 $primary: #333a3d;
 $info: #FFD700;
@@ -25,4 +27,4 @@ $theme-colors: (
         "danger":     $danger,
         "light":      $light,
         "dark":       $dark
-)
+);

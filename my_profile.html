@@ -50,7 +50,9 @@
             <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
             <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
           </div>
-          <a href="#" class="btn btn-outline-dark fw-bold border-2">Edit Leader(s)</a>
+          <button class="btn btn-outline-dark fw-bold border-2" data-bs-toggle="modal" data-bs-target="#modal">
+            Edit Leader(s)
+          </button>
         </div>
         <div class="mb-5">
           <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">The following team members reports to
@@ -67,7 +69,7 @@
             <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
             <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
           </div>
-          <a href="#" class="btn btn-outline-dark fw-bold border-2">Edit Member(s)</a>
+          <button class="btn btn-outline-dark fw-bold border-2">Edit Member(s)</button>
         </div>
         <div class="mb-5">
           <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">Anatoliy's invite link</h6>
@@ -84,6 +86,7 @@
       ${require("./src/components/support-btn.html")}
     </div>
   </div>
+  ${require("./src/components/modal.html")}
 </div>
 </body>
 </html>
