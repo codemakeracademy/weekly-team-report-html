@@ -7,15 +7,15 @@
   <title>Weekly Report</title>
 </head>
 <body>
-    <div class="row">
-      <div class="col-3">
-        ${require("./src/components/aside.html")}
-      </div>
-      <div class="col-9">
-
-      </div>
+  <div class="row position-relative w-100 m-0">
+    <div class="col-2 p-0">
+      ${require("./src/components/aside.html")}
     </div>
-  
-    
+    <div class="col-10 p-0">
+      ${require("./src/components/header.html")}
+      ${require("./src/components/launch-guide.html")}
+    </div>
+    ${require("./src/components/help-buttons.html")}
+  </div>
 </body>
 </html>
