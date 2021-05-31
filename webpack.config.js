@@ -27,6 +27,10 @@ const config = {
       filename: "launch-guide.html",
       template: "./src/page/launch-guide.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "aside.html",
+      template: "./src/components/aside.html",
+    })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

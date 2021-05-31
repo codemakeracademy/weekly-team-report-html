@@ -3,11 +3,45 @@
 @import "~bootstrap/scss/mixins";
 
 // Colors.
+$theme-colors: (
+    "primary":    $yellow,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
+
+$dark:     #1f2426;
+$gray-800: #333a3d;
+$white:    #fff;
+$yellow:  #ffc107;
+
 
 // Font.
+$btn-font-weight-lg: 800;
+$btn-font-weight-link: 500;
 
 // Width & height.
 $header-height: 200px;
 $header-logo-height: 50px;
 
 $launch-guide-item-img-height: 30px;
+
+$aside-width: 250px;
+
+
+$btn-padding-y-lg: 14px;
+
+$btn-font-size-lg: 18px;
+$link-decoration: unset;
+
+// Buttons.
+$btn-link-hover-color: $white;
+$btn-link-color: $white;
+$btn-link-border-color: $white;
+$btn-link-addit-hover-color: $yellow;
+$btn-link-addit-color: $yellow;
+$btn-link-addit-border-color: $yellow;
