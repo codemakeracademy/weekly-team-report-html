@@ -11,15 +11,15 @@
     <div class="col-2 p-0">
       <aside class="bg-dark px-1 pt-5 min-vh-100">
         <div class="h-25 d-flex align-items-center justify-content-center">
-          <img src="./src/assets/logo.png" alt="Weekly Report Logo" width="200" height="100">
+          <img src="../assets/logo.png" alt="Weekly Report Logo" width="200" height="100">
         </div>
         
         <ul class="nav flex-column px-4 pt-5">
           <li class="nav-item">
-            <a class="nav-link p-3 fw-bold active">Launch Guide</a>
+            <a class="nav-link p-3 fw-bold" href="./index.html">Launch Guide</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-3 fw-bold" href="./invite-your-team.html">Invite Your Team</a>
+            <a class="nav-link p-3 fw-bold active">Invite Your Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-3 fw-bold" href="#">Team Reports</a>
@@ -53,10 +53,10 @@
         </ul>
       </aside>
     </div>
-    <div class="col-10 p-0">
-      ${require("./src/components/launch-guide-content.html")}
+    <div class="col-10 p-0 bg-light">
+      ${require("../components/invite-your-team-content.html")}
     </div>
-    ${require("./src/components/help-buttons.html")}
+    ${require("../components/help-buttons.html")}
   </div>
 </body>
 </html>
