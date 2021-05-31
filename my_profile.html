@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+</head>
+<body class="mh-100 w-100 p-0 m-0 bg-light">
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-10 p-0">
+      ${require("./src/components/profile-header.html")}
+      <div class="m-4 p-5">
+        <div class="mb-5">
+          <h3 class="extra-bold">Edit Anatoliy's information.</h3>
+          <p>You may assign leaders or team members to this person, as well as deactivate their account if they no
+            longer work for your organization.</p>
+        </div>
+        <div class="mb-5">
+          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">Basic profile information</h6>
+          <form>
+            <div class="mb-3">
+              <label for="firstname" class="form-label fw-bold">First Name</label>
+              <input class="form-control form-control-lg sm-input" id="firstname">
+            </div>
+            <div class="mb-3">
+              <label for="lastname" class="form-label fw-bold">Last Name</label>
+              <input class="form-control form-control-lg md-input" id="lastname">
+            </div>
+            <div class="mb-3">
+              <label for="title" class="form-label fw-bold">Last Name</label>
+              <input class="form-control form-control-lg lg-input" id="title">
+            </div>
+            <button type="submit" class="btn btn-info fw-bold">Save</button>
+          </form>
+        </div>
+        <div class="mb-5">
+          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">Anatoliy reports to the following leaders:</h6>
+          <div class="d-flex flex-wrap mb-2">
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+          </div>
+          <button class="btn btn-outline-dark fw-bold border-2" data-bs-toggle="modal" data-bs-target="#modal">
+            Edit Leader(s)
+          </button>
+        </div>
+        <div class="mb-5">
+          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">The following team members reports to
+            Anatoliy:</h6>
+          <div class="d-flex flex-wrap mb-2">
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+            <span class="badge bg-dark me-2 mb-2">Anna Kotova</span>
+            <span class="badge bg-dark me-2 mb-2">Nikolai Kapustin</span>
+          </div>
+          <button class="btn btn-outline-dark fw-bold border-2">Edit Member(s)</button>
+        </div>
+        <div class="mb-5">
+          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">Anatoliy's invite link</h6>
+          <p>Share the following link to invite team members on Anatoliy's behalf.</p>
+          <div class="text-center">
+            <div>
+              <input class="w-50 p-2 mb-3">
+            </div>
+            <button class="btn btn-info fw-bold">Copy link</button>
+          </div>
+        </div>
+      </div>
+      ${require("./src/components/feedback-btn.html")}
+      ${require("./src/components/support-btn.html")}
+    </div>
+  </div>
+  ${require("./src/components/modal.html")}
+</div>
+</body>
+</html>
