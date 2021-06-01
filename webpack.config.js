@@ -36,6 +36,10 @@ const config = {
       filename: "pages/team-reports.html",
       template: "src/pages/team-reports.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "pages/weekly-report-history.html",
+      template: "src/pages/weekly-report-history.html", //weekly-report-history.html
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
