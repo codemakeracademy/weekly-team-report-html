@@ -42,6 +42,12 @@ const config = {
       chunks: ['index', 'teamReports'],
       filename: 'team-reports.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/my-company.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'my-company.html'
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
