@@ -10,7 +10,7 @@
 <div class="container-fluid p-0 m-0">
   <div class="row p-0 m-0">
     ${require("./src/components/aside.html")}
-    <div class="col-10 p-0">
+    <div class="col-12 col-lg-10 p-0">
       ${require("./src/components/company-header.html")}
       <div class="m-4 p-5">
         <div class="mb-5">
@@ -24,7 +24,10 @@
           <form>
             <div class="mb-3">
               <label for="name" class="form-label fw-bold">Change company name.</label>
-              <input class="form-control form-control-lg w-50 border border-2 border-info" id="name">
+              <!-- For large -->
+              <input class="form-control form-control-lg w-50 border border-2 border-info d-none d-lg-block" id="name">
+              <!-- For small -->
+              <input class="form-control form-control-lg border border-2 border-info d-block d-lg-none" id="name">
             </div>
             <button type="submit" class="btn btn-outline-dark fw-bold border-2">Save name change</button>
           </form>
