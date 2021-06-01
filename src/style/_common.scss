@@ -1,3 +1,7 @@
+html, body{
+    height: 100%;
+}
+//doublecheck, may cause troubles ^
 .page-header {
     background-image: url(/src/img/header-bg.png);
     height: $header-height;
