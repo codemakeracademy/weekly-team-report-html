@@ -21,6 +21,15 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "src/pages/launch-guide.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "pages/my-reports.html",
+      template: "src/pages/my-reports.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "pages/launch-guide.html",
       template: "src/pages/launch-guide.html",
     }),
 
@@ -47,8 +56,8 @@ const config = {
       },
       {
         test: /\.html$/i,
-        use: [{loader: "html-loader?interpolate"}]
-      }
+        use: [{ loader: "html-loader?interpolate" }],
+      },
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
