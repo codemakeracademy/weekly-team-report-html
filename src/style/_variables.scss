@@ -22,7 +22,19 @@ $nav-link-height:50px;
 .bg-green-light{
     background-color: $green-light;
 }
-
+$enable-negative-margins: true;
+.z-index1{
+    z-index: 2000;
+}
+.z-index2{
+    z-index: 2200;
+}
+.z-index3{
+    z-index: 2300;
+}
+.z-index4{
+    z-index: 2400;
+}
 
 
 /*$primary:       $blue;
