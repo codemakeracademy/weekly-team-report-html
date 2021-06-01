@@ -11,27 +11,189 @@
 <body>
     <div class="container-fluide p-0 h-100">
         <div class="row  h-100 w-100 p-0 m-0 row-cols-lg-2 row-cols-1">
-            <div class="p-0 col-lg-3 h-auto">
+            <div class="p-0 col-lg-2 h-auto">
                 ${require("../component/aside.html")}
             </div>
-            <div class="d-flex flex-column col-lg-9 h-100 ">
+            <div class="d-flex flex-column col-lg-10 h-100 ">
                 <div class="row">
-                    <header class="header d-flex flex-column justify-content-center align-items-center">
-                        <div>
-                            <a class="navbar-brand" href="#">
-                                <img src="../img/logo.png" alt="" class="img-fluid">
-                            </a>
+                    <header class=" d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-dark fw-bold text-center m-4">
+                            <h2>Welcome back,</h2>
+                            <h2>Anatoliy.</h2>
+                            <span class="fw-normal">Let your leader know where you're winning and struggling ths week - in less than 10 minutes.</span>
                         </div>
-                        <div class="caption">
-                            <h2>Launch Guide</h2>
-                        </div>
-
                     </header>
                 </div>
                 <div class="row">
                     <main class="col d-flex justify-content-center">
+                        <form class="w-75" action="">
+                            <div class="text-dark fw-bold text-center m-2">
+                                <h4>How was your morale this week?</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-frown"></i>
+                                        </div>
+                                        <div class="m-1">Very low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="notenter emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-expressionless"></i>
+                                        </div>
+                                        <div class="m-1">Low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="notenter emoji-smile fs-1 text-light bg-green-light d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-neutral"></i>
+                                        </div>
+                                        <div class="m-1">Okay</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="notenter emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-smile"></i>
+                                        </div>
+                                        <div class="m-1">Good</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class=" btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center notenter">
+                                            <i class="bi bi-emoji-laughing"></i>
+                                        </div>
+                                        <div class="m-1">Great</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>How was your stress this week?</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="notenter emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-frown"></i>
+                                        </div>
+                                        <div class="m-1">Very low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class=" emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-expressionless"></i>
+                                        </div>
+                                        <div class="m-1">Low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="notenter emoji-smile fs-1 text-light bg-green-light d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-neutral"></i>
+                                        </div>
+                                        <div class="m-1">Okay</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="notenter emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-smile"></i>
+                                        </div>
+                                        <div class="m-1">Good</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class=" btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center notenter">
+                                            <i class="bi bi-emoji-laughing"></i>
+                                        </div>
+                                        <div class="m-1">Great</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>How was your workload this week?</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="notenter emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-frown"></i>
+                                        </div>
+                                        <div class="m-1">Very low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div class="notenter emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-expressionless"></i>
+                                        </div>
+                                        <div class="m-1">Low</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class=" emoji-smile fs-1 text-light bg-green-light d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-neutral"></i>
+                                        </div>
+                                        <div class="m-1">Okay</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="notenter emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-emoji-smile"></i>
+                                        </div>
+                                        <div class="m-1">Good</div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class=" btn btn-light d-flex  flex-column justify-content-center align-items-center p-4 bg-white">
+                                        <div
+                                            class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center notenter">
+                                            <i class="bi bi-emoji-laughing"></i>
+                                        </div>
+                                        <div class="m-1">Great</div>
+                                    </button>
+                                </div>
+                            </div>
 
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>What was your high this week?</h4>
+                            </div>
+                            <textarea class="form-control" id="textarea1" rows="3" placeholder="Default input"></textarea>
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>What was your low this week?</h4>
+                            </div>
+                            <textarea class="form-control" id="textarea2" rows="3" placeholder="Default input"></textarea>
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>Anything else?</h4>
+                            </div>
+                            <textarea class="form-control" id="textarea3" rows="3" placeholder="Default input"></textarea>
+                            <div class="text-dark fw-bold text-center mt-5">
+                                <h4>Date range</h4>
+                            </div>
+                            <div class="d-flex flex-column w-75 justify-content-between align-items-center">
+                                <label for="date">Choose date </label>
+                                <input type="date" id="date" name="date" />
+                                <button type="submit" class="btn btn-secondary mt-5">Send Weekly Report</button>
+                            </div>
+                        </form>
                     </main>
+                    <footer class="h-25"></footer>
                 </div>
             </div>
         </div>
