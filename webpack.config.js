@@ -34,6 +34,18 @@ const config = {
       chunks: ['index'],
       filename: 'invite-your-team.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/my-company.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'my-company.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/launch-guide.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'launch-guide.html'
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

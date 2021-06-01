@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Report</title>
 </head>
-<body>
+<body class="bg-light">
   <div class="row position-relative w-100 m-0">
     <div class="col-2 p-0">
       <aside class="bg-dark px-1 pt-5 min-vh-100">
@@ -16,10 +16,10 @@
         
         <ul class="nav flex-column px-4 pt-5">
           <li class="nav-item">
-            <a class="nav-link p-3 fw-bold" href="./index.html">Launch Guide</a>
+            <a class="nav-link p-3 fw-bold" href="launch-guide.html">Launch Guide</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-3 fw-bold active">Invite Your Team</a>
+            <a class="nav-link p-3 fw-bold" href="./invite-your-team.html">Invite Your Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-3 fw-bold" href="#">Team Reports</a>
@@ -36,7 +36,7 @@
             <a class="nav-link p-3 fw-bold" href="#">Back to Elite</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-3 fw-bold" href="./my-company.html">My Company</a>
+            <a class="nav-link p-3 fw-bold active">My Company</a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-3 fw-bold" href="#">
@@ -53,10 +53,13 @@
         </ul>
       </aside>
     </div>
-    <div class="col-10 p-0 bg-light">
-      ${require("../components/invite-your-team-content.html")}
+    <div class="col-10 p-0">
+      ${require("../components/my-company-content.html")}
     </div>
     ${require("../components/help-buttons.html")}
   </div>
 </body>
 </html>
+
+
+
