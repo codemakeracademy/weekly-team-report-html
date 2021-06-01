@@ -11,12 +11,22 @@ $info: #FFD700;
 $warning: #c7c7c7;
 $enable-negative-margins: true;
 $feedback: #0f3d67;
+$success: rgba(8, 228, 8, 0.719);
 
 $badge-padding-y: 1em;
 $badge-padding-x: .9em;
 $badge-font-size: .9em;
 
 $extra-bold: 900;
+
+$accordion-button-active-bg: tint-color($dark, 10%);
+$accordion-button-active-color: shade-color($info, 10%);
+$accordion-border-width: 0;
+$accordion-border-color: rgba($black, .125);
+$accordion-border-radius: $border-radius;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$light}' class='bi bi-caret-down-fill' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+
 
 $theme-colors: (
         "primary":    $primary,
@@ -26,5 +36,7 @@ $theme-colors: (
         "warning":    $warning,
         "danger":     $danger,
         "light":      $light,
-        "dark":       $dark
+        "dark":       $dark,
+        "orange":     orange,
+        "green":      green
 );
