@@ -20,6 +20,25 @@ html {
   max-width: 25rem;
 }
 
+.extra-input {
+  max-width: 30rem;
+}
+
 .extra-bold {
-  font-weight: $extra-bold;
+  font-weight: $extra-bold !important;
+}
+
+.radio-button {
+  height: 12rem;
+  width: 12rem;
+}
+
+.radio-button img {
+  height: 5rem;
+  width: 5rem;
+}
+
+textarea {
+  height: 8rem;
+  resize: none !important;
 }

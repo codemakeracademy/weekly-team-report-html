@@ -56,6 +56,10 @@ const config = {
       filename: "my_reports.html",
       template: "my_reports.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "fill_out_report.html",
+      template: "fill_out_report.html",
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
