@@ -20,10 +20,36 @@ html {
   max-width: 25rem;
 }
 
+.extra-input {
+  max-width: 30rem;
+}
+
 .extra-bold {
-  font-weight: $extra-bold;
+  font-weight: $extra-bold !important;
+}
+
+.radio-button {
+  height: 12rem;
+  width: 12rem;
+}
+
+.radio-button img {
+  height: 5rem;
+  width: 5rem;
+}
+
+textarea {
+  height: 8rem;
+  resize: none !important;
 }
 
 .w-550px {
   width: 550px;
+}
+
+.bg-img {
+  background-image: url(/src/img/brush_stroke.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
