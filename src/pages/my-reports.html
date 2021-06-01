@@ -42,41 +42,369 @@
                                 <div class="col"></div>
                                 <div class="col"></div>
                                 <div class="col-2">
-                                    <button class="btn btn-dark">Expand all</button>
+                                    <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseOne collapse2 collapse3 collapse4">Expand all</button>
                                 </div>
                             </div>
                             <div class="row row-cols-5 w-100 pt-3 pb-3 mt-1 shadow-lg bg-white">
-                                <div class="col-7"></div>
+                                <div class="col-8"></div>
                                 <div class="col-1">Morale</div>
                                 <div class="col-1">Stress</div>
                                 <div class="col-1">Workload</div>
-                                <div class="col-2"></div>
+                                <div class="col-1"></div>
                             </div>
-                            <div class="row row-cols-5 w-100 pt-3 pb-3 mt-3 shadow-lg bg-white">
-                                <div class="col-7"></div>
-                                <div class="col-1">
-                                    <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-emoji-laughing"></i>
+                                <div class="accordion w-100 mt-3" id="accordion">
+                                    <div class="accordion-item w-100 shadow-lg bg-white border-0 p-3 ">
+                                        <h2 class="accordion-header h2 d-flex justify-content-between align-items-center" id="headingOne">
+                                            <div class="fs-5 fw-bold pl-4"><span>May 3 - MAY 9, 2020</span> </div>
+                                            <div class="d-flex">
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-laughing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-frown"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-smile"></i>
+                                                    </div>
+                                                </div>
+                                                <button class="accordion-button  collapsed border-0 bg-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    Expand
+                                                </button>
+                                            </div>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse multi-collapse" aria-labelledby="headingOne"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-laughing"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">morale</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur quaerat corrupti illo
+                                                        repudiandae.
+                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-frown"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">stress</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about stress.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-smile"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">Workload</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about Workload.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly High</div>
+                                                    <div class="report-text">Identified our goal and priorities</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly Low</div>
+                                                    <div class="report-text">Cold weather</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Anything Else</div>
+                                                    <div class="report-text">Looking forward to launching our firs product</div>
+                                                </div>
+                                                </div>
+                                            </div>
                                     </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-emoji-frown"></i>
+                                    <div class="accordion-item w-100 shadow-lg bg-white border-0 p-3 mt-3">
+                                        <h2 class="accordion-header h2 d-flex justify-content-between align-items-center" id="headingOne">
+                                            <div class="fs-5 fw-bold pl-4"><span>Aprile 12 - Aprile 18, 2020</span> </div>
+                                            <div class="d-flex">
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-laughing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-frown"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-smile"></i>
+                                                    </div>
+                                                </div>
+                                                <button class="accordion-button  collapsed border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseOne">
+                                                    Expand
+                                                </button>
+                                            </div>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse multi-collapse" aria-labelledby="headingOne"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-laughing"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">morale</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur quaerat corrupti
+                                                        illo
+                                                        repudiandae.
+                                    
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-frown"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">stress</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about stress.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-smile"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">Workload</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about Workload.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly High</div>
+                                                    <div class="report-text">Identified our goal and priorities</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly Low</div>
+                                                    <div class="report-text">Cold weather</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Anything Else</div>
+                                                    <div class="report-text">Looking forward to launching our firs product</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-emoji-smile"></i>
+                                    <div class="accordion-item w-100 shadow-lg bg-white border-0 p-3 mt-3">
+                                        <h2 class="accordion-header h2 d-flex justify-content-between align-items-center" id="headingOne">
+                                            <div class="fs-5 fw-bold pl-4"><span>February 9 - February 22, 2020</span> </div>
+                                            <div class="d-flex">
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-laughing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-frown"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-smile"></i>
+                                                    </div>
+                                                </div>
+                                                <button class="accordion-button  collapsed border-0 bg-white" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseOne">
+                                                    Expand
+                                                </button>
+                                            </div>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse multi-collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-laughing"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">morale</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur quaerat corrupti
+                                                        illo
+                                                        repudiandae.
+                                    
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-frown"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">stress</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about stress.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-smile"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">Workload</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about Workload.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly High</div>
+                                                    <div class="report-text">Identified our goal and priorities</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly Low</div>
+                                                    <div class="report-text">Cold weather</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Anything Else</div>
+                                                    <div class="report-text">Looking forward to launching our firs product</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-2">
-                                    <a class="btn btn-light" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
-                                    aria-controls="multiCollapseExample1">Expand <i class="bi bi-caret-down-fill"></i></a>
+                                    <div class="accordion-item w-100 shadow-lg bg-white border-0 p-3 mt-3">
+                                        <h2 class="accordion-header h2 d-flex justify-content-between align-items-center" id="headingOne">
+                                            <div class="fs-5 fw-bold pl-4"><span>January 19 - January 25, 2020</span> </div>
+                                            <div class="d-flex">
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-laughing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-frown"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="emoji">
+                                                    <div class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                        <i class="bi bi-emoji-smile"></i>
+                                                    </div>
+                                                </div>
+                                                <button class="accordion-button  collapsed border-0 bg-white" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseOne">
+                                                    Expand
+                                                </button>
+                                            </div>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse multi-collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                            <div class="accordion-body">
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-success d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-laughing"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">morale</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur quaerat corrupti
+                                                        illo
+                                                        repudiandae.
+                                    
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-danger d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-frown"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">stress</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about stress.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 mb-2">
+                                                    <div class="col-3 ">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between bg-green-light p-3 shadow-lg rounded-2">
+                                                            <div
+                                                                class="emoji-smile fs-1 text-light bg-warning d-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-emoji-smile"></i>
+                                                            </div>
+                                                            <div class="h5"><span class="text-light text-uppercase">Workload</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <i class="text-muted">There were no comments added about Workload.</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly High</div>
+                                                    <div class="report-text">Identified our goal and priorities</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Weekly Low</div>
+                                                    <div class="report-text">Cold weather</div>
+                                                </div>
+                                                <div class="row w-100 m-2">
+                                                    <div class="report-title h5"> Anything Else</div>
+                                                    <div class="report-text">Looking forward to launching our firs product</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row"></div>
-                            <div class="row"></div>
-                            <div class="row"></div>
                         </div>
                     </main>
                 </div>
