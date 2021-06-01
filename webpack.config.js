@@ -13,6 +13,8 @@ const stylesHandler = isProduction
 const config = {
   entry: {
     index: "./src/index.js",
+    invite: "./src/js/invite-your-team.js",
+    teamReports: "./src/js/team-reports.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -31,20 +33,20 @@ const config = {
     new HtmlWebpackPlugin({
       template: "./src/pages/invite-your-team.html",
       inject: true,
-      chunks: ['index'],
+      chunks: ['index', 'invite'],
       filename: 'invite-your-team.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/team-reports.html",
+      inject: true,
+      chunks: ['index', 'teamReports'],
+      filename: 'team-reports.html'
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/my-company.html",
       inject: true,
       chunks: ['index'],
       filename: 'my-company.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/launch-guide.html",
-      inject: true,
-      chunks: ['index'],
-      filename: 'launch-guide.html'
     }),
 
     // Add your plugins here
