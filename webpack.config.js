@@ -38,7 +38,15 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       filename: "pages/weekly-report-history.html",
-      template: "src/pages/weekly-report-history.html", //weekly-report-history.html
+      template: "src/pages/weekly-report-history.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "pages/fill-report.html",
+      template: "src/pages/fill-report.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "pages/invite-your-team.html",
+      template: "src/pages/invite-your-team.html",
     }),
 
     // Add your plugins here
