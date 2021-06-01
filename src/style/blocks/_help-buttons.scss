@@ -1,0 +1,17 @@
+.feedback-btn {
+  border-radius: 0;
+  transform: rotate(-90deg);
+  right: -1.8rem;
+}
+
+.help-btn {
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

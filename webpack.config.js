@@ -11,7 +11,9 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -22,6 +24,15 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/invite-your-team.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'invite-your-team.html'
     }),
 
     // Add your plugins here
