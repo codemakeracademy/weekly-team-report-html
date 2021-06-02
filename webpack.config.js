@@ -66,6 +66,12 @@ const config = {
       chunks: ['index'],
       filename: 'my-reports.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/fill-out-report.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'fill-out-report.html'
+    }),
     
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Report</title>
 </head>
-<body class="bg-light">
+<body>
   <div class="row position-relative w-100 m-0">
     <div class="col-2 p-0">
       <aside class="bg-dark px-4 pt-3 min-vh-100">
         <div class="d-flex align-items-center justify-content-center">
-          <img class="img-fluid" src="./src/assets/logo.png" alt="Weekly Report Logo" width="200" height="100">
+          <img class="img-fluid" src="../assets/logo.png" alt="Weekly Report Logo" width="200" height="100">
         </div>
         
         <ul class="nav flex-column pt-4">
           <li class="nav-item">
-            <a class="nav-link p-3 active">Launch Guide</a>
+            <a class="nav-link p-3" href="./index.html">Launch Guide</a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-3" href="./invite-your-team.html">Invite Your Team</a>
@@ -28,7 +28,7 @@
             <a class="nav-link p-3" href="./my-reports.html">My Reports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-3 nav-link--special" href="./fill-out-report.html">Fill out a Report</a>
+            <a class="nav-link p-3 nav-link--special active">Fill out a Report</a>
           </li>
         </ul>
         <ul class="nav flex-column pt-5 pb-3">
@@ -53,13 +53,10 @@
         </ul>
       </aside>
     </div>
-    <div class="col-10 p-0">
-      ${require("./src/components/launch-guide-content.html")}
+    <div class="col-10 p-0 bg-light">
+      ${require("../components/fill-out-report-content.html")}
     </div>
-    ${require("./src/components/help-buttons.html")}
+    ${require("../components/help-buttons.html")}
   </div>
 </body>
 </html>
-
-
-
