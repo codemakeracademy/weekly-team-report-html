@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Team Reports</title>
+</head>
+
+<body>
+    <div>
+        ${require("/src/components/nav-top.html")}
+    </div>
+    
+    <div class="h-100 d-flex">
+        <!-- Side nav panel. -->
+        <div>
+            ${require("/src/components/aside.html")}
+        </div>
+
+        <div class="flex-grow-1">
+            <!-- Header. -->
+            <div class="page-header">
+                <!-- Team selection. -->
+                <div class="col-lg-5 col-md-9 col-12 px-md-2 py-2">
+                    <div class="btn-group text-center col-12" role="group" aria-label="Period">
+                        <button type="button" class="btn btn-dark btn-dark-active flex-column col-6 align-items-center">Immediate Team</button>
+                        <button type="button" class="btn btn-dark btn-dark-passive flex-column col-6 align-items-center">Extended Team</button>
+                        </div>
+                </div>
+                <!-- Members icons-->
+                <div class="accounts d-flex mt-3">
+                    <a href="#" class="text-decoration-none mr-n1 z-index3">
+                        <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                            <span class="d-block h6  text-dark">AE</span>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none mr-n1 z-index2">
+                        <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                            <span class="d-block h6  text-dark">NK</span>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none mr-n1 z-index1">
+                        <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                            <span class="d-block h6  text-dark">AK</span>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none ">
+                        <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                            <span class="d-block h6  text-dark">NM</span>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none z-index4 ml-n1">
+                        <div class="account-img-sm d-flex justify-content-center  align-items-center bg-warning">
+                            <span class="d-block h6  text-dark">+1</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Header title. -->
+                <h2 class="text-light text-center mt-2 mx-5">Your team has not submitted reports this week</h2>
+            </div>
+
+            <!-- Main content. -->
+            <div class="px-lg-5 px-2">
+                <!-- Choose Period -->
+                <div class="col-12 text-center py-5">
+                    <div class="btn-group" role="group" aria-label="Period">
+                        <button type="button" class="btn btn-dark btn-dark-active">Previous Period: 5/16 - 5/22</button>
+                        <button type="button" class="btn btn-dark btn-dark-passive">Current Period: 5/23 - 5/29</button>
+                        <button type="button" class="btn btn-dark btn-dark-passive">Older Reports</button>
+                        </div>
+                </div>
+                <div class="text-center row justify-content-center py-5 w-100">
+                    <h3>IMMEDIATE TEAM</h3>
+                    <div class="breakline my-2"></div>
+                </div> 
+                <!-- Team members list -->
+                <div class="container col-12 py-5 align-items-center">
+                    <div class="row justify-content-end w-100"><button class="btn btn-small btn-dark col-3 col-lg-2">Expand All</button></div>
+                    <div class="col-lg-9 w-100">
+                        <!-- Member status head -->
+                        <div class="row w-100 table-header pt-3 py-3 my-3 mt-1 shadow-lg bg-white">
+                            <div class="col-8"></div>
+                            <div class="col-1">Morale</div>
+                            <div class="col-1">Stress</div>
+                            <div class="col-1">Workload</div>
+                            <div class="col-1"></div>
+                        </div>
+                        <!-- Member status items -->
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">AE</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Alexander Evseev</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">NK</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Nilolay Kapustin</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">AK</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Anna Kotova</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">NM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Nina Mammadova</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">NS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                            <span class="row">Natalia Starkova</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">AT</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Anton Takhanov</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>  
+
+                        <div class="shadow-lg rounded-3 py-2 my-2 row w-100 pt-3  mt-1 shadow-lg bg-white">
+                            <!-- Member logo -->
+                            <div class="col-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="account-img-sm d-flex justify-content-center  align-items-center">
+                                        <span class="d-block h6  text-dark">AV</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Member Info -->
+                            <div class="col-6 mx-5 mx-md-4 mx-lg-1">
+                                <span class="row">Alexandr Vovchuk</span>
+                                <span class="row text-muted">is missing a report</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

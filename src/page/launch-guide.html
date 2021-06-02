@@ -2,34 +2,101 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Webpack App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Webpack App</title>
 </head>
 
 <body>
+  <!-- Top nav until md -->
+  <div>
+    ${require("/src/components/nav-top.html")}
+  </div>
 
-    <!-- Side nav panel. -->
-    ${required("./components/aside.html")}
-    <!-- Header. -->
-    <div class="page-header">
+  <div class="h-100 d-flex">
+
+    <!-- Side nav for md+ -->
+    <div>
+      ${require("/src/components/aside.html")}
+    </div>
+
+    <div class="flex-grow-1">
+      <!-- Header. -->
+      <div class="page-header">
         <!-- Logo. -->
         <img class="logo" src="/src/img/logo.png" alt="logo">
         <!-- Header title -->
-        <h2 class="text-light text-center">Launch Guide</h2>
-    </div>
+        <h2 class="text-light text-center mt-2">Launch Guide</h2>
+      </div>
 
-    <!-- Main content. -->
-    <!-- WIP -->
-    <div>
-        <div class="launch-guide-item">
-            <div>
-                <p>Invite Your Team</p>
-                <p>Click on the link below and invite the team members who directly report to you.</p>
-                <a href="#" class="btn-primary">Invite Your Team</a>
-            </div>
-            <img class="launch-guide-item-img" src="/src/img/yellow-1.png" alt="Invite Your Team">
+      <!-- Main content. -->
+      <div class="container launch-guide-items px-5">
+        <!-- Invite your team -->
+        <div class="row flex-column-reverse flex-lg-row my-4">
+          <div class="col-sm-10 col-lg-6 p-0 pe-lg-3 my-0 my-lg-auto mx-auto mx-lg-0 text-center text-lg-start">
+            <h4 class="fw-bolder">Invite Your Team</h4>
+            <p class="my-3">Click on the link below and invite the team members who directly report to you.
+            </p>
+            <a href="#" class="btn-primary d-inline-block px-3 py-2 rounded fw-bold">Invite Your Team</a>
+          </div>
+          <div class="col-12 col-lg-6 p-0 text-center">
+            <img class="launch-guide-item-img" src="/src/img/invite-your-team.png" alt="Invite Your Team">
+          </div>
         </div>
+
+        <!-- Invite your team -->
+        <div class="row flex-column-reverse flex-lg-row-reverse my-4">
+          <div class="col-sm-10 col-lg-6 p-0 pe-lg-3 my-0 my-lg-auto mx-auto mx-lg-0 text-center text-lg-start">
+            <h4 class="fw-bolder">Encourage Your Team to Accept Your Invitation</h4>
+            <p class="my-3">When they recieve your invitation, team members
+              will be prompted to complete their profiles.
+              If a team member hasn't created their profile within 24 hours,
+              follow up with them!
+            </p>
+          </div>
+          <div class="col-12 col-lg-auto p-0 text-center">
+            <img class="launch-guide-item-img" src="/src/img/encourage-your-team.png" alt="Invite Your Team">
+          </div>
+        </div>
+
+        <!-- Remind your team -->
+        <div class="row flex-column-reverse flex-lg-row my-4">
+          <div class="col-sm-10 col-lg-6 p-0 pe-lg-3 my-0 my-lg-auto mx-auto mx-lg-0 text-center text-lg-start">
+            <h4 class="fw-bolder">Remind Your Team</h4>
+            <p class="my-3 pe-3">Every Friday, we'll automatically send your
+              team members an email reminding them to fill out their
+              Weekly Report. But we also encourage
+              <span class="fw-bold fst-italic">you</span> to consistently request
+              their Weekly Reports so they realize the importance of this new habit.
+            </p>
+          </div>
+          <div class="col-12 col-lg-auto p-0 text-center">
+            <img class="launch-guide-item-img" src="/src/img/remind-your-team.png" alt="Invite Your Team">
+          </div>
+        </div>
+
+        <!-- Read their reports -->
+        <div class="row flex-column-reverse flex-lg-row-reverse my-4 pb-5">
+          <div class="col-sm-10 col-lg-6 p-0 pe-lg-3 my-0 my-lg-auto mx-auto mx-lg-0 text-center text-lg-start">
+            <h4 class="fw-bolder">Read Their Reports</h4>
+            <p class="my-3">Set aside some time on Monday to read all the reports.
+              Then reach out to any team members who need to be ackonwledged for
+              a success or supported during a difficult time. (And yes,
+              we'll send you a reminder to read your reports each week too.)
+            </p>
+          </div>
+          <div class="col-12 col-lg-auto p-0 text-center">
+            <img class="launch-guide-item-img" src="/src/img/read-their-reports.png" alt="Invite Your Team">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Help and feedback anchored buttons -->
+  <div>
+    ${require("/src/components/btn-overlay-help-feedback.html")}
+  </div>
 </body>
 
 </html>
