@@ -11,7 +11,9 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -21,65 +23,66 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      inject: true,
-      chunks: ['index'],
       template: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "team_reports.html",
       inject: true,
       chunks: ['index'],
-      template: "team_reports.html",
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: "invite_team.html",
-      inject: true,
-      chunks: ['index'],
-      template: "invite_team.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "invite_team_success.html",
-      inject: true,
-      chunks: ['index'],
-      template: "invite_team_success.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "edit_info.html",
-      inject: true,
-      chunks: ['index'],
       template: "edit_info.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "team_members.html",
       inject: true,
       chunks: ['index'],
-      template: "team_members.html",
+      filename: 'edit_info.html'
     }),
     new HtmlWebpackPlugin({
-      filename: "weekly_report_history.html",
-      inject: true,
-      chunks: ['index'],
-      template: "weekly_report_history.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "my_profile.html",
-      inject: true,
-      chunks: ['index'],
-      template: "my_profile.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "my_reports.html",
-      inject: true,
-      chunks: ['index'],
       template: "my_reports.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "fill_out_report.html",
       inject: true,
       chunks: ['index'],
-      template: "fill_out_report.html",
+      filename: 'my_reports.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "weekly_report_history.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'weekly_report_history.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "team_reports.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'team_reports.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "team_members.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'team_members.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "my_profile.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'my_profile.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "invite_team.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'invite_team.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "invite_team_success.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'invite_team_success.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "fill_out_report.html",
+      inject: true,
+      chunks: ['index'],
+      filename: 'fill_out_report.html'
+    }),
+    
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -90,6 +93,10 @@ const config = {
         loader: "babel-loader",
       },
       {
+        test: /\.css$/i,
+        use: [stylesHandler, "css-loader"],
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [stylesHandler, "css-loader", "sass-loader"],
       },
@@ -97,13 +104,13 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-      {
-        test: /\.html$/i,
+      { 
+        test: /\.(html)$/,
         use: [{
-          loader: "html-loader?interpolate"
+          loader: 'html-loader?interpolate'
         }]
-      }
-
+      },
+      
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
