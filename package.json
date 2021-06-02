@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/Rushtell/weekly-team-report-html#readme",
   "dependencies": {
-    "bootstrap": "^5.0.1"
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

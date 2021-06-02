@@ -1,0 +1,14 @@
+@import "variables";
+
+.btn-fix-right-bottom {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.btn-feedback {
+    transform: rotate(270deg);
+    right: -2rem;
+    background-color: $feedback !important;
+    color: $white !important;
+}
