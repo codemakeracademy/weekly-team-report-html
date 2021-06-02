@@ -22,42 +22,62 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
+      inject: true,
+      chunks: ['index'],
       template: "index.html",
     }),
     new HtmlWebpackPlugin({
       filename: "team_reports.html",
+      inject: true,
+      chunks: ['index'],
       template: "team_reports.html",
     }),
     new HtmlWebpackPlugin({
       filename: "invite_team.html",
+      inject: true,
+      chunks: ['index'],
       template: "invite_team.html",
     }),
     new HtmlWebpackPlugin({
       filename: "invite_team_success.html",
+      inject: true,
+      chunks: ['index'],
       template: "invite_team_success.html",
     }),
     new HtmlWebpackPlugin({
       filename: "edit_info.html",
+      inject: true,
+      chunks: ['index'],
       template: "edit_info.html",
     }),
     new HtmlWebpackPlugin({
       filename: "team_members.html",
+      inject: true,
+      chunks: ['index'],
       template: "team_members.html",
     }),
     new HtmlWebpackPlugin({
       filename: "weekly_report_history.html",
+      inject: true,
+      chunks: ['index'],
       template: "weekly_report_history.html",
     }),
     new HtmlWebpackPlugin({
       filename: "my_profile.html",
+      inject: true,
+      chunks: ['index'],
       template: "my_profile.html",
     }),
     new HtmlWebpackPlugin({
       filename: "my_reports.html",
+      inject: true,
+      chunks: ['index'],
       template: "my_reports.html",
     }),
     new HtmlWebpackPlugin({
       filename: "fill_out_report.html",
+      inject: true,
+      chunks: ['index'],
       template: "fill_out_report.html",
     }),
     // Add your plugins here
