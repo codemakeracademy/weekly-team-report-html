@@ -71,11 +71,7 @@ const config = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader", "sass-loader"],
-      },
-      {
-        test: /\.css$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader"],
+        use: [stylesHandler, "css-loader", "sass-loader"],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
