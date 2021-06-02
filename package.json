@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "weekly-report",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Weekly Report project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,25 +15,20 @@
     "type": "git",
     "url": "git+https://github.com/Rushtell/weekly-team-report-html.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rushtell/weekly-team-report-html/issues"
   },
   "homepage": "https://github.com/Rushtell/weekly-team-report-html#readme",
-  "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.1",
-    "bootstrap-icons": "^1.5.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
-    "@webpack-cli/generators": "^2.1.0",
-    "autoprefixer": "^10.2.5",
+    "@webpack-cli/generators": "2.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
-    "html-loader": "^0.5.5",
+    "html-loader": "0.5.5",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "prettier": "^2.3.0",
@@ -43,5 +38,10 @@
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.9.2",
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.5.0"
   }
 }
