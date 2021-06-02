@@ -44,26 +44,27 @@ ul {
   width: 36px;
   height: 36px;
   background-color: $gray-400;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &--1 {
     background-color: $red;
+    background-image: url("../assets/rating-emo-1.svg");
   }
   &--2 {
     background-color: $orange;
+    background-image: url("../assets/rating-emo-2.svg");
   }
   &--3 {
     background-color: $yellow;
+    background-image: url("../assets/rating-emo-3.svg");
   }
   &--4 {
     background-color: $green;
+    background-image: url("../assets/rating-emo-4.svg");
   }
   &--5 {
     background-color: $teal;
+    background-image: url("../assets/rating-emo-5.svg");
   }
-}
-
-.emo {
-  position: absolute;
-  top: 6px;
-  font-size: 36px;
 }

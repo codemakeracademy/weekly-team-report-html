@@ -1,0 +1,47 @@
+.header-user-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.collapse-text {
+  display: none;
+}
+
+.accordion-button {
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  color: $dark;
+
+  &:not(.collapsed) {
+    background-color: $dark;
+    color: $yellow;
+    font-weight: $font-weight-bold;
+  }
+
+  &:not(.collapsed) .collapse-text {
+    display: inline-flex;
+  }
+
+  &:not(.collapsed) .expand-text {
+    display: none;
+  }
+
+  &:not(.collapsed) .rating {
+    visibility: hidden;
+  }
+
+  &::after {
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../assets/caret-down-fill.svg");
+    background-size: 1rem;
+  }
+
+  &:not(.collapsed)::after {
+    background-image: url("../assets/caret-up-fill.svg");
+    transform: unset;
+  }
+}
+
+.weekly-report-status {
+  background-color: rgba($green, .6);
+}
