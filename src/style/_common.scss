@@ -1,11 +1,18 @@
-html,
-body {
-    height: 100%;
-    background-color: $background;
+html {
+    font-size: 0.8rem;
 }
 
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1rem;
+    }
+}
 .color-yellow {
     color: $yellow !important;
+}
+
+.text-secondary {
+    color: $gray-secondary !important;
 }
 
 .page-header {
@@ -16,6 +23,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.page-header-bg {
+    background-image: url(/src/img/header-bg.png);
 }
 
 .logo {
@@ -30,3 +41,44 @@ body {
     height: $launch-guide-item-img-height;
 }
 
+.header-text-huge {
+    font-size: $header-huge-text-size;
+    font-weight: $header-huge-text-weight;
+}
+
+.fw-heavy {
+    font-weight: $font-weight-heavy;
+}
+
+.container-main {
+    max-width: $container-main-max-width;
+}
+
+.grade-emotion-icon {
+    padding: $grade-emotion-icon-padding;
+}
+
+.btn-grade-emotion {
+    max-width: $btn-grade-emotion-max-width;
+    font-weight: $font-weight-medium;
+}
+
+.grade-range-input {
+    max-width: $grade-range-input-max-width;
+}
+
+.btn-grade-submit {
+    max-width: $grade-range-submit-max-width;
+}
+
+.text-input-long{
+    max-width: $text-input-long-max-width;
+}
+
+.text-input-medium{
+    max-width: $text-input-medium-max-width;
+}
+
+.text-input-short{
+    max-width: $text-input-short-max-width;
+}

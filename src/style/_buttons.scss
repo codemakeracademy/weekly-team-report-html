@@ -31,3 +31,9 @@
     right: -2rem;
     background-color: $blue-feedback;
 }
+
+.btn-primary:disabled {
+    box-shadow: unset !important;
+    color: $gray-disabled;
+    background-color: $gray-disabled-bg;
+}
