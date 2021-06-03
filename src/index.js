@@ -1,2 +1,2 @@
 import "./style/main.scss";
-import {Collapse, Modal} from 'bootstrap';
+import { Collapse, Modal, Dropdown } from "bootstrap";

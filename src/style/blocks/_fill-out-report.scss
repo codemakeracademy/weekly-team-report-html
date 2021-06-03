@@ -1,0 +1,51 @@
+.report-form {
+  & .radio-label {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+  }
+
+  & .rating-emo {
+    width: 50px;
+    height: 50px;
+    background-color: $gray-400;
+  }
+
+  & .radio-label:hover .rating-emo--1,
+  & input[type="radio"]:checked + .radio-label .rating-emo--1 {
+    background-color: $red;
+  }
+
+  & .radio-label:hover .rating-emo--2,
+  & input[type="radio"]:checked + .radio-label .rating-emo--2 {
+    background-color: $orange;
+  }
+
+  & .radio-label:hover .rating-emo--3,
+  & input[type="radio"]:checked + .radio-label .rating-emo--3 {
+    background-color: $yellow;
+  }
+
+  & .radio-label:hover .rating-emo--4,
+  & input[type="radio"]:checked + .radio-label .rating-emo--4 {
+    background-color: $green;
+  }
+
+  & .radio-label:hover .rating-emo--5,
+  & input[type="radio"]:checked + .radio-label .rating-emo--5 {
+    background-color: $teal;
+  }
+}
+
+.textarea-max-length {
+  bottom: 3px;
+  right: 12px;
+}
+
+.form-report-submit {
+  background-color: $gray-400;
+  color: $dark;
+  &:disabled {
+    opacity: .6;
+  }
+}
