@@ -1,3 +1,8 @@
 .edit-member-form .bi-person-badge {
-  right: 76%;
+  right: 70%;
+}
+@media (max-width: 768px) {
+  .edit-member-form .bi-person-badge {
+    right: 3%;
+  }
 }

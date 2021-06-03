@@ -14,18 +14,36 @@
           
             <div class="mb-3 position-relative">
               <label for="form-firstname" class="form-label fw-bold">First Name</label>
-              <input type="text" class="form-control w-25 pe-4 ps-2" id="member-form-firstname" value="Anatoliy">
+
+              <div class = "row text-center text-md-left">
+              <div class = "col col-md-4">
+                <input type="text" class="form-control pe-4 ps-2" id="member-form-firstname" value="Anatoliy">
+              </div>
+              
+              </div>
+              
               <i class="bi bi-person-badge position-absolute text-secondary"></i>
             </div>
 
             <div class="mb-3 position-relative">
                 <label for="form-firstname" class="form-label fw-bold">Last Name</label>
-                <input type="text" class="form-control w-50 pe-4 ps-2" id="member-form-lastname" value="Kolodkin">
-              </div>
+
+                <div class = "row">
+                  <div class = "col col-md-6">
+                    <input type="text" class="form-control pe-4 ps-2" id="member-form-lastname" value="Kolodkin">
+                  </div>
+                </div>
+
+            </div>
 
               <div class="mb-3 position-relative">
                 <label for="form-firstname" class="form-label fw-bold">Title</label>
-                <input type="text" class="form-control w-75 pe-4 ps-2" id="member-form-title" value="CEO">
+
+                <div class = "row">
+                  <div class = "col col-md-10">
+                    <input type="text" class="form-control pe-4 ps-2" id="member-form-title" value="CEO">
+                  </div>
+                </div>
               </div>
           
             <button class="btn btn-warning border-dark fw-bold text-dark" type="submit">Save</button>
@@ -59,11 +77,11 @@
                   <p class="my-5">Pro tip: You can change who sees your report in your profile settings</p>
 
                   <ul class="list-group list-group-horizontal-md">
-                    <li><a href="" class="btn btn-dark ms-1 ms-md-0 mt-1">Nikolay Kapustin</a></li>
-                    <li><a href="" class="btn btn-dark ms-1 mt-1 mt-1 ms-md-0">Nina Mammadova</a></li>
-                    <li><a href="" class="btn btn-dark ms-1 mt-1 mt-1 ms-md-0">Natalia Starikova</a></li>
-                    <li><a href="" class="btn btn-dark ms-1 mt-1 mt-1 ms-md-0">Anton Tarkhanov</a></li>
-                    <li><a href="" class="btn btn-dark ms-1 mt-1 mt-1 ms-md-0">Alexandr Vovchuk</a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 ms-md-0 d-flex align-items-center">Nikolay Kapustin <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Nina Mammadova <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Natalia Starikova <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Anton Tarkhanov <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Alexandr Vovchuk <button class="btn-close btn-close-white"></button></a></li>
                   </ul>
 
                   <div class="my-5 w-100 h-25 border"></div>
@@ -90,16 +108,50 @@
             <li><a href="" class="btn btn-dark ms-1 ms-1 mt-1 mt-md-0">Alexandr Vovchuk</a></li>
           </ul>
 
-          <a href="#"><button class="btn btn-light border-dark fw-bold text-dark my-3" type="button">Edit Members</button></a>
+          <a href="#"><button class="btn btn-light border-dark fw-bold text-dark my-3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Edit Members</button></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-left">
+
+                  <h2 class="fw-bold">Edit Member(s)</h2>
+
+                  <p>By default, the person who sent you the invite will receive your weekly report. You may also select the person you report to directly as an additional leader.</p>
+                  <p class="my-5">Pro tip: You can change who sees your report in your profile settings</p>
+
+                  <ul class="list-group list-group-horizontal-md">
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 ms-md-0 d-flex align-items-center">Nikolay Kapustin <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Nina Mammadova <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Natalia Starikova <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Anton Tarkhanov <button class="btn-close btn-close-white"></button></a></li>
+                    <li><a href="" class="btn btn-dark btn-sm ms-1 mt-1 mt-1 mt-md-0 d-flex align-items-center">Alexandr Vovchuk <button class="btn-close btn-close-white"></button></a></li>
+                  </ul>
+
+                  <div class="my-5 w-100 h-25 border"></div>
+                </div>
+                <div text-left w-100>
+                  <button class="btn btn-warning ms-3 mb-3" data-bs-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
 
           <span class="d-block fw-bold mt-5 text-uppercase">Anatoliy's invite link</span>
           <hr class="mt-0">
 
           <span class="d-block mt-5">Share the following link to invite team members on Anatoly's behalf.</span>
-
-          <div class="w-50 border border-dark m-3 mx-auto overflow-auto">
-            <div>https://weeklyreport.enterleadership.com/accept/wadwadandkadawadawdawdaw</div>
-          </div>
+        
+              <div class="border border-dark m-3 overflow-auto mx-auto w-50">
+                <div>https://weeklyreport.enterleadership.com/accept/wadwadandkadawadawdawdaw</div>
+              </div>
+        
           <button class="btn btn-warning d-block mx-auto">Copy link</button>
     </div>
 </div>
