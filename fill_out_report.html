@@ -178,7 +178,14 @@ ${require("./src/components/nav_bar.html")}
             <div class="extra-input mx-auto">
               <div class="text-start mb-5">
                 <label for="date" class="form-label">Choose date</label>
-                <input class="form-control form-control-lg border-0" id="date">
+                <select class="form-select form-select-lg text-secondary border-0" id="date">
+                  <option value="current" selected>
+                    Current period: May 30 - June 5
+                  </option>
+                  <option value="previous">
+                    Previous period: May 23 - May 29
+                  </option>
+                </select>
               </div>
               <div class="text-center">
                 <p class="text-danger fw-bold small">All fields are required unless marked as optional.</p>
