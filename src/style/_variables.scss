@@ -1,35 +1,17 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-// Colors.
-$dark: #1f2426;
-$gray-800: #333a3d;
-$white: #fff;
-$yellow: #fcd214;
-$blue-feedback: #0b3d67;
 
-$theme-colors: (
-    "primary": $yellow,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
 );
-
-// Font.
-$btn-font-weight-lg: 800;
-$btn-font-weight-link: 500;
-// Width & height.
-$header-height: 200px;
-$header-logo-height: 60px;
-
-$launch-guide-items-width: 818px;
-$launch-guide-item-img-height: 350px;
-
-$aside-width: 250px;
 
 $grid-breakpoints: (
   xs: 0,
@@ -37,8 +19,58 @@ $grid-breakpoints: (
   md: 768px,
   lg: 1070px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );
+
+// Colors.
+$dark: #1f2426;
+$gray-800: #333a3d;
+$gray-secondary: #a1a8ac;
+$gray-disabled: #8e999e;
+$gray-disabled-bg: #e8eced;
+$white: #fff;
+$yellow: #fcd214;
+$blue-feedback: #0b3d67;
+
+$input-placeholder-color: $gray-secondary;
+
+$theme-colors: (
+  "primary": $yellow,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+// Font.
+$header-huge-text-size: 3.3rem;
+$header-huge-text-weight: 700;
+
+$font-weight-medium: 600;
+
+$btn-font-weight-lg: 800;
+$btn-font-weight-link: 500;
+
+// Width & height.
+$header-height: 200px;
+$header-logo-height: 60px;
+
+$launch-guide-items-width: 818px;
+$launch-guide-item-img-height: 350px;
+
+$grade-form-max-width: 1000px;
+$btn-grade-emotion-max-width: 180px;
+
+$grade-range-input-max-width: 500px;
+$grade-range-submit-max-width: 500px;
+
+$aside-width: 250px;
+
+// Padding
+$grade-emotion-icon-padding: 6px;
 
 // Buttons.
 $btn-padding-y-lg: 14px;

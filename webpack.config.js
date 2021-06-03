@@ -32,6 +32,10 @@ const config = {
       template: "./src/page/invitation.html",
     }),
     new HtmlWebpackPlugin({
+      filename: "fill-a-report.html",
+      template: "./src/page/fill-a-report.html",
+    }),
+    new HtmlWebpackPlugin({
       filename: "aside.html",
       template: "./src/components/aside.html",
     })
@@ -60,7 +64,7 @@ const config = {
       // Learn more about loaders from https://webpack.js.org/loaders/
       {
         test: /\.html$/,
-        use:[{
+        use: [{
           loader: 'html-loader?interpolate'
         }]
       },

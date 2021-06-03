@@ -1,10 +1,9 @@
-html,
-body {
-    height: 100%;
-}
-
 .color-yellow {
     color: $yellow !important;
+}
+
+.text-secondary {
+    color: $gray-secondary !important;
 }
 
 .page-header {
@@ -27,4 +26,30 @@ body {
 
 .launch-guide-item-img {
     height: $launch-guide-item-img-height;
+}
+
+.header-text-huge {
+    font-size: $header-huge-text-size;
+    font-weight: $header-huge-text-weight;
+}
+
+.grade-form {
+    max-width: $grade-form-max-width;
+}
+
+.grade-emotion-icon {
+    padding: $grade-emotion-icon-padding;
+}
+
+.btn-grade-emotion {
+    max-width: $btn-grade-emotion-max-width;
+    font-weight: $font-weight-medium;
+}
+
+.grade-range-input {
+    max-width: $grade-range-input-max-width;
+}
+
+.btn-grade-submit {
+    max-width: $grade-range-submit-max-width;
 }
