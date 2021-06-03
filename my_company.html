@@ -7,13 +7,13 @@
   <title>My Company</title>
 </head>
 <body class="mh-100 w-100 p-0 m-0 bg-light">
-  ${require("./src/components/nav-bar.html")}
+${require("./src/components/nav_bar.html")}
 <div class="container-fluid p-0 m-0">
   <div class="row p-0 m-0">
     ${require("./src/components/aside.html")}
     <div class="col-12 col-lg-10 p-0">
-      ${require("./src/components/company-header.html")}
-      <div class="m-4 p-5">
+      ${require("./src/components/company_header.html")}
+      <main class="m-4 p-5">
         <div class="mb-5">
           <h3 class="extra-bold">Edit ANKO Technologies Corp's information.</h3>
           <p>You may edit the company name, as well as deactivate/activate the Weekly Report Tool functionality. If you
@@ -34,19 +34,20 @@
           </form>
         </div>
         <div>
-          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">See a list of ANKO Technologies Corp's team members</h6>
+          <h6 class="border-bottom py-1 mb-4 text-uppercase fw-bold">See a list of ANKO Technologies Corp's team
+            members</h6>
           <form>
             <div class="mb-3">
               <p>If you need to edit a particular team member, you can see a complete list of team members and visit
                 their profile to make edits. <span class="fw-bold">You will not be able to see a team member's weekly report.</span>
               </p>
             </div>
-            <a href="#" class="btn btn-outline-dark fw-bold border-2">See All Team Members</a>
+            <a href="team_members.html" class="btn btn-outline-dark fw-bold border-2">See All Team Members</a>
           </form>
         </div>
-      </div>
-      ${require("./src/components/feedback-btn.html")}
-      ${require("./src/components/support-btn.html")}
+      </main>
+      ${require("./src/components/feedback_btn.html")}
+      ${require("./src/components/support_btn.html")}
     </div>
   </div>
 </div>

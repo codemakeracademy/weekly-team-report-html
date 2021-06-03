@@ -1,448 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>My Reports</title>
-    </head>
-    <body class="mh-100 w-100 p-0 m-0 bg-warning">
-        ${require("./src/components/nav-bar.html")}
-        <div class="container-fluid p-0 m-0">
-            <div class="row p-0 m-0">
-                ${require("./src/components/aside.html")}
-                <div class="col-12 col-lg-10 p-0">
-                    <!-- Block header -->
-                    ${require("./src/components/profile-header.html")}
-                    <div class="m-5">
-                        <!-- Block with text and yelow line -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <h5>IMMEDIATE TEAM</h5>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-1 mb-5">
-                            <img src="./src/img/line.png" alt="line" />
-                        </div>
-                        <!-- block -->
-                        <!-- button -->
-                        <div class="d-flex container-fluid p-0 flex-row-reverse">
-                            <a class="btn btn-primary" href="#" role="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="flush-collapse1 flush-collapse2 flush-collapse3 flush-collapse4 flush-collapse5">Expand All</a>
-                        </div>
-                        <!-- Menu -->
-                        <div class="d-flex container-fluid bg-light mt-2 flex-row-reverse px-5 rounded">
-                            <div class="d-flex justify-content-between mx-5 p-2">
-                                <div class="mx-2">
-                                    Workload
-                                </div>
-                                <div class="mx-3">
-                                    Stress
-                                </div>
-                                <div class="mx-3">
-                                    Morale
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion 1 -->
-                        <div class="accordion accordion-flush mt-2" id="accordionFlush1">
-                            <!-- item -->
-                            <div class="accordion-item rounded my-2">
-                                <h2 class="accordion-header" id="flush-heading1">
-                                    <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
-                                        <div class="container-fluid d-flex justify-content-between align-items-center px-1">
-                                            <div>
-                                                <b>May 3 - May 9, 2020</b>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-row justify-content-end">
-                                                <!-- smiles -->
-                                                <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse1"/>
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse1"/>
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse1"/>
-                                                </div>
-                                                <!-- text -->
-                                                <div>
-                                                    <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse1">Expand</p>
-                                                    <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse1">Collapse</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse1" class="accordion-collapse collapse multi-collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlush1">
-                                    <div class="accordion-body">
-                                        <!-- cards blocks -->
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">WORKLOAD</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <!-- text blocks -->
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly High</p>
-                                            <p class="m-0">Identified our goal and priorities</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly Low</p>
-                                            <p class="m-0">Cold weather</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Anything Else</p>
-                                            <p class="m-0">Looking forward to launching our first product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion 2 -->
-                        <div class="accordion accordion-flush mt-2" id="accordionFlush2">
-                            <!-- item -->
-                            <div class="accordion-item rounded my-2">
-                                <h2 class="accordion-header" id="flush-heading2">
-                                    <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-                                        <div class="container-fluid d-flex justify-content-between align-items-center px-1">
-                                            <div>
-                                                <b>April 12 - April 18, 2020</b>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-row justify-content-end">
-                                                <!-- smiles -->
-                                                <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse2"/>
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse2"/>
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse2"/>
-                                                </div>
-                                                <!-- text -->
-                                                <div>
-                                                    <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse2">Expand</p>
-                                                    <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse2">Collapse</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse2" class="accordion-collapse collapse multi-collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlush2">
-                                    <div class="accordion-body">
-                                        <!-- cards blocks -->
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">WORKLOAD</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <!-- text blocks -->
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly High</p>
-                                            <p class="m-0">Identified our goal and priorities</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly Low</p>
-                                            <p class="m-0">Cold weather</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Anything Else</p>
-                                            <p class="m-0">Looking forward to launching our first product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion 3 -->
-                        <div class="accordion accordion-flush mt-2" id="accordionFlush3">
-                            <!-- item -->
-                            <div class="accordion-item rounded my-2">
-                                <h2 class="accordion-header" id="flush-heading3">
-                                    <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-                                        <div class="container-fluid d-flex justify-content-between align-items-center px-1">
-                                            <div>
-                                                <b>February 16 - February 22, 2020</b>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-row justify-content-end">
-                                                <!-- smiles -->
-                                                <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse3"/>
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse3"/>
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse3"/>
-                                                </div>
-                                                <!-- text -->
-                                                <div>
-                                                    <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse3">Expand</p>
-                                                    <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse3">Collapse</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse3" class="accordion-collapse collapse multi-collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlush3">
-                                    <div class="accordion-body">
-                                        <!-- cards blocks -->
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_normal.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">WORKLOAD</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <!-- text blocks -->
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly High</p>
-                                            <p class="m-0">Identified our goal and priorities</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly Low</p>
-                                            <p class="m-0">Cold weather</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Anything Else</p>
-                                            <p class="m-0">Looking forward to launching our first product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion 4 -->
-                        <div class="accordion accordion-flush mt-2" id="accordionFlush4">
-                            <!-- item -->
-                            <div class="accordion-item rounded my-2">
-                                <h2 class="accordion-header" id="flush-heading4">
-                                    <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-                                        <div class="container-fluid d-flex justify-content-between align-items-center px-1">
-                                            <div>
-                                                <b>February 9 - February 15, 2020</b>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-row justify-content-end">
-                                                <!-- smiles -->
-                                                <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse4"/>
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse4"/>
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse4"/>
-                                                </div>
-                                                <!-- text -->
-                                                <div>
-                                                    <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse4">Expand</p>
-                                                    <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse4">Collapse</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse4" class="accordion-collapse collapse multi-collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlush4">
-                                    <div class="accordion-body">
-                                        <!-- cards blocks -->
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_low_sad.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">WORKLOAD</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <!-- text blocks -->
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly High</p>
-                                            <p class="m-0">Identified our goal and priorities</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly Low</p>
-                                            <p class="m-0">Cold weather</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Anything Else</p>
-                                            <p class="m-0">Looking forward to launching our first product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion 5 -->
-                        <div class="accordion accordion-flush mt-2" id="accordionFlush5">
-                            <!-- item -->
-                            <div class="accordion-item rounded my-2">
-                                <h2 class="accordion-header" id="flush-heading5">
-                                    <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-                                        <div class="container-fluid d-flex justify-content-between align-items-center px-1">
-                                            <div>
-                                                <b>January 19 - January 25, 2020</b>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-row justify-content-end">
-                                                <!-- smiles -->
-                                                <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse5"/>
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse5"/>
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse" id="flush-collapse5"/>
-                                                </div>
-                                                <!-- text -->
-                                                <div>
-                                                    <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse5">Expand</p>
-                                                    <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse5">Collapse</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse5" class="accordion-collapse collapse multi-collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlush5">
-                                    <div class="accordion-body">
-                                        <!-- cards blocks -->
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row my-4">
-                                            <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <img src="./src/img/smile_very_happy.png" class="mx-3 border border-2 border border-light rounded-circle bg-light" />
-                                                    <h4 class="me-5 text-light">WORKLOAD</h4>
-                                                </div>
-                                            </div>
-                                            <div class="px-2">
-                                                <p class="text-warning"><em>There were no comments added about morale.</em></p>
-                                            </div>
-                                        </div>
-                                        <!-- text blocks -->
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly High</p>
-                                            <p class="m-0">Identified our goal and priorities</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Weekly Low</p>
-                                            <p class="m-0">Cold weather</p>
-                                        </div>
-                                        <div class="my-2">
-                                            <p class="m-0 fs-4">Anything Else</p>
-                                            <p class="m-0">Looking forward to launching our first product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Reports</title>
+</head>
+<body class="mh-100 w-100 p-0 m-0 bg-warning">
+${require("./src/components/nav_bar.html")}
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-0">
+      <!-- Block header -->
+      ${require("./src/components/profile_header.html")}
+      <main class="m-5">
+        <!-- Block with text and yellow line -->
+        <div class="container d-flex justify-content-center mt-5">
+          <h5>IMMEDIATE TEAM</h5>
         </div>
-        ${require("./src/components/feedback-btn.html")}
-        ${require("./src/components/support-btn.html")}
-    </body>
+        <div class="container d-flex justify-content-center mt-1 mb-5">
+          <img src="src/img/line.png" alt="line"/>
+        </div>
+        <!-- block -->
+        <!-- button -->
+        <div class="d-flex container-fluid p-0 flex-row-reverse">
+          <a class="btn btn-primary" href="#" role="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+             aria-controls="flush-collapse1 flush-collapse2 flush-collapse3 flush-collapse4 flush-collapse5">Expand
+            All</a>
+        </div>
+        <!-- Menu -->
+        <div class="d-flex container-fluid bg-light mt-2 flex-row-reverse px-5 rounded">
+          <div class="d-flex justify-content-between mx-5 p-2">
+            <div class="mx-2">
+              Workload
+            </div>
+            <div class="mx-3">
+              Stress
+            </div>
+            <div class="mx-3">
+              Morale
+            </div>
+          </div>
+        </div>
+        <!-- Accordion 1 -->
+        <div class="accordion accordion-flush mt-2" id="accordionFlush1">
+          <!-- item -->
+          <div class="accordion-item rounded my-2">
+            <h2 class="accordion-header" id="flush-heading1">
+              <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-1">
+                  <div>
+                    <b>May 3 - May 9, 2020</b>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-row justify-content-end">
+                    <!-- smiles -->
+                    <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse1"/>
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse1"/>
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse1"/>
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse1">Expand</p>
+                      <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse1">Collapse</p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse1" class="accordion-collapse collapse multi-collapse"
+                 aria-labelledby="flush-heading1" data-bs-parent="#accordionFlush1">
+              <div class="accordion-body">
+                <!-- cards blocks -->
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">WORKLOAD</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <!-- text blocks -->
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly High</p>
+                  <p class="m-0">Identified our goal and priorities</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly Low</p>
+                  <p class="m-0">Cold weather</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Anything Else</p>
+                  <p class="m-0">Looking forward to launching our first product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="accordion accordion-flush mt-2" id="accordionFlush2">
+          <!-- item -->
+          <div class="accordion-item rounded my-2">
+            <h2 class="accordion-header" id="flush-heading2">
+              <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-1">
+                  <div>
+                    <b>April 12 - April 18, 2020</b>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-row justify-content-end">
+                    <!-- smiles -->
+                    <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse2"/>
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse2"/>
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse2"/>
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse2">Expand</p>
+                      <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse2">Collapse</p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse2" class="accordion-collapse collapse multi-collapse"
+                 aria-labelledby="flush-heading2" data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+                <!-- cards blocks -->
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">WORKLOAD</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <!-- text blocks -->
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly High</p>
+                  <p class="m-0">Identified our goal and priorities</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly Low</p>
+                  <p class="m-0">Cold weather</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Anything Else</p>
+                  <p class="m-0">Looking forward to launching our first product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="accordion accordion-flush mt-2" id="accordionFlush3">
+          <!-- item -->
+          <div class="accordion-item rounded my-2">
+            <h2 class="accordion-header" id="flush-heading3">
+              <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-1">
+                  <div>
+                    <b>February 16 - February 22, 2020</b>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-row justify-content-end">
+                    <!-- smiles -->
+                    <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse3"/>
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse3"/>
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse3"/>
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse3">Expand</p>
+                      <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse3">Collapse</p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse3" class="accordion-collapse collapse multi-collapse"
+                 aria-labelledby="flush-heading3" data-bs-parent="#accordionFlush3">
+              <div class="accordion-body">
+                <!-- cards blocks -->
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-success py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-info py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_normal.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-orange py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">WORKLOAD</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <!-- text blocks -->
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly High</p>
+                  <p class="m-0">Identified our goal and priorities</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly Low</p>
+                  <p class="m-0">Cold weather</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Anything Else</p>
+                  <p class="m-0">Looking forward to launching our first product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 4 -->
+        <div class="accordion accordion-flush mt-2" id="accordionFlush4">
+          <!-- item -->
+          <div class="accordion-item rounded my-2">
+            <h2 class="accordion-header" id="flush-heading4">
+              <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-1">
+                  <div>
+                    <b>February 9 - February 15, 2020</b>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-row justify-content-end">
+                    <!-- smiles -->
+                    <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse4"/>
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse4"/>
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse4"/>
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse4">Expand</p>
+                      <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse4">Collapse</p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse4" class="accordion-collapse collapse multi-collapse"
+                 aria-labelledby="flush-heading4" data-bs-parent="#accordionFlush4">
+              <div class="accordion-body">
+                <!-- cards blocks -->
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-danger py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_low_sad.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">WORKLOAD</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <!-- text blocks -->
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly High</p>
+                  <p class="m-0">Identified our goal and priorities</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly Low</p>
+                  <p class="m-0">Cold weather</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Anything Else</p>
+                  <p class="m-0">Looking forward to launching our first product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 5 -->
+        <div class="accordion accordion-flush mt-2" id="accordionFlush5">
+          <!-- item -->
+          <div class="accordion-item rounded my-2">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                <div class="container-fluid d-flex justify-content-between align-items-center px-1">
+                  <div>
+                    <b>January 19 - January 25, 2020</b>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-row justify-content-end">
+                    <!-- smiles -->
+                    <div class="d-flex justify-content-between px-3 collapse" id="collapseExample">
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse5"/>
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse5"/>
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light collapse show multi-collapse"
+                           id="flush-collapse5"/>
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <p class="m-0 text-dark collapse show multi-collapse" id="flush-collapse5">Expand</p>
+                      <p class="m-0 text-warning collapse multi-collapse" id="flush-collapse5">Collapse</p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse multi-collapse"
+                 aria-labelledby="flush-heading5" data-bs-parent="#accordionFlush5">
+              <div class="accordion-body">
+                <!-- cards blocks -->
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">MORALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">STRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <div class="d-inline-flex bg-green py-3 px-2 rounded shadow">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="src/img/smile_very_happy.png"
+                           class="mx-3 border border-2 border border-light rounded-circle bg-light"/>
+                      <h4 class="me-5 text-light">WORKLOAD</h4>
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <p class="text-warning"><em>There were no comments added about morale.</em></p>
+                  </div>
+                </div>
+                <!-- text blocks -->
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly High</p>
+                  <p class="m-0">Identified our goal and priorities</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Weekly Low</p>
+                  <p class="m-0">Cold weather</p>
+                </div>
+                <div class="my-2">
+                  <p class="m-0 fs-4">Anything Else</p>
+                  <p class="m-0">Looking forward to launching our first product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  ${require("./src/components/feedback_btn.html")}
+  ${require("./src/components/support_btn.html")}
+</div>
+</body>
 </html>

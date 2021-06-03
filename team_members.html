@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Team Members</title>
-    </head>
-    <body class="mh-100 w-100 p-0 m-0 bg-warning">
-        ${require("./src/components/nav-bar.html")}
-        <div class="container-fluid p-0 m-0">
-            <div class="row p-0 m-0">
-                ${require("./src/components/aside.html")}
-                <div class="col-12 col-lg-10 p-0">
-                    <!-- Block header -->
-                    ${require("./src/components/company-header.html")}
-                    <div class="m-5">
-                        <!-- Block with text and yelow line -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <h5>TEAM MEMBERS</h5>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-1 mb-5">
-                            <img src="./src/img/line.png" alt="line" />
-                        </div>
-                        <!-- Team block -->
-                        <!-- Pearson -->
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-self-center mx-2">
-                                   <p class="m-0"><b>Andrey Andreev</b></p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mx-3">
-                                <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-self-center mx-2">
-                                   <p class="m-0"><b>Aleksey Bahramov</b></p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mx-3">
-                                <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-self-center mx-2">
-                                   <p class="m-0"><b>Aleksandr Celent</b></p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mx-3">
-                                <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-self-center mx-2">
-                                   <p class="m-0"><b>Arnold Dumbledore</b></p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mx-3">
-                                <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Members</title>
+</head>
+<body class="mh-100 w-100 p-0 m-0 bg-warning">
+${require("./src/components/nav_bar.html")}
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-0">
+      <!-- Block header -->
+      ${require("./src/components/company_header.html")}
+      <main class="m-5">
+        <!-- Block with text and yellow line -->
+        <div class="container d-flex justify-content-center mt-5">
+          <h5>TEAM MEMBERS</h5>
         </div>
-        ${require("./src/components/feedback-btn.html")}
-        ${require("./src/components/support-btn.html")}
-    </body>
+        <div class="container d-flex justify-content-center mt-1 mb-5">
+          <img src="src/img/line.png" alt="line"/>
+        </div>
+        <!-- Team block -->
+        <!-- Pearson -->
+        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
+              </div>
+            </div>
+            <div class="d-flex align-self-center mx-2">
+              <p class="m-0"><b>Andrey Andreev</b></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mx-3">
+            <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
+              </div>
+            </div>
+            <div class="d-flex align-self-center mx-2">
+              <p class="m-0"><b>Aleksey Bahramov</b></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mx-3">
+            <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
+              </div>
+            </div>
+            <div class="d-flex align-self-center mx-2">
+              <p class="m-0"><b>Aleksandr Celent</b></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mx-3">
+            <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
+              </div>
+            </div>
+            <div class="d-flex align-self-center mx-2">
+              <p class="m-0"><b>Arnold Dumbledore</b></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mx-3">
+            <a href="#" class="text-decoration-none text-dark"><b>Edit</b></a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  ${require("./src/components/feedback_btn.html")}
+  ${require("./src/components/support_btn.html")}
+</div>
+</body>
 </html>

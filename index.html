@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Report</title>
 </head>
 <body class="mh-100 w-100 p-0 m-0 bg-light">
-  ${require("./src/components/nav-bar.html")}
-  <div class="container-fluid p-0 m-0">
-    <div class="row p-0 m-0">
-      ${require("./src/components/aside.html")}
-      <div class="col-12 col-lg-10 p-0">
-        <div>
-          <div class="page-header p-4">
-            <div class="text-center">
-              <img src="./src/img/logo.png" class="img-fluid" alt="Logo"/>
-            </div>
-            <h2 class="text-light text-center">Launch Guide</h2>
+${require("./src/components/nav_bar.html")}
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-0">
+      <header>
+        <div class="page-header p-4">
+          <div class="text-center">
+            <img src="src/img/logo.png" class="img-fluid" alt="Logo"/>
+          </div>
+          <h2 class="text-light text-center">Launch Guide</h2>
+        </div>
+      </header>
+      <main class="m-5">
+        <div class="d-lg-flex flex-row-reverse m-0 m-lg-5">
+          <div class="col-12 col-lg-6 mt-5 m-lg-0">
+            <img src="src/img/invite_your_team.png" class="img-fluid" alt="Invite your team"/>
+          </div>
+          <div class="col-12 col-lg-6 p-0 p-lg-5">
+            <h2>Invite Your Team</h2>
+            <p>Click on the link below and invite<br> the team members who directly report to you.</p>
+            <a class="btn btn-info" href="#">Invite Your Team</a>
           </div>
         </div>
-        <div class="m-5">
-          <div class="d-lg-flex flex-row-reverse m-0 m-lg-5">
-            <div class="col-12 col-lg-6 mt-5 m-lg-0">
-              <img src="./src/img/img1.png" class="img-fluid" alt="img1"/>
-            </div>
-            <div class="col-12 col-lg-6 p-0 p-lg-5">
-              <h2>Invite Your Team</h2>
-              <p>Click on the link below and invite<br> the team members who directly report to you.</p>
-              <a class="btn btn-info" href="#">Invite Your Team</a>
-            </div>
+        <div class="d-lg-flex flex-row mt-5 m-lg-5">
+          <div class="col-12 col-lg-6 mt-5 m-lg-0">
+            <img src="src/img/encourage_your_team.png" class="img-fluid" alt="Encourage your team"/>
           </div>
-          <div class="d-lg-flex flex-row mt-5 m-lg-5">
-            <div class="col-12 col-lg-6 mt-5 m-lg-0">
-              <img src="./src/img/img2.png" class="img-fluid" alt="img2"/>
-            </div>
-            <div class="col-12 col-lg-6 p-0 p-lg-5">
-              <h2>Encourage Your Team to Accept Youe Invitation</h2>
-              <p>When thy receive your invitation, team members<br> will be prompted to comlete their profiles. If a team
-                member<br> hasn't created their profile within 24 hours, follow up with them!</p>
-            </div>
-          </div>
-          <div class="d-lg-flex flex-row-reverse mt-5 m-lg-5">
-            <div class="col-12 col-lg-6 mt-5 m-lg-0">
-              <img src="./src/img/img3.png" class="img-fluid" alt="img3"/>
-            </div>
-            <div class="col-12 col-lg-6 p-0 p-lg-5">
-              <h2>Remind Your Team</h2>
-              <p>Every Friday, we'll automatically send your team members an email<br> reminding them to fill out their
-                Weekly Report.<br> But we also encourage you to consistently request their Weekly<br> Reports so they
-                realize the importance of this new habit.</p>
-            </div>
-          </div>
-          <div class="d-lg-flex flex-row mt-5 m-lg-5">
-            <div class="col-12 col-lg-6 mt-5 m-lg-0">
-              <img src="./src/img/img4.png" class="img-fluid" alt="img4"/>
-            </div>
-            <div class="col-12 col-lg-6 p-0 p-lg-5">
-              <h2>Read Their Reports</h2>
-              <p>Set aside some time on Monday to read all the reports.<br> Then reach out to any team members who need to
-                be acknowledged<br> for a success or supported during a difficult time, <br>(And yes, we'll send you a
-                reminder to read your reports each week too.)</p>
-            </div>
+          <div class="col-12 col-lg-6 p-0 p-lg-5">
+            <h2>Encourage Your Team to Accept Your Invitation</h2>
+            <p>When thy receive your invitation, team members<br> will be prompted to complete their profiles. If a team
+              member<br> hasn't created their profile within 24 hours, follow up with them!</p>
           </div>
         </div>
-        ${require("./src/components/support-btn.html")}
-        ${require("./src/components/feedback-btn.html")}
-      </div>
+        <div class="d-lg-flex flex-row-reverse mt-5 m-lg-5">
+          <div class="col-12 col-lg-6 mt-5 m-lg-0">
+            <img src="src/img/remind_your_team.png" class="img-fluid" alt="Remind your team"/>
+          </div>
+          <div class="col-12 col-lg-6 p-0 p-lg-5">
+            <h2>Remind Your Team</h2>
+            <p>Every Friday, we'll automatically send your team members an email<br> reminding them to fill out their
+              Weekly Report.<br> But we also encourage you to consistently request their Weekly<br> Reports so they
+              realize the importance of this new habit.</p>
+          </div>
+        </div>
+        <div class="d-lg-flex flex-row mt-5 m-lg-5">
+          <div class="col-12 col-lg-6 mt-5 m-lg-0">
+            <img src="src/img/read_their_reports.png" class="img-fluid" alt="Read their reports"/>
+          </div>
+          <div class="col-12 col-lg-6 p-0 p-lg-5">
+            <h2>Read Their Reports</h2>
+            <p>Set aside some time on Monday to read all the reports.<br> Then reach out to any team members who need to
+              be acknowledged<br> for a success or supported during a difficult time, <br>(And yes, we'll send you a
+              reminder to read your reports each week too.)</p>
+          </div>
+        </div>
+      </main>
+      ${require("./src/components/support_btn.html")}
+      ${require("./src/components/feedback_btn.html")}
     </div>
   </div>
+</div>
 </body>
 </html>

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Profile</title>
+  <title>Edit member information</title>
 </head>
 <body class="mh-100 w-100 p-0 m-0 bg-light">
-  ${require("./src/components/nav-bar.html")}
+${require("./src/components/nav_bar.html")}
 <div class="container-fluid p-0 m-0">
   <div class="row p-0 m-0">
     ${require("./src/components/aside.html")}
     <div class="col-12 col-lg-10 p-0">
-      ${require("./src/components/profile-header.html")}
-      <div class="m-4 p-5">
+      ${require("./src/components/profile_header.html")}
+      <main class="m-4 p-5">
         <div class="mb-5">
           <h3 class="extra-bold">Edit Anatoliy's information.</h3>
           <p>You may assign leaders or team members to this person, as well as deactivate their account if they no
@@ -82,9 +82,9 @@
             <button class="btn btn-info fw-bold">Copy link</button>
           </div>
         </div>
-      </div>
-      ${require("./src/components/feedback-btn.html")}
-      ${require("./src/components/support-btn.html")}
+      </main>
+      ${require("./src/components/feedback_btn.html")}
+      ${require("./src/components/support_btn.html")}
     </div>
   </div>
   ${require("./src/components/modal.html")}

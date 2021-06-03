@@ -1,148 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Team Reports</title>
-    </head>
-    <body class="mh-100 w-100 p-0 m-0 bg-warning">
-        ${require("./src/components/nav-bar.html")}
-        <div class="container-fluid p-0 m-0">
-            <div class="row p-0 m-0">
-                ${require("./src/components/aside.html")}
-                <div class="col-12 col-lg-10 p-0">
-                    <!-- Block header -->
-                    <div class="page-header p-5">
-                        <!-- Block with header buttons -->
-                        <div class="container d-flex justify-content-center">
-                            <div class="row">
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Immediate Team</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Extended Team</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with header circles -->
-                        <div class="container d-flex justify-content-center my-5">
-                            <div class="row position-relative">
-                                <div class="mx-n2 col-md-auto p-0 container">
-                                    <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
-                                </div>
-                                <div class="mx-n2 col-md-auto p-0">
-                                    <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
-                                </div>
-                                <div class="mx-n2 col-md-auto p-0">
-                                    <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
-                                </div>
-                                <div class="mx-n2 col-md-auto p-0">
-                                    <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
-                                </div>
-                                <div class="mx-n2 col-md-auto p-0">
-                                    <a href="#" class="rounded-circle p-3 bg-info text-decoration-none border border-3 border-light">+3</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with header text -->
-                        <h1 class="text-center text-light">You team <b>has not submitted</b> reports this week</h1>
-                    </div>
-                    <div class="m-5">
-                        <!-- Block with buttons -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <div class="row">
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Previous Period: 5/16 - 5/22</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Current Period: 5/23 - 5/29</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Older Reports</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with text and yelow line -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <h5>IMMEDIATE TEAM</h5>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-1 mb-5">
-                            <img src="./src/img/line.png" alt="line" />
-                        </div>
-                        <!-- Team block -->
-                        <!-- Team button -->
-                        <div class="container d-flex container-fluid p-0 flex-row-reverse">
-                            <a class="btn btn-primary" href="#" role="button">Expand All</a>
-                        </div>
-                        <!-- Team Menu -->
-                        <div class="container d-flex container-fluid bg-light mt-2 flex-row-reverse pr-5 rounded">
-                            <div class="m-3">
-                                Workload
-                            </div>
-                            <div class="m-3">
-                                Stress
-                            </div>
-                            <div class="m-3">
-                                Morale
-                            </div>
-                        </div>
-                        <!-- Pearson -->
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-self-center mx-2">
-                                   <p class="m-0"><b>Andrey Andreev</b></p>
-                                   <p class="m-0 text-warning">is missing a report</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-self-center mx-2">
-                                   <p class="m-0"><b>Aleksey Bahramov</b></p>
-                                   <p class="m-0 text-warning">is missing a report</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-self-center mx-2">
-                                   <p class="m-0"><b>Aleksandr Celent</b></p>
-                                   <p class="m-0 text-warning">is missing a report</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded">
-                            <div class="d-flex flex-row">
-                                <div class="d-flex align-items-center">
-                                    <div class="my-4">
-                                        <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-self-center mx-2">
-                                   <p class="m-0"><b>Arnold Dumbledore</b></p>
-                                   <p class="m-0 text-warning">is missing a report</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Reports</title>
+</head>
+<body class="mh-100 w-100 p-0 m-0 bg-warning">
+${require("./src/components/nav_bar.html")}
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-0">
+      <!-- Block header -->
+      <header class="page-header p-5">
+        <!-- Block with header buttons -->
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Immediate
+                Team</a>
             </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Extended Team</a>
+            </div>
+          </div>
         </div>
-        ${require("./src/components/feedback-btn.html")}
-        ${require("./src/components/support-btn.html")}
-    </body>
+        <!-- Block with header circles -->
+        <div class="container d-flex justify-content-center my-5">
+          <div class="row position-relative">
+            <div class="mx-n2 col-md-auto p-0 container">
+              <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
+            </div>
+            <div class="mx-n2 col-md-auto p-0">
+              <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
+            </div>
+            <div class="mx-n2 col-md-auto p-0">
+              <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
+            </div>
+            <div class="mx-n2 col-md-auto p-0">
+              <a href="#" class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
+            </div>
+            <div class="mx-n2 col-md-auto p-0">
+              <a href="#" class="rounded-circle p-3 bg-info text-decoration-none border border-3 border-light">+3</a>
+            </div>
+          </div>
+        </div>
+        <!-- Block with header text -->
+        <h1 class="text-center text-light">You team <b>has not submitted</b> reports this week</h1>
+      </header>
+      <main class="m-5">
+        <!-- Block with buttons -->
+        <div class="container d-flex justify-content-center mt-5">
+          <div class="row">
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Previous Period:
+                5/16 - 5/22</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Current Period: 5/23
+                - 5/29</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Older Reports</a>
+            </div>
+          </div>
+        </div>
+        <!-- Block with text and yelow line -->
+        <div class="container d-flex justify-content-center mt-5">
+          <h5>IMMEDIATE TEAM</h5>
+        </div>
+        <div class="container d-flex justify-content-center mt-1 mb-5">
+          <img src="src/img/line.png" alt="line"/>
+        </div>
+        <!-- Team block -->
+        <!-- Team button -->
+        <div class="container d-flex container-fluid p-0 flex-row-reverse">
+          <a class="btn btn-primary" href="weekly_report_history.html" role="button">Expand All</a>
+        </div>
+        <!-- Team Menu -->
+        <div class="container d-flex container-fluid bg-light mt-2 flex-row-reverse pr-5 rounded">
+          <div class="m-3">
+            Workload
+          </div>
+          <div class="m-3">
+            Stress
+          </div>
+          <div class="m-3">
+            Morale
+          </div>
+        </div>
+        <!-- Pearson -->
+        <div class="container d-flex container-fluid bg-light mt-2 rounded">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AA</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-self-center mx-2">
+              <p class="m-0"><b>Andrey Andreev</b></p>
+              <p class="m-0 text-warning">is missing a report</p>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AB</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-self-center mx-2">
+              <p class="m-0"><b>Aleksey Bahramov</b></p>
+              <p class="m-0 text-warning">is missing a report</p>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AC</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-self-center mx-2">
+              <p class="m-0"><b>Aleksandr Celent</b></p>
+              <p class="m-0 text-warning">is missing a report</p>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex container-fluid bg-light mt-2 rounded">
+          <div class="d-flex flex-row">
+            <div class="d-flex align-items-center">
+              <div class="my-4">
+                <a href="#"
+                   class="rounded-circle p-3 bg-warning text-decoration-none border border-3 border-light">AD</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-self-center mx-2">
+              <p class="m-0"><b>Arnold Dumbledore</b></p>
+              <p class="m-0 text-warning">is missing a report</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  ${require("./src/components/feedback_btn.html")}
+  ${require("./src/components/support_btn.html")}
+</div>
+</body>
 </html>

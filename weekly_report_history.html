@@ -1,406 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Weekly Report History</title>
-    </head>
-    <body class="mh-100 w-100 p-0 m-0 bg-warning">
-        ${require("./src/components/nav-bar.html")}
-        <div class="container-fluid p-0 m-0">
-            <div class="row p-0 m-0">
-                ${require("./src/components/aside.html")}
-                <div class="col-12 col-lg-10 p-0">
-                    <!-- Block header -->
-                    <div class="page-header p-5">
-                        <!-- Block with header buttons -->
-                        <div class="container d-flex justify-content-center">
-                            <div class="row">
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4  text-secondary" href="#" role="button">Immediate Team</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Extended Team</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with header text -->
-                        <h1 class="text-center text-light my-5">Weekly Report History</h1>
-                        <h5 class="text-center text-light m-0">Get a bigger picture of how your team has been doing over time.</h5>
-                    </div>
-                    <div class="m-5">
-                        <!-- Block with buttons -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <div class="row">
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Previous Period: 5/16 - 5/22</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Current Period: 5/23 - 5/29</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Older Reports</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-5">
-                            <div class="row">
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Overall</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Morale</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Stress</a>
-                                </div>
-                                <div class="col-md-auto p-0">
-                                    <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Workload</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with text and yelow line -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <h5>EXTENDED TEAM AVERAGE</h5>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-1 mb-5">
-                            <img src="./src/img/line.png" alt="line" />
-                        </div>
-                        <!-- Overall block -->
-                        <!-- Overall titles -->
-                        <div class="container d-flex container-fluid pr-5 justify-content-end">
-                            <div class="w-550px d-flex flex-row justify-content-between">
-                                <div>9w ago</div>
-                                <div>8w ago</div>
-                                <div>7w ago</div>
-                                <div>6w ago</div>
-                                <div>5w ago</div>
-                                <div>4w ago</div>
-                                <div>3w ago</div>
-                                <div>2w ago</div>
-                                <div>1w ago</div>
-                                <div>Current</div>
-                            </div>
-                        </div>
-                        <!-- Overall smiles -->
-                        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                            <div class="d-flex align-items-center mx-3 my-4">
-                                <p class="text-decoration-none text-dark m-0"><b>Overall</b></p>
-                            </div>
-                            <div class="w-550px d-flex flex-row justify-content-between align-items-center">
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_normal.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_empty.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_empty.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_empty.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_empty.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_low_sad.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_normal.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_happy.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_empty.png" alt="smile" />
-                                    </div>
-                                </div>
-                                <div class="my-4">
-                                    <div class="rounded-circle bg-light border border-3 border-light">
-                                        <img src="./src/img/smile_happy.png" alt="smile" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Block with text and yelow line -->
-                        <div class="container d-flex justify-content-center mt-5">
-                            <h5>EXTENDED TEAM</h5>
-                        </div>
-                        <div class="container d-flex justify-content-center mt-1 mb-5">
-                            <img src="./src/img/line.png" alt="line" />
-                        </div>
-                        <!-- Pearsons block -->
-                        <!-- Pearsons titles -->
-                        <div>
-                            <div class="container d-flex container-fluid pr-5 justify-content-end">
-                                <div class="w-550px d-flex flex-row justify-content-between">
-                                    <div>9w ago</div>
-                                    <div>8w ago</div>
-                                    <div>7w ago</div>
-                                    <div>6w ago</div>
-                                    <div>5w ago</div>
-                                    <div>4w ago</div>
-                                    <div>3w ago</div>
-                                    <div>2w ago</div>
-                                    <div>1w ago</div>
-                                    <div>Current</div>
-                                </div>
-                            </div>
-                            <!-- Pearson 1 -->
-                            <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                                <div class="d-flex align-items-center mx-3 my-4">
-                                    <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Andrey&nbsp;</p><p class="m-0">Andreev</p></a>
-                                </div>
-                                <div class="w-550px d-flex flex-row justify-content-between align-items-center">
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_low_sad.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_normal.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_happy.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Pearson 2 -->
-                            <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                                <div class="d-flex align-items-center mx-3 my-4">
-                                    <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Aleksey&nbsp;</p><p class="m-0">Bahramov</p></a>
-                                </div>
-                                <div class="w-550px d-flex flex-row justify-content-between align-items-center">
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_normal.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_happy.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Pearson 3 -->
-                            <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                                <div class="d-flex align-items-center mx-3 my-4">
-                                    <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Aleksandr&nbsp;</p><p class="m-0">Celent</p></a>
-                                </div>
-                                <div class="w-550px d-flex flex-row justify-content-between align-items-center">
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_normal.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_happy.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Pearson 4 -->
-                            <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
-                                <div class="d-flex align-items-center mx-3 my-4">
-                                    <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Arnold&nbsp;</p><p class="m-0">Dumbledore</p></a>
-                                </div>
-                                <div class="w-550px d-flex flex-row justify-content-between align-items-center">
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_low_sad.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_happy.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                    <div class="my-4">
-                                        <div class="rounded-circle bg-light border border-3 border-light">
-                                            <img src="./src/img/smile_empty.png" alt="smile" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Report History</title>
+</head>
+<body class="mh-100 w-100 p-0 m-0 bg-warning">
+${require("./src/components/nav_bar.html")}
+<div class="container-fluid p-0 m-0">
+  <div class="row p-0 m-0">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-0">
+      <!-- Block header -->
+      <header class="page-header p-5">
+        <!-- Block with header buttons -->
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4  text-secondary" href="#" role="button">Immediate Team</a>
             </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Extended Team</a>
+            </div>
+          </div>
         </div>
-        ${require("./src/components/feedback-btn.html")}
-        ${require("./src/components/support-btn.html")}
-    </body>
+        <!-- Block with header text -->
+        <h1 class="text-center text-light my-5">Weekly Report History</h1>
+        <h5 class="text-center text-light m-0">Get a bigger picture of how your team has been doing over time.</h5>
+      </header>
+      <main class="m-5">
+        <!-- Block with buttons -->
+        <div class="container d-flex justify-content-center mt-5">
+          <div class="row">
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Previous Period: 5/16
+                - 5/22</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Current Period: 5/23
+                - 5/29</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Older Reports</a>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center mt-5">
+          <div class="row">
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary active border-info rounded-0 py-1 px-4" href="#" role="button">Overall</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Morale</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Stress</a>
+            </div>
+            <div class="col-md-auto p-0">
+              <a class="btn btn-primary rounded-0 py-1 px-4 text-secondary" href="#" role="button">Workload</a>
+            </div>
+          </div>
+        </div>
+        <!-- Block with text and yelow line -->
+        <div class="container d-flex justify-content-center mt-5">
+          <h5>EXTENDED TEAM AVERAGE</h5>
+        </div>
+        <div class="container d-flex justify-content-center mt-1 mb-5">
+          <img src="src/img/line.png" alt="line"/>
+        </div>
+        <!-- Overall block -->
+        <!-- Overall titles -->
+        <div class="container d-flex container-fluid pr-5 justify-content-end">
+          <div class="w-550px d-flex flex-row justify-content-between">
+            <div>9w ago</div>
+            <div>8w ago</div>
+            <div>7w ago</div>
+            <div>6w ago</div>
+            <div>5w ago</div>
+            <div>4w ago</div>
+            <div>3w ago</div>
+            <div>2w ago</div>
+            <div>1w ago</div>
+            <div>Current</div>
+          </div>
+        </div>
+        <!-- Overall smiles -->
+        <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+          <div class="d-flex align-items-center mx-3 my-4">
+            <p class="text-decoration-none text-dark m-0"><b>Overall</b></p>
+          </div>
+          <div class="w-550px d-flex flex-row justify-content-between align-items-center">
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_normal.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_empty.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_empty.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_empty.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_empty.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_low_sad.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_normal.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_happy.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_empty.png" alt="smile"/>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="rounded-circle bg-light border border-3 border-light">
+                <img src="src/img/smile_happy.png" alt="smile"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block with text and yelow line -->
+        <div class="container d-flex justify-content-center mt-5">
+          <h5>EXTENDED TEAM</h5>
+        </div>
+        <div class="container d-flex justify-content-center mt-1 mb-5">
+          <img src="src/img/line.png" alt="line"/>
+        </div>
+        <!-- Pearsons block -->
+        <!-- Pearsons titles -->
+        <div>
+          <div class="container d-flex container-fluid pr-5 justify-content-end">
+            <div class="w-550px d-flex flex-row justify-content-between">
+              <div>9w ago</div>
+              <div>8w ago</div>
+              <div>7w ago</div>
+              <div>6w ago</div>
+              <div>5w ago</div>
+              <div>4w ago</div>
+              <div>3w ago</div>
+              <div>2w ago</div>
+              <div>1w ago</div>
+              <div>Current</div>
+            </div>
+          </div>
+          <!-- Pearson 1 -->
+          <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+            <div class="d-flex align-items-center mx-3 my-4">
+              <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Andrey&nbsp;</p>
+                <p class="m-0">Andreev</p></a>
+            </div>
+            <div class="w-550px d-flex flex-row justify-content-between align-items-center">
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_low_sad.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_normal.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_happy.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pearson 2 -->
+          <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+            <div class="d-flex align-items-center mx-3 my-4">
+              <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Aleksey&nbsp;</p>
+                <p class="m-0">Bahramov</p></a>
+            </div>
+            <div class="w-550px d-flex flex-row justify-content-between align-items-center">
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_normal.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_happy.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pearson 3 -->
+          <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+            <div class="d-flex align-items-center mx-3 my-4">
+              <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Aleksandr&nbsp;</p>
+                <p class="m-0">Celent</p></a>
+            </div>
+            <div class="w-550px d-flex flex-row justify-content-between align-items-center">
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_normal.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_happy.png" alt="smile"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pearson 4 -->
+          <div class="container d-flex container-fluid bg-light mt-2 rounded justify-content-between">
+            <div class="d-flex align-items-center mx-3 my-4">
+              <a href="#" class="text-decoration-none text-dark d-lg-flex flex-row"><p class="m-0">Arnold&nbsp;</p>
+                <p class="m-0">Dumbledore</p></a>
+            </div>
+            <div class="w-550px d-flex flex-row justify-content-between align-items-center">
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_low_sad.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_happy.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+              <div class="my-4">
+                <div class="rounded-circle bg-light border border-3 border-light">
+                  <img src="src/img/smile_empty.png" alt="smile"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  ${require("./src/components/feedback_btn.html")}
+  ${require("./src/components/support_btn.html")}
+</div>
+</body>
 </html>

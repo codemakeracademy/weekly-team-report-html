@@ -29,10 +29,10 @@ const config = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: "edit_info.html",
+      template: "my_company.html",
       inject: true,
       chunks: ['index'],
-      filename: 'edit_info.html'
+      filename: 'my_company.html'
     }),
     new HtmlWebpackPlugin({
       template: "my_reports.html",
@@ -59,10 +59,10 @@ const config = {
       filename: 'team_members.html'
     }),
     new HtmlWebpackPlugin({
-      template: "my_profile.html",
+      template: "edit_member_info.html",
       inject: true,
       chunks: ['index'],
-      filename: 'my_profile.html'
+      filename: 'edit_member_info.html'
     }),
     new HtmlWebpackPlugin({
       template: "invite_team.html",
@@ -82,7 +82,7 @@ const config = {
       chunks: ['index'],
       filename: 'fill_out_report.html'
     }),
-    
+
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -104,13 +104,13 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-      { 
+      {
         test: /\.(html)$/,
         use: [{
           loader: 'html-loader?interpolate'
         }]
       },
-      
+
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
