@@ -1,3 +1,12 @@
+html {
+    font-size: 0.8rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1rem;
+    }
+}
 .color-yellow {
     color: $yellow !important;
 }
@@ -14,6 +23,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.page-header-bg {
+    background-image: url(/src/img/header-bg.png);
 }
 
 .logo {
@@ -33,8 +46,12 @@
     font-weight: $header-huge-text-weight;
 }
 
-.grade-form {
-    max-width: $grade-form-max-width;
+.fw-heavy {
+    font-weight: $font-weight-heavy;
+}
+
+.container-main {
+    max-width: $container-main-max-width;
 }
 
 .grade-emotion-icon {
@@ -52,4 +69,16 @@
 
 .btn-grade-submit {
     max-width: $grade-range-submit-max-width;
+}
+
+.text-input-long{
+    max-width: $text-input-long-max-width;
+}
+
+.text-input-medium{
+    max-width: $text-input-medium-max-width;
+}
+
+.text-input-short{
+    max-width: $text-input-short-max-width;
 }

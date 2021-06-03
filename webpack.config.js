@@ -36,6 +36,10 @@ const config = {
       template: "./src/page/fill-a-report.html",
     }),
     new HtmlWebpackPlugin({
+      filename: "my-company.html",
+      template: "./src/page/my-company.html",
+    }),
+    new HtmlWebpackPlugin({
       filename: "aside.html",
       template: "./src/components/aside.html",
     })

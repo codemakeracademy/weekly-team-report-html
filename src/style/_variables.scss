@@ -51,6 +51,8 @@ $header-huge-text-weight: 700;
 
 $font-weight-medium: 600;
 
+$font-weight-heavy: 1000;
+
 $btn-font-weight-lg: 800;
 $btn-font-weight-link: 500;
 
@@ -61,13 +63,17 @@ $header-logo-height: 60px;
 $launch-guide-items-width: 818px;
 $launch-guide-item-img-height: 350px;
 
-$grade-form-max-width: 1000px;
+$container-main-max-width: 1000px;
 $btn-grade-emotion-max-width: 180px;
 
 $grade-range-input-max-width: 500px;
 $grade-range-submit-max-width: 500px;
 
 $aside-width: 250px;
+
+$text-input-long-max-width: 31rem;
+$text-input-medium-max-width: 22rem;
+$text-input-short-max-width: 17rem;
 
 // Padding
 $grade-emotion-icon-padding: 6px;
