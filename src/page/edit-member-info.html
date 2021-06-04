@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Edit Member Information</title>
+</head>
+
+<body>
+  <!-- Top nav until md -->
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand text-center" href="#">Weekly Team Report</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <!-- Main options (top) -->
+            <li class="nav-item">
+              <a class="nav-link active text-center " href="#">Launch Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#">Invite Your Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#">Team Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#">My Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center color-yellow" href="#">Fill out a Report</a>
+            </li>
+
+            <!-- Additional options (bottom) -->
+            <li class="nav-item mt-3">
+              <a class="nav-link active text-center" href="#">Back to Elite</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#">My Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#"><i class="bi bi-gear-fill"></i>&nbsp;My
+                Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#"><i class="bi bi-box-arrow-left"></i>&nbsp;Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="d-flex">
+
+    <!-- Side nav for md+ -->
+    <div>
+      <aside class="aside d-none d-md-flex flex-column justify-content-between  min-vh-100">
+        <!-- Main options (top) -->
+        <div>
+          <div class="text-center">
+            <img src="/src/img/logo.png" alt="sdasd" class="my-4">
+          </div>
+          <div>
+            <ul class="list-unstyled mx-3">
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg">Launch Guide</a>
+              </li>
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg">Invite Your Team</a>
+              </li>
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg">Team Reports</a>
+              </li>
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg">My Reports</a>
+              </li>
+              <li>
+                <a href="#" class="btn my-3 btn-link item-yellow  d-block btn-lg">Fill out a Report</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Additional options (bottom) -->
+        <div>
+          <div class="py-2">
+            <ul class="list-unstyled mx-3">
+              <li>
+                <a href="#" class="btn btn-link my-3 d-block btn-lg">Back to Elite</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-link my-3 d-block btn-lg">My Company</a>
+              </li>
+          </div>
+          <div class="py-1 h-100">
+            <ul class="list-unstyled mx-3 align-bottom h-100">
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg align-bottom"><i
+                    class="bi bi-gear-fill"></i>&nbsp;My
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="btn my-3 btn-link d-block btn-lg align-bottom"><i
+                    class="bi bi-box-arrow-left"></i>&nbsp;Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-grow-1">
+      <!-- Header. -->
+      <div class="page-header-bg d-flex flex-column text-light text-center px-3 pt-4 pb-5">
+        <!-- Initials -->
+        <!-- up to sm -->
+        <div class="initials-circle-small d-sm-none mx-auto">
+          <span class="initials-text-small">AK</span>
+        </div>
+        <!-- sm+ -->
+        <div class="initials-circle-big d-none d-sm-flex mx-auto">
+          <span class="initials-text-big">AK</span>
+        </div>
+
+        <!-- Name, email -->
+        <h1 class="display-3">Anatoliy Kolodkin</h1>
+        <p class="m-0 p-0">anatoliy@ankosoftware.com</p>
+      </div>
+
+      <!-- Edit member info. -->
+      <div class="container-main justify-content-center mx-auto px-3 px-md-4">
+
+        <!-- Title -->
+        <div class="row justify-content-center mt-6 mx-0">
+          <h2 class="fw-heavy mb-3 p-0">Edit Anatoliy's information</h2>
+          <p class="p-0">You may assign leaders on team members to this person,
+            as well as deactivate their account if they no longer work for your organisation.
+          </p>
+        </div>
+
+        <!-- Edit basis profile info -->
+        <div class="mt-6 mx-0">
+          <h6 class="border-bottom px-0 pb-1 mb-4 text-uppercase fw-bold">Basic profile information</h6>
+          <p class="p-0 mb-1 fw-bold">First name</p>
+          <input type="text" class="form-control text-input-short border-2 mb-3">
+          <p class="p-0 mb-1 fw-bold">Last name</p>
+          <input type="text" class="form-control text-input-medium border-2 mb-3">
+          <p class="p-0 mb-1 fw-bold">Title</p>
+          <input type="text" class="form-control text-input-long border-2 mb-3">
+          <button type="button" class="btn btn-primary fw-bold">Save</button>
+        </div>
+
+        <!-- Reports to -->
+        <div class="mt-6 mx-0">
+          <h6 class="border-bottom px-0 pb-1 mb-4 text-uppercase fw-bold">Anatoliy reports to the following leaders:
+          </h6>
+          <div class="d-flex flex-row flex-wrap pt-2">
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Nikolai Kapustin</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Nina Mammadova</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Natalia Starkova</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Anton Tarkhanov</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Alexandr Vovchuk</button>
+          </div>
+          <button type="button" class="btn border-2 mt-2 fw-bold border-dark">Edit Leader(s)</button>
+        </div>
+
+        <!-- Reported to by -->
+        <div class="mt-6 mx-0">
+          <h6 class="border-bottom px-0 pb-1 mb-4 text-uppercase fw-bold">The following team members report to Anatoliy:
+          </h6>
+          <div class="d-flex flex-row flex-wrap pt-2">
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Aleksandr Evseev</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Nikolai Kapustin</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Anna Kotova</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Nina Mammadova</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Natalia Starkova</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Anton Tarkhanov</button>
+            <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Alexandr Vovchuk</button>
+          </div>
+          <button type="button" class="btn border-2 mt-2 fw-bold border-dark">Edit Members(s)</button>
+        </div>
+
+        <!-- Edit basis profile info -->
+        <div class="my-6 mx-0">
+          <h6 class="border-bottom px-0 pb-1 mb-4 text-uppercase fw-bold">Anatoliy's invite link</h6>
+          <p class="p-0 mb-2">Share the following link to invite team members on Anatoliy's behalf.</p>
+
+          <div class="text-center">
+            <div>
+              <input class="text-input-long p-2 mb-3">
+            </div>
+            <button class="btn btn-primary fw-bold">Copy link</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Help and feedback anchored buttons -->
+  <div>
+    ${require("/src/components/btn-overlay-help-feedback.html")}
+  </div>
+
+</body>
+
+</html>

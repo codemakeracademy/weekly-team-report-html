@@ -24,6 +24,10 @@ const config = {
       template: "./src/page/index.html",
     }),
     new HtmlWebpackPlugin({
+      filename: "aside.html",
+      template: "./src/components/aside.html",
+    }),
+    new HtmlWebpackPlugin({
       filename: "launch-guide.html",
       template: "./src/page/launch-guide.html",
     }),
@@ -40,8 +44,8 @@ const config = {
       template: "./src/page/my-company.html",
     }),
     new HtmlWebpackPlugin({
-      filename: "aside.html",
-      template: "./src/components/aside.html",
+      filename: "edit-member-info.html",
+      template: "./src/page/edit-member-info.html",
     })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
