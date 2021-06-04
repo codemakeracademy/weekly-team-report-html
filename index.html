@@ -7,53 +7,9 @@
   <title>Weekly Report</title>
 </head>
 <body class="bg-light">
-  <div class="row position-relative w-100 m-0">
-    <div class="col-0 col-md-2 p-0">
-      <aside class="bg-dark px-4 pt-3 min-vh-100 d-none d-md-block">
-        <div class="d-flex align-items-center justify-content-center">
-          <img class="img-fluid" src="./src/assets/logo.png" alt="Weekly Report Logo" width="200" height="100">
-        </div>
-        
-        <ul class="nav flex-column pt-4">
-          <li class="nav-item">
-            <a class="nav-link p-3 active">Launch Guide</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="./invite-your-team.html">Invite Your Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="./team-reports.html">Team Reports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="./my-reports.html">My Reports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3 nav-link--special" href="./fill-out-report.html">Fill out a Report</a>
-          </li>
-        </ul>
-        <ul class="nav flex-column pt-5 pb-3">
-          <li class="nav-item">
-            <a class="nav-link p-3" href="#">Back to Elite</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="./my-company.html">My Company</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="#">
-              <i class="bi bi-gear"></i>
-              My Profile
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-3" href="#">
-              <i class="bi bi-box-arrow-left"></i>
-              Sign Out
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-    <div class="col-12 col-md-10 p-0">
+  <div class="w-100 m-0 d-lg-flex bg-light bg-lg-white">
+    ${require("./src/components/aside.html")}
+    <div class="col-12 col-lg-10 p-lg-0 bg-lg-light">
       ${require("./src/components/launch-guide-content.html")}
     </div>
     ${require("./src/components/help-buttons.html")}
