@@ -23,6 +23,7 @@ $grid-breakpoints: (
 );
 
 // Colors.
+$background: #f5f7f8;
 $dark: #1f2426;
 $gray-800: #333a3d;
 $gray-secondary: #a1a8ac;
@@ -55,6 +56,8 @@ $font-weight-heavy: 1000;
 
 $btn-font-weight-lg: 800;
 $btn-font-weight-link: 500;
+
+$btn-font-weight-head-tr: 500;
 
 // Width & height.
 $header-height: 200px;
@@ -89,3 +92,5 @@ $btn-link-border-color: $white;
 $btn-link-addit-hover-color: $yellow;
 $btn-link-addit-color: $yellow;
 $btn-link-addit-border-color: $yellow;
+$btn-dark-active-border-color: $yellow;
+$btn-dark-passive-font-color: $gray-800;

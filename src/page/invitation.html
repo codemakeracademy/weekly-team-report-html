@@ -8,42 +8,48 @@
 </head>
 
 <body>
+  <div>
+    ${require("/src/components/nav-top.html")}
+</div>
 
-  <!-- TODO: add nav. -->
-
-  <!-- TODO: add max width for the input form. -->
-  <!-- TODO: fix submit button sizing and positioning. -->
-
-  <!-- Header. -->
-  <div class="page-header">
-    <!-- Logo. -->
-    <img class="logo" src="/src/img/logo.png" alt="logo">
-    <!-- Header title -->
-    <h2 class="text-light text-center">Launch Guide</h2>
-  </div>
-
-  <!-- Main content. -->
-  <!-- WIP -->
-  <div class="p-5">
-    <form class="shadow rounded-3 px-4 py-3">
-      <label class="py-2 fw-bold">Enter the team member you'd like to invite</label>
-      </br>
-      <label class="py-2">Dont worry! You'll be able to add more team members later</label>
-      <div class="mb-3 py-2">
-        <label for="FirstName" class="form-label fw-bold">First Name</label>
-        <input type="text" class="form-control" id="FirstName" aria-describedby="emailHelp">
+<div class="h-100 d-flex">
+        <!-- Side nav panel. -->
+        <div>
+          ${require("/src/components/aside.html")}
       </div>
-      <div class="mb-3 py-2">
-        <label for="LastName" class="form-label fw-bold">Last Name</label>
-        <input type="text" class="form-control" id="LastName">
+      <div class="flex-grow-1">
+        <!-- Header. -->
+        <div class="page-header">
+            <!-- Logo. -->
+            <img class="logo" src="/src/img/logo.png" alt="logo">
+            <!-- Header title -->
+            <h2 class="text-light text-center">Launch Guide</h2>
+        </div>
+
+        <!-- Main content. -->
+        <!-- WIP -->
+        <div class="p-5">
+            <form class="shadow rounded-3 px-4 py-3">
+                <label class="py-2 fw-bold">Enter the team member you'd like to invite</label>
+            </br>
+                <label class="py-2">Dont worry! You'll be able to add more team members later</label>
+                <div class="mb-3 py-2">
+                  <label for="FirstName" class="form-label fw-bold">First Name</label>
+                  <input type="text" class="form-control" id="FirstName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 py-2">
+                  <label for="LastName" class="form-label fw-bold">Last Name</label>
+                  <input type="text" class="form-control" id="LastName">
+                </div>
+                <div class="mb-3 py-2">
+                  <label for="Email" class="form-label fw-bold">Email</label>
+                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary col-2 btn-lg p-1">Submit</button>
+              </form>
+        </div>
       </div>
-      <div class="mb-3 py-2">
-        <label for="Email" class="form-label fw-bold">Email</label>
-        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-      </div>
-      <button type="submit" class="btn btn-primary col-2 btn-lg p-1">Submit</button>
-    </form>
-  </div>
+    </div>
 </body>
 
 </html>

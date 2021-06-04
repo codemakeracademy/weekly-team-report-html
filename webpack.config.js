@@ -42,6 +42,10 @@ const config = {
     new HtmlWebpackPlugin({
       filename: "aside.html",
       template: "./src/components/aside.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "tr-immediate-team.html",
+      template: "./src/page/tr-immediate-team.html",
     })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

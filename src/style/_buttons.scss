@@ -8,6 +8,16 @@
     border: 1px $btn-link-border-color solid;
 }
 
+.btn-dark-active{
+    font-weight: $btn-font-weight-head-tr;
+    border: 2px $btn-dark-active-border-color solid;
+}
+
+.btn-dark-passive{
+    font-weight: $btn-font-weight-head-tr;
+    color: $gray-500;
+}
+
 .item-yellow {
     color: $btn-link-addit-color;
 }
