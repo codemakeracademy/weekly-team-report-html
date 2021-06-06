@@ -58,6 +58,12 @@ html {
     padding: $grade-emotion-icon-padding;
 }
 
+.grade-emotion-icon-flexible{
+    padding: 2px;
+    width: 100%;
+    height: auto;
+}
+
 .btn-grade-emotion {
     max-width: $btn-grade-emotion-max-width;
     font-weight: $font-weight-medium;

@@ -54,6 +54,10 @@ const config = {
     new HtmlWebpackPlugin({
       filename: "edit-member-info.html",
       template: "./src/page/edit-member-info.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "my-reports.html",
+      template: "./src/page/my-reports.html",
     })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

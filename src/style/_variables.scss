@@ -62,6 +62,8 @@ $btn-font-weight-head-tr: 500;
 $initials-font-size-big: 2rem;
 $initials-font-size-small: 1.3rem;
 
+$table-header-fs: 17px;
+
 // Width & height.
 $header-height: 200px;
 $header-logo-height: 60px;
@@ -81,8 +83,24 @@ $text-input-long-max-width: 31rem;
 $text-input-medium-max-width: 22rem;
 $text-input-short-max-width: 17rem;
 
+$account-img-width: 70px;
+$account-img-height: 70px;
+
+$account-img-sm-width: 50px;
+$account-img-sm-height: 50px;
+
+$account-img-lg-width: 90px;
+$account-img-lg-height: 90px;
+
+$emoji-width: 50px;
+$emoji-height: 50px;
+
+$breakline-width: 50px;
+$breakline-height: 5px;
+
 // Padding
 $grade-emotion-icon-padding: 6px;
+$table-header-padding-r: 135px;
 
 // Buttons.
 $btn-padding-y-lg: 14px;

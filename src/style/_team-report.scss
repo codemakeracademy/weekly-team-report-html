@@ -1,28 +1,42 @@
 .account-img-sm{
-    width: 50px;
-    height: 50px;
+    width:  $account-img-sm-width;
+    height: $account-img-sm-height;
+    border-radius: 50%;
+    background-color: $gray-300;
+    border: solid 2px $white;
+}
+
+.account-img-lg{
+    width: $account-img-lg-width;
+    height: $account-img-lg-height;
     border-radius: 50%;
     background-color: $gray-300;
     border: solid 2px $white;
 }
 
 .table-header{
-    font-size: smaller;
-    font-weight: 300;
-
+    font-size: $table-header-fs;
+    padding-right: $table-header-padding-r;
     text-align: center;
-}
-
-
-.rounded-circle{
-    background-color: gray;
-    border: 2px white solid;
-    width: 50px;
-    height: 50px;
 }
 
 .breakline{
     background-color: $yellow;
-    width: 50px;
-    height: 5px;
+    width: $breakline-width;
+    height: $breakline-height;
 }
+
+.account-img{
+    width: $account-img-width;
+    height: $account-img-height;
+    border-radius: 50%;
+    background-color: $gray-300;
+    border: solid 2px $white;
+}
+.emoji{
+    width: $emoji-width;
+    height: $emoji-height;
+    border-radius: 50%;
+    margin: 0 15px 0 15px;
+}
+
