@@ -28,6 +28,10 @@ const config = {
       template: "./src/components/aside.html",
     }),
     new HtmlWebpackPlugin({
+      filename: "edit-leaders-modal.html",
+      template: "./src/components/edit-leaders-modal.html",
+    }),
+    new HtmlWebpackPlugin({
       filename: "launch-guide.html",
       template: "./src/page/launch-guide.html",
     }),
@@ -42,6 +46,14 @@ const config = {
     new HtmlWebpackPlugin({
       filename: "my-company.html",
       template: "./src/page/my-company.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "team-members.html",
+      template: "./src/page/team-members.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "weekly-report-history.html",
+      template: "./src/page/weekly-report-history.html",
     }),
     new HtmlWebpackPlugin({
       filename: "aside.html",

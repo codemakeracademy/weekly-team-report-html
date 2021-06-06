@@ -97,29 +97,52 @@ html {
     display: flex;
 }
 
-.bg-gray-circle-initials {
-    background-color: $gray-circle-intials;
+.bg-gray-circle {
+    background-color: $gray-circle-bg;
+}
+
+.bg-dark-edit {
+    background-color: $gray-800;
 }
 
 .initials-circle-base {
     border-radius: 50%;
-    background-color: $gray-circle-intials;
+    background-color: $gray-circle-bg;
     border: solid 2px $white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.initials-circle {
+    @extend .initials-circle-base;
+    width: $initials-circle-diameter;
+    height: $initials-circle-diameter;
+}
+
 .initials-circle-big {
     @extend .initials-circle-base;
-    width: 95px;
-    height: 95px;
+    width: $initials-circle-diameter-big;
+    height: $initials-circle-diameter-big;
 }
 
 .initials-circle-small {
     @extend .initials-circle-base;
-    width: 55px;
-    height: 55px;
+    width: $initials-circle-diameter-small;
+    height: $initials-circle-diameter-small;
+}
+
+.grade-circle {
+    @extend .initials-circle-base;
+    width: $grade-circle-diameter;
+    height: $grade-circle-diameter;
+}
+
+.grade-circle-small {
+    @extend .initials-circle-base;
+    width: $grade-circle-diameter-small;
+    height: $grade-circle-diameter-small;
+    border-width: 1px;
 }
 
 .initials-text-base {
@@ -128,12 +151,45 @@ html {
     margin: 0;
 }
 
-.initials-text-big {
+.initials-text {
     @extend .initials-text-base;
-    font-size: $initials-font-size-big;
+    font-size: $initials-font-size;
 }
 
 .initials-text-small {
     @extend .initials-text-base;
     font-size: $initials-font-size-small;
+}
+
+.initials-text-big {
+    @extend .initials-text-base;
+    font-size: $initials-font-size-big;
+}
+
+.title-underline {
+    background-color: $yellow;
+    width: $title-underline-width;
+    height: $title-underline-height;
+}
+
+.fs-bigger {
+    font-size: $font-size-bigger;
+}
+
+.fw-medium {
+    font-weight: $font-weight-medium;
+}
+
+.shadow-md {
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.report-history-grade-col {
+    width: $report-history-grade-col-width;
+}
+.report-history-grade-col-flex-fixed {
+    flex: 0 0 $report-history-grade-col-width;
+}
+.report-history-grade-col-small {
+    width: $report-history-grade-col-width-small;
 }

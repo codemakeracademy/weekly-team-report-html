@@ -22,17 +22,20 @@ $grid-breakpoints: (
   xxl: 1400px,
 );
 
-// Colors.
+// Colors, Opacity.
 $background: #f5f7f8;
 $dark: #1f2426;
 $gray-800: #333a3d;
 $gray-secondary: #a1a8ac;
-$gray-circle-intials: #d5d9db;
+$gray-circle-bg: #d5d9db;
 $gray-disabled: #8e999e;
 $gray-disabled-bg: #e8eced;
 $white: #fff;
 $yellow: #fcd214;
 $blue-feedback: #0b3d67;
+
+$modal-backdrop-bg: $white;
+$modal-backdrop-opacity: 0.9;
 
 $input-placeholder-color: $gray-secondary;
 
@@ -48,6 +51,8 @@ $theme-colors: (
 );
 
 // Font.
+$font-size-bigger: 1.1rem;
+
 $header-huge-text-size: 3.3rem;
 $header-huge-text-weight: 700;
 
@@ -59,8 +64,10 @@ $btn-font-weight-lg: 800;
 $btn-font-weight-link: 500;
 
 $btn-font-weight-head-tr: 500;
+
+$initials-font-size: 1.1rem;
 $initials-font-size-big: 2rem;
-$initials-font-size-small: 1.3rem;
+$initials-font-size-small: 1rem;
 
 $table-header-fs: 17px;
 
@@ -97,6 +104,18 @@ $emoji-height: 50px;
 
 $breakline-width: 50px;
 $breakline-height: 5px;
+$title-underline-width: 30px;
+$title-underline-height: 4px;
+
+$initials-circle-diameter: 55px;
+$initials-circle-diameter-big: 95px;
+$initials-circle-diameter-small: 40px;
+
+$grade-circle-diameter: 40px;
+$grade-circle-diameter-small: 24px;
+
+$report-history-grade-col-width: 56px;
+$report-history-grade-col-width-small: 30px;
 
 // Padding
 $grade-emotion-icon-padding: 6px;

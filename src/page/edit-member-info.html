@@ -122,8 +122,8 @@
       <div class="page-header-bg d-flex flex-column text-light text-center px-3 pt-4 pb-5">
         <!-- Initials -->
         <!-- up to sm -->
-        <div class="initials-circle-small d-sm-none mx-auto">
-          <span class="initials-text-small">AK</span>
+        <div class="initials-circle d-sm-none mx-auto">
+          <span class="initials-text">AK</span>
         </div>
         <!-- sm+ -->
         <div class="initials-circle-big d-none d-sm-flex mx-auto">
@@ -169,7 +169,8 @@
             <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Anton Tarkhanov</button>
             <button type="button" class="btn bg-dark text-light fw-heavy mb-2 me-2">Alexandr Vovchuk</button>
           </div>
-          <button type="button" class="btn border-2 mt-2 fw-bold border-dark">Edit Leader(s)</button>
+          <button type="button" class="btn border-2 mt-2 fw-bold border-dark" data-bs-toggle="modal"
+            data-bs-target="#edit-leaders-modal">Edit Leader(s)</button>
         </div>
 
         <!-- Reported to by -->
@@ -203,6 +204,9 @@
 
       </div>
     </div>
+    <!-- Edit leaders modal -->
+    ${require("/src/components/edit-leaders-modal.html")}
+
   </div>
 
   <!-- Help and feedback anchored buttons -->
