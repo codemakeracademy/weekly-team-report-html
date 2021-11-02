@@ -19,7 +19,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "invite_your_team.html",
     }),
 
     // Add your plugins here
