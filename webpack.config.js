@@ -19,7 +19,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "invite_your_team.html",
+      template: "launch_guide.html",
     }),
 
     // Add your plugins here
@@ -42,6 +42,10 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
+      },
+      {
+        test: /\.(html)$/,
+        use: ['html-loader?interpolate']
       },
 
       // Add your rules for custom modules here
