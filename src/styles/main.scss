@@ -1,0 +1,18 @@
+@import 'aside';
+@import '~bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'nav';
+@import 'header';
+
+html, body {
+    height: 100%;
+}
+.bg-dark {
+    background-color: #323A3D !important;
+}
+main {
+    position: relative;
+    top: 0px;
+    left: 240px;
+    margin-right: 240px;
+}
