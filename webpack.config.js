@@ -20,6 +20,11 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: "invite-your-team.html",
+        filename: "invite-your-team.html",
     }),
 
     // Add your plugins here
