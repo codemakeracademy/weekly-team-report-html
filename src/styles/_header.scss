@@ -1,0 +1,30 @@
+header {
+    background-color: #313131;
+    min-height: 200px;
+}
+.header-text {
+    color: $white;
+    &.name {
+        font-family: 'EB Garamond', serif;
+        font-size: 50px;
+    }
+}
+.header-mail-text {
+    & a {
+        color: $white;
+        font-size: 14px;
+    }
+}
+.initials{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #D4D9DB;
+    border: 2px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #323A3D;
+    font-weight:700;
+}

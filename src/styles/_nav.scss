@@ -1,0 +1,22 @@
+.nav-link.active {
+    font-weight: bold;
+}
+.nav-item{
+    text-align: left;
+    & a{
+        color:$white;
+        padding: 17px 25px !important;
+    }
+}
+.nav-pills .nav-link {
+    border-radius: 0.15rem;
+}
+.nav-pills .nav-link.active{
+    background-color: #1F2426;
+}
+.marked {
+    color: #F3CC15 !important;
+}
+.icon svg{
+    margin-right: 10px;
+}
