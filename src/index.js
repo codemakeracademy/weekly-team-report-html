@@ -1,4 +1,7 @@
 import './styles/main.scss';
+import './styles/normalize.css';
+import 'bootstrap';
+import './_my-reports';
 
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(el => {
