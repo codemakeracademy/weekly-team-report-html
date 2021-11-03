@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+</head>
+
+<body>
+    <div class="d-flex w-100 h-100">
+        <aside class="p-5 d-flex flex-column justify-content-between">
+            <div>
+                <h3 class="text-light mb-4">Weekly Report</h3>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Launch Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Company</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/Setting.png" alt="icon">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/exit.png" alt="icon">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="flex-grow-1">
+            <header class="p-5 text-center text-light">
+                <h1>Invite Your Team</h1>
+            </header>
+            <article class="p-3 w-100 h-100">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Enter the team member you'd like to invite</h6>
+                                    <p>Don't worry! You'll be able to add more team members later.</p>
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <div class="input-group nbr">
+                                            <input name="firstName" type="text" class="form-control">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fas fa-portrait"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input name="lastName" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input name="email" type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-warning">Invite</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+
+</html>
