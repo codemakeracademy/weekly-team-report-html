@@ -4,10 +4,13 @@
 @import "nav";
 @import "header";
 @import "my-reports";
+@import "team-reports";
 
-html,
-body {
+html {
     min-height: 100%;
+}
+body, .wrapper {
+    min-height: 100vh;
 }
 .bg-dark {
     background-color: #323a3d !important;
