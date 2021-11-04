@@ -1,0 +1,547 @@
+${require("./src/templates/header_start.html")}
+
+<div class="header-info">
+    <div class="header-logo d-flex flex-column align-items-center">
+      <div class="switches d-flex align-items-center">
+          <div class="switch active p-1 pl-3 pr-3">Immediate Team</div>
+          <div class="switch inactive p-1 pl-3 pr-3"><a href="./weekly-report-history.html">Extended Team</a></div>
+      </div>
+      <div class="initials-circles d-flex align-items-center justify-content-between mt-4">
+        <div class="initials-small" data-order='1'>AE</div>
+        <div class="initials-small" data-order='2'>NK</div>
+        <div class="initials-small" data-order='3'>AK</div>
+        <div class="initials-small" data-order='4'>NM</div>
+        <div class="initials-small initials-more">+ 3</div>
+      </div>
+    </div>
+    <div class="header-text team-title mt-4">Your team <b>has not submitted reports</b> this week.</div>
+  </div>
+
+${require("./src/templates/header_end.html")}
+
+<div class="period-switchers d-flex justify-content-center">
+    <div class="switches d-flex align-items-center">
+        <div class="switch immediate active p-1 pl-3 pr-3">Previous Period : 5/16 - 5/22</div>
+        <div class="switch extended inactive p-1 pl-3 pr-3">Current Period : 5/23 - 5/29</div>
+        <div class="switch extended inactive p-1 pl-3 pr-3">Older Reports</div>
+    </div>
+</div>
+
+
+
+<div class="title text-center text-bold font-weight-bold text-uppercase mt-5">
+    immediate team
+  </div>
+  <div class="reports container d-flex flex-column mt-50">
+    <div class="expand text-right mb-2">
+      <button type="button" class="expand-all btn btn-dark font-weight-bold">Expand All</button>
+    </div>
+    <div class="card reports-header mb-2">
+      <div class="card-body d-flex justify-content-end">
+        <div class="mr-4">Morale</div>
+        <div class="mr-4">Stress</div>
+        <div class="mr-150">Workload</div>
+      </div>
+    </div>
+  
+    <div class="accordion" id="accordionExample">
+  
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingOne">
+          <div class="vh period ">May 3 - May 9, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+          <div class="person-block d-flex align-items-center">
+              <div class="initials-small flat mr-3">AE</div>
+              <div class="person-info d-flex flex-column align-items-start">
+                  <div class="person-name">Aleksandr Evseev</div>
+                  <div class="person-report">is missing a report</div>
+              </div>
+          </div>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingTwo">
+          <div class="vh period ">April 12 - April 18, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+        <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">NK</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Nikolay Kapustin</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingThree">
+          <div class="vh period ">February 16 - February 22, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+          
+          <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">AK</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Anna Kotova</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingFour">
+          <div class="vh period ">February 9 - February 15, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+          <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">NM</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Nina Mammadova</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingFour">
+          <div class="vh period ">February 9 - February 15, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+          <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">NS</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Natalia Starkova</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingFour">
+          <div class="vh period ">February 9 - February 15, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+          <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">AT</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Anton Tarkhanov</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="card mb-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id="headingFive">
+          <div class="vh period ">January 19 -January 25, 2020</div>
+          <div class="vh smiles-block d-flex align-items-center">
+            <div class="smiles d-flex align-items-center">
+              <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+              <img class="smile mr-32" src="./src/images/smile_sad.png" alt="smile stress">
+              <img class="smile mr-50" src="./src/images/smile_ducked_up.png" alt="smile workload">
+            </div>
+            <h2 class="mb-0">
+            <button class="btn-reports-collapse btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              Expand <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+            </button>
+            </h2>
+          </div>
+
+          <div class="person-block d-flex align-items-center">
+            <div class="initials-small flat mr-3">AV</div>
+            <div class="person-info d-flex flex-column align-items-start">
+                <div class="person-name">Aleksandr Vovchuk</div>
+                <div class="person-report">is missing a report</div>
+            </div>
+        </div>
+
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="vh card-body">
+            <div class="summary d-flex flex-column align-items-start">
+              <div class="param d-flex align-items-start">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">MORALE</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about morale.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">STRESS</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about stress.</i></div>
+              </div>
+              <div class="param d-flex align-items-start mt-4">
+                <div class="button-wrapper mr-3">
+                  <img class="smile mr-25" src="./src/images/smile_alright.png" alt="smile morale">
+                  <button class="param-button btn text-left" type="button">WORKLOAD</button>
+                </div>
+                <div class="comment"><i class="text-secondary">There were no comment added about workload.</i></div>
+              </div>
+            </div>
+  
+            <div class="results d-flex flex-column align-items-start mt-4">
+              <div class="result-item">
+                <div class="result-item-title">Weekly High</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Weekly Low</div>
+                <div class="result-item-text">Identified our goal and priorities</div>
+              </div>
+              <div class="result-item mt-4">
+                <div class="result-item-title">Anything Else</div>
+                <div class="result-item-text">Looking forward to launching our first product</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+
+
+
+${require("./src/templates/footer.html")}
