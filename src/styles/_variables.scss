@@ -26,6 +26,16 @@ $aside-bg: $gray-800;
 
 //Article
 $article-bg: $white-100;
+$article-padding: 3rem 6.3rem;
+
+
+//Card
+$card-border-radius: .5rem;
+
+//Forms
+$input-border-width: border-2;
+$input-focus-border-color: tint-color($yellow-400, 50%);
+$input-border-color: $gray-500;
 
 //Team Members
 $list-group-item-padding-y: 0;
