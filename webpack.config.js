@@ -19,7 +19,28 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      filename: 'index.html',
+      hash: true,
+      alwaysWriteToDisk: true,
+      template: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'team-reports.html',
+      hash: true,
+      alwaysWriteToDisk: true,
+      template: './team-reports.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'my-reports.html',
+      hash: true,
+      alwaysWriteToDisk: true,
+      template: './my-reports.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'weekly-report-history.html',
+      hash: true,
+      alwaysWriteToDisk: true,
+      template: './weekly-report-history.html'
     }),
     new HtmlWebpackPlugin({
         template: "launch-guide.html",
