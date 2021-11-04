@@ -1,0 +1,36 @@
+@import 'aside';
+@import '~bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'nav';
+@import 'header';
+@import 'badge';
+
+html, body {
+    height: 100%;
+}
+.bg-dark {
+    background-color: #323A3D !important;
+}
+main {
+    position: relative;
+    top: 0px;
+    left: 240px;
+    margin-right: 240px;
+}
+body {
+    background: #f5f7f8;
+}
+
+.btn-link {
+    color: black;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.form-control:focus{
+    border-color: #F3CC15;
+    box-shadow: #F3CC15;
+}
