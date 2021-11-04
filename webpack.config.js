@@ -4,7 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
 
@@ -25,6 +25,14 @@ const config = {
     new HtmlWebpackPlugin({
         template: "invite-your-team.html",
         filename: "invite-your-team.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "Launch.html",
+      filename: 'Launch.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "TeamMembers.html",
+      filename: 'TeamMembers.html'
     }),
 
     // Add your plugins here
