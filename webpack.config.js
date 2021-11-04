@@ -36,7 +36,12 @@ const config = {
       alwaysWriteToDisk: true,
       template: './my-reports.html'
     }),
-    
+    new HtmlWebpackPlugin({
+      filename: 'weekly-report-history.html',
+      hash: true,
+      alwaysWriteToDisk: true,
+      template: './weekly-report-history.html'
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
