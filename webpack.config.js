@@ -42,6 +42,10 @@ const config = {
       alwaysWriteToDisk: true,
       template: './weekly-report-history.html'
     }),
+    new HtmlWebpackPlugin({
+        template: "launch-guide.html",
+        filename: "launch-guide.html"
+    })
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -93,5 +97,3 @@ module.exports = () => {
   }
   return config;
 };
-
-
