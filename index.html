@@ -6,7 +6,9 @@ ${require("./src/templates/header_start.html")}
   </div>
   <div class="header-text"><h2>Launch Guide</h2></div>
 </div>
+
 ${require("./src/templates/header_end.html")}
+
 <div class="collapse" id="result">
   <div class="row">
     <div class="card col-md-8 mx-auto">
@@ -37,13 +39,24 @@ ${require("./src/templates/header_end.html")}
           <label for="inputEmail" class="font-weight-bold">E-mail</label>
           <input type="email" class="form-control" id="inputEmail">
         </div>
-        <a class="btn btn-warning font-weight-bold" type="button" data-toggle="collapse" data-target="#result">
+        <a class="btn btn-warning font-weight-bold" type="button" id="btnInvite">
           Invite
         </a>
+        <script>
+          function success() {
+            var firstName = document.getElementById('inputFirstName');
+            var lastName = document.getElementById('inputLastName');
+            var email = document.getElementById('inputEmail');
+            //check member
+            var panelSuccess = document.getElementById("result");
+            panelSuccess.setAttribute("class", "");
+          }
+          var btnInvite = document.getElementById('btnInvite');
+          btnInvite.addEventListener('click', success, false);
+        </script>
       </form>
     </div>
   </div>
 </div>
-
 
 ${require("./src/templates/footer.html")}
