@@ -1,5 +1,11 @@
 header {
-  background-color: $header-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/header.png");
+  background-size: contain;
+  width: 100%;
+  min-height: 14rem;
 }
 
 .nav-pills {
