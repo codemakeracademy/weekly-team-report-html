@@ -1,0 +1,8 @@
+.accordion {
+width: $accordion-width;
+padding:$accordion-padding-x $accordion-padding-y;
+};
+.accordion-header
+{
+    background-color: $accordion-color;
+}
