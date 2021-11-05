@@ -1,0 +1,93 @@
+<%# Задаём имя странички, которое передается в шаблон header_start.ejs %>
+<% let title= 'Team Members'; %>
+<%# Также задаём цвет хэдера (необходимо для странички "Fill out your report") %>
+<% let bgcolor = '#313131'; %>
+<$- include('./src/templates/header_start.ejs') -$>
+
+<div class="header-info">
+    <div class="header-text">
+        <div class="font-weight-bold company-name">ANKO Technologies Corp</div>
+        <small>Joined November 2021</small>
+    </div>
+</div>
+
+<$- include('./src/templates/header_end.html') -$>
+
+<p class="title text-center font-weight-bold mb-5">TEAM MEMBERS</p>
+<div class="container">
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">AE</span>
+                Aleksandr Evseev
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">NK</span>
+                Nikolai Kapustin
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">AK</span>
+                Anatoliy Kolodkin
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">AK</span>
+                Anna Kotova
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">NM</span>
+                Nina Mammadova
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">NS</span>
+                Natalia Starkova
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">AT</span>
+                Anton Tarkhanov
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+    <div class="card my-1">
+        <div class="d-flex card-body p-2">
+            <div class="flex-grow-1 m-0 px-1">
+                <span class="initials-small flat mx-2 p-0" style="display: inline-grid;">AV</span>
+                Aleksandr Vovchuk
+            </div>
+            <button type="button" class="btn btn-link mx-3">Edit</button>
+        </div>
+    </div>
+</div>
+
+
+<$- include('./src/templates/footer.html') -$>

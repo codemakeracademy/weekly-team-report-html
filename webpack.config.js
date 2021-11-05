@@ -38,6 +38,18 @@ const config = {
       filename: 'fill-out-a-report.html',
       template: './fill-out-a-report.ejs'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'invite-your-team.html',
+      template: './invite-your-team.ejs'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'my-company.html',
+      template: './my-company.ejs'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'team-members.html',
+      template: './team-members.ejs'
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
