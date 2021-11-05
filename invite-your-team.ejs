@@ -5,59 +5,57 @@
 <$- include('./src/templates/header_start.ejs') -$>
 
 <div class="header-info">
-  <div class="header-text"><h2>Invite Your Team</h2></div>
+    <div class="header-text"><h2>Invite Your Team</h2></div>
 </div>
 
 <$- include('./src/templates/header_end.html') -$>
 
 <div class="collapse" id="result">
-  <div class="row">
-    <div class="card col-md-8 mx-auto">
-      <div class="card-body">
-        <p class="font-weight-bold">Success! Your team member has been invited to the Weekly Report Tool.</p>
-        <p>Once they accept your invitation, they'll be able to create their reports.</p>
-      </div>
+    <div class="row">
+        <div class="card col-md-8 mx-auto">
+            <div class="card-body">
+                <p class="font-weight-bold">Success! Your team member has been invited to the Weekly Report Tool.</p>
+                <p>Once they accept your invitation, they'll be able to create their reports.</p>
+            </div>
+        </div>
+        <p class="col-md-8 mx-auto my-3">The team member didn't receive your invite?</p>
     </div>
-    <p class="col-md-8 mx-auto my-3">The team member didn't receive your invite?</p>
-  </div>
 </div>
 
 <div class="row">
-  <div class="card col-md-8 mx-auto">
-    <div class="card-body">
-      <p class="font-weight-bold">Enter the team member you'd like to invite.</p>
-      <p>Don't worry! You will be able to add more team members later.</p>
-      <form>
-        <div class="form-group">
-          <label for="inputFirstName" class="font-weight-bold">First Name</label>
-          <input type="text" class="form-control" id="inputFirstName">
+    <div class="card col-md-8 mx-auto">
+        <div class="card-body">
+            <p class="font-weight-bold">Enter the team member you'd like to invite.</p>
+            <p>Don't worry! You will be able to add more team members later.</p>
+            <form>
+                <div class="form-group">
+                    <label for="inputFirstName" class="font-weight-bold">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" />
+                </div>
+                <div class="form-group">
+                    <label for="inputLastName" class="font-weight-bold">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" />
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="font-weight-bold">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" />
+                </div>
+                <a class="btn btn-warning font-weight-bold" type="button" id="btnInvite">Invite</a>
+                <script>
+                    function success() {
+                        var firstName = document.getElementById("inputFirstName");
+                        var lastName = document.getElementById("inputLastName");
+                        var email = document.getElementById("inputEmail");
+                        //check member
+                        var panelSuccess = document.getElementById("result");
+                        panelSuccess.setAttribute("class", "");
+                    }
+                    var btnInvite = document.getElementById("btnInvite");
+                    btnInvite.addEventListener("click", success, false);
+                </script>
+            </form>
         </div>
-        <div class="form-group">
-          <label for="inputLastName" class="font-weight-bold">Last Name</label>
-          <input type="text" class="form-control" id="inputLastName">
-        </div>
-        <div class="form-group">
-          <label for="inputEmail" class="font-weight-bold">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail">
-        </div>
-        <a class="btn btn-warning font-weight-bold" type="button" id="btnInvite">
-          Invite
-        </a>
-        <script>
-          function success() {
-            var firstName = document.getElementById('inputFirstName');
-            var lastName = document.getElementById('inputLastName');
-            var email = document.getElementById('inputEmail');
-            //check member
-            var panelSuccess = document.getElementById("result");
-            panelSuccess.setAttribute("class", "");
-          }
-          var btnInvite = document.getElementById('btnInvite');
-          btnInvite.addEventListener('click', success, false);
-        </script>
-      </form>
     </div>
-  </div>
 </div>
 
 <$- include('./src/templates/footer.html') -$>

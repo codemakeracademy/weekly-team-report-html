@@ -50,6 +50,10 @@ const config = {
       filename: 'team-members.html',
       template: './team-members.ejs'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'edit-member-information.html',
+      template: './edit-member-information.ejs'
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

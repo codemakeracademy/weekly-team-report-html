@@ -7,14 +7,14 @@
 
 <div class="header-info">
     <div class="header-logo d-flex flex-column align-items-center">
-      <div class="switches d-flex align-items-center">
-          <div class="switch inactive p-1 pl-3 pr-3"><a href="./team-reports.html">Immediate Team</a></div>
-          <div class="switch active p-1 pl-3 pr-3">Extended Team</div>
-      </div>
+        <div class="switches d-flex align-items-center">
+            <div class="switch inactive p-1 pl-3 pr-3"><a href="./team-reports.html">Immediate Team</a></div>
+            <div class="switch active p-1 pl-3 pr-3">Extended Team</div>
+        </div>
     </div>
     <div class="header-text team-title mt-4"><b>Weekly Report History</b></div>
     <div class="header-team-text mt-4">Get a bigger picture of how your team has been doing over time.</div>
-  </div>
+</div>
 
 <$- include('./src/templates/header_end.html') -$>
 
@@ -27,185 +27,178 @@
 </div>
 
 <div class="period-switchers d-flex justify-content-center mt-4">
-  <div class="switches d-flex align-items-center">
-      <div class="switch active p-1 pl-3 pr-3">Overall</div>
-      <div class="switch inactive p-1 pl-3 pr-3">Morale</div>
-      <div class="switch inactive p-1 pl-3 pr-3">Stress</div>
-      <div class="switch inactive p-1 pl-3 pr-3">Workload</div>
-  </div>
+    <div class="switches d-flex align-items-center">
+        <div class="switch active p-1 pl-3 pr-3">Overall</div>
+        <div class="switch inactive p-1 pl-3 pr-3">Morale</div>
+        <div class="switch inactive p-1 pl-3 pr-3">Stress</div>
+        <div class="switch inactive p-1 pl-3 pr-3">Workload</div>
+    </div>
 </div>
 
-  <div class="title text-center text-bold font-weight-bold text-uppercase mt-5">
-    extended team average
-  </div>
+<div class="title text-center text-bold font-weight-bold text-uppercase mt-5">extended team average</div>
 
-  <div class="overall container d-flex flex-column mt-50">
-
-    <div class="weeks-block d-flex align-items-center justify-content-end ">
-      <div class="weeks d-flex align-items-center justify-content-between mb-1 mr-4">
-        <div class="week mr-4">9w ago</div>
-        <div class="week mr-4">8w ago</div>
-        <div class="week mr-4">7w ago</div>
-        <div class="week mr-4">6w ago</div>
-        <div class="week mr-4">5w ago</div>
-        <div class="week mr-4">4w ago</div>
-        <div class="week mr-4">3w ago</div>
-        <div class="week mr-4">2w ago</div>
-        <div class="week mr-4">1w ago</div>
-        <div class="week mr-0">Current</div>
-      </div>
+<div class="overall container d-flex flex-column mt-50">
+    <div class="weeks-block d-flex align-items-center justify-content-end">
+        <div class="weeks d-flex align-items-center justify-content-between mb-1 mr-4">
+            <div class="week mr-4">9w ago</div>
+            <div class="week mr-4">8w ago</div>
+            <div class="week mr-4">7w ago</div>
+            <div class="week mr-4">6w ago</div>
+            <div class="week mr-4">5w ago</div>
+            <div class="week mr-4">4w ago</div>
+            <div class="week mr-4">3w ago</div>
+            <div class="week mr-4">2w ago</div>
+            <div class="week mr-4">1w ago</div>
+            <div class="week mr-0">Current</div>
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0">
-      <div class="card-name">Overall</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileBad %>" alt="smile bad">
-        <img class="smile mr-3" src="<%= smileAlright %>" alt="smile alright">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="card-name">Overall</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileBad %>" alt="smile bad" />
+            <img class="smile mr-3" src="<%= smileAlright %>" alt="smile alright" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
-  </div>
+</div>
 
-  
-  <div class="title text-center text-bold font-weight-bold text-uppercase mt-5">extended team</div>
+<div class="title text-center text-bold font-weight-bold text-uppercase mt-5">extended team</div>
 
-  <div class="extended-team container d-flex flex-column mt-50">
-
-    <div class="weeks-block d-flex align-items-center justify-content-end ">
-      <div class="weeks d-flex align-items-center justify-content-between mb-1 mr-4">
-        <div class="week mr-4">9w ago</div>
-        <div class="week mr-4">8w ago</div>
-        <div class="week mr-4">7w ago</div>
-        <div class="week mr-4">6w ago</div>
-        <div class="week mr-4">5w ago</div>
-        <div class="week mr-4">4w ago</div>
-        <div class="week mr-4">3w ago</div>
-        <div class="week mr-4">2w ago</div>
-        <div class="week mr-4">1w ago</div>
-        <div class="week mr-0">Current</div>
-      </div>
+<div class="extended-team container d-flex flex-column mt-50">
+    <div class="weeks-block d-flex align-items-center justify-content-end">
+        <div class="weeks d-flex align-items-center justify-content-between mb-1 mr-4">
+            <div class="week mr-4">9w ago</div>
+            <div class="week mr-4">8w ago</div>
+            <div class="week mr-4">7w ago</div>
+            <div class="week mr-4">6w ago</div>
+            <div class="week mr-4">5w ago</div>
+            <div class="week mr-4">4w ago</div>
+            <div class="week mr-4">3w ago</div>
+            <div class="week mr-4">2w ago</div>
+            <div class="week mr-4">1w ago</div>
+            <div class="week mr-0">Current</div>
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Aleksandr Evseev</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileAlright %>" alt="smile alright">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Aleksandr Evseev</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileAlright %>" alt="smile alright" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Nikolay Kapustin</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Nikolay Kapustin</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Anna Kotova</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad">
-        <img class="smile mr-3" src="<%= smileBad %>" alt="smile bad">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Anna Kotova</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileSad %>" alt="smile sad" />
+            <img class="smile mr-3" src="<%= smileBad %>" alt="smile bad" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Nina Mammadova</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Nina Mammadova</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Natalia Starkova</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Natalia Starkova</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Anton Tarkhanov</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Anton Tarkhanov</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
 
     <div class="card card-header d-flex flex-row align-items-center justify-content-between pt-3 pb-3 pr-0 mb-2">
-      <div class="person-name">Alexandr Vovchuk</div>
-      <div class="smiles d-flex align-items-center justify-content-between">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone">
-        <img class="smile" src="<%= smileIsGone %>" alt="smile is gone">
-      </div>
+        <div class="person-name">Alexandr Vovchuk</div>
+        <div class="smiles d-flex align-items-center justify-content-between">
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile mr-3" src="<%= smileIsGone %>" alt="smile is gone" />
+            <img class="smile" src="<%= smileIsGone %>" alt="smile is gone" />
+        </div>
     </div>
-  </div>
+</div>
 
-
-
-  <$- include('./src/templates/footer.html') -$>
+<$- include('./src/templates/footer.html') -$>

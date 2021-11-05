@@ -5,8 +5,8 @@
 <$- include('./src/templates/header_start.ejs') -$>
 <$- include('./ejs-variables.ejs') -$> 
 
-
-<div class="text-center mt-4 py-0 px-4"><h1 class="display-5 brush_img">Welcome back,</h1>
+<div class="text-center mt-4 py-0 px-4">
+    <h1 class="display-5 brush_img">Welcome back,</h1>
     <h1 class="display-5 extra-bold mb-4">Anatoliy.</h1>
     <p>Let your leader know where you're winning and struggling this week - in less than 10 minutes.</p>
 </div>
@@ -14,154 +14,153 @@
 <$- include('./src/templates/header_end.html') -$>
 
 <div class="d-flex justify-content-center">
-    
-
-        <form class="text-center mx-5" data-toggle="required">
-            <h2 class="mb-3 pb-0">
-                How was your morale this week?
-            </h2>
-                    <div class="d-flex flex-wrap justify-content-center mx-5" data-form="FormMorale" data-comment="commentmorale">
-                        <div class="morales morale_smile morale_very_low">
-                            <input type="radio" name="morale" id="morale-very-low" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="morale-very-low">
-                            <img alt="Very low">Very low</label>
-                        </div>
-                        <div class="morales morale_smile morale_low">
-                            <input type="radio" name="morale" id="morale-low" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="morale-low">
-                            <img alt="Low">low</label>
-                        </div>
-                        <div class="morales morale_smile morale_okay">
-                            <input type="radio" name="morale" id="morale-okay" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="morale-okay">
-                            <img alt="Okay">Okay</label>
-                        </div>
-                        <div class="morales morale_smile morale_good">
-                            <input type="radio" name="morale" id="morale-good" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="morale-good">
-                            <img alt="Good">Good</label>
-                        </div>
-                        <div class="morales morale_smile morale_great">
-                            <input type="radio" name="morale" id="morale-great" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="morale-great">
-                            <img alt="Great">Great</label>
-                        </div>
-                    </div>
-                <div class="form-group shadow-textarea my-5  mx-xl-5" id="commentmorale">
-                </div>
-
-
-            <h2 class="mb-3 pb-0">
-                How was your stress this week?
-            </h2>
-            <div class="d-flex flex-wrap justify-content-center" data-form="FormStress" data-comment="commentstress">
-                        <div class="morales morale_smile morale_very_low">
-                            <input type="radio" name="stress" id="stress-very-low" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="stress-very-low">
-                            <img alt="Very low">Very low</label>
-                        </div>
-                        <div class="morales morale_smile morale_low">
-                            <input type="radio" name="stress" id="stress-low" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="stress-low">
-                            <img alt="Low">low</label>
-                        </div>
-                        <div class="morales morale_smile morale_okay">
-                            <input type="radio" name="stress" id="stress-okay" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="stress-okay">
-                            <img alt="Very low">Okay</label>
-                        </div>
-                        <div class="morales morale_smile morale_good">
-                            <input type="radio" name="stress" id="stress-good" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="stress-good">
-                            <img alt="Low">Good</label>
-                        </div>
-                        <div class="morales morale_smile morale_great">
-                            <input type="radio" name="stress" id="stress-great" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="stress-great">
-                            <img alt="Low">Great</label>
-                        </div>
-            </div>
-                <div class="form-group shadow-textarea my-5 mx-xl-5" id="commentstress">
-                </div>
-
-
-
-            <h2 class="mb-3 pb-0">
-                How was your workload this week?
-            </h2>
-            <div class="d-flex flex-wrap justify-content-center" data-form="FormWorkload" data-comment="commentworkload">
+    <form class="text-center mx-5" data-toggle="required">
+        <h2 class="mb-3 pb-0">How was your morale this week?</h2>
+        <div class="d-flex flex-wrap justify-content-center mx-5" data-form="FormMorale" data-comment="commentmorale">
             <div class="morales morale_smile morale_very_low">
-                            <input type="radio" name="workload" id="workload-very-low" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="workload-very-low">
-                            <img alt="Very low">Very low</label>
-                        </div>
-                        <div class="morales morale_smile morale_low">
-                            <input type="radio" name="workload" id="workload-low" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="workload-low">
-                            <img alt="Low">low</label>
-                        </div>
-                        <div class="morales morale_smile morale_okay">
-                            <input type="radio" name="workload" id="workload-okay" required> <label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="workload-okay">
-                            <img alt="Okay">Okay</label>
-                        </div>
-                        <div class="morales morale_smile morale_good">
-                            <input type="radio" name="workload" id="workload-good" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white"
-                                for="workload-good">
-                            <img alt="Good">Good</label>
-                        </div>
-                        <div class="morales morale_smile morale_great">
-                            <input type="radio" name="workload" id="workload-great" required><label
-                                class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-great">
-                            <img alt="Great">Great</label>
-                        </div>
+                <input type="radio" name="morale" id="morale-very-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="morale-very-low">
+                    <img alt="Very low" />
+                    Very low
+                </label>
             </div>
-                <div class="form-group shadow-textarea my-5 mx-xl-5" id="commentworkload">
-                </div>
+            <div class="morales morale_smile morale_low">
+                <input type="radio" name="morale" id="morale-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="morale-low">
+                    <img alt="Low" />
+                    low
+                </label>
+            </div>
+            <div class="morales morale_smile morale_okay">
+                <input type="radio" name="morale" id="morale-okay" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="morale-okay">
+                    <img alt="Okay" />
+                    Okay
+                </label>
+            </div>
+            <div class="morales morale_smile morale_good">
+                <input type="radio" name="morale" id="morale-good" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="morale-good">
+                    <img alt="Good" />
+                    Good
+                </label>
+            </div>
+            <div class="morales morale_smile morale_great">
+                <input type="radio" name="morale" id="morale-great" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="morale-great">
+                    <img alt="Great" />
+                    Great
+                </label>
+            </div>
+        </div>
+        <div class="form-group shadow-textarea my-5 mx-xl-5" id="commentmorale"></div>
 
+        <h2 class="mb-3 pb-0">How was your stress this week?</h2>
+        <div class="d-flex flex-wrap justify-content-center" data-form="FormStress" data-comment="commentstress">
+            <div class="morales morale_smile morale_very_low">
+                <input type="radio" name="stress" id="stress-very-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="stress-very-low">
+                    <img alt="Very low" />
+                    Very low
+                </label>
+            </div>
+            <div class="morales morale_smile morale_low">
+                <input type="radio" name="stress" id="stress-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="stress-low">
+                    <img alt="Low" />
+                    low
+                </label>
+            </div>
+            <div class="morales morale_smile morale_okay">
+                <input type="radio" name="stress" id="stress-okay" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="stress-okay">
+                    <img alt="Very low" />
+                    Okay
+                </label>
+            </div>
+            <div class="morales morale_smile morale_good">
+                <input type="radio" name="stress" id="stress-good" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="stress-good">
+                    <img alt="Low" />
+                    Good
+                </label>
+            </div>
+            <div class="morales morale_smile morale_great">
+                <input type="radio" name="stress" id="stress-great" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="stress-great">
+                    <img alt="Low" />
+                    Great
+                </label>
+            </div>
+        </div>
+        <div class="form-group shadow-textarea my-5 mx-xl-5" id="commentstress"></div>
 
-            <div class="form-group shadow-textarea mb-5 mx-xl-5">
-                <label for="FormHigh" class="mb-5 pb-0"><h2 class="mb-3">What was your high this week?</h2></label>
-                <textarea class="form-control z-depth-1" id="FormHigh" rows="6" placeholder="What was your personal or professional high this week? What's the one thing you accomplished at work this week?" maxlength="600" required></textarea>
+        <h2 class="mb-3 pb-0">How was your workload this week?</h2>
+        <div class="d-flex flex-wrap justify-content-center" data-form="FormWorkload" data-comment="commentworkload">
+            <div class="morales morale_smile morale_very_low">
+                <input type="radio" name="workload" id="workload-very-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-very-low">
+                    <img alt="Very low" />
+                    Very low
+                </label>
             </div>
-            <div class="form-group shadow-textarea mb-5 mx-xl-5">
-                <label for="FormLow" class="mb-5 pb-0"><h2 class="mb-3">What was your low this week?</h2></label>
-                <textarea class="form-control z-depth-1" id="FormLow" rows="6" placeholder="What was your personal or professional low this week?" maxlength="600" required></textarea>
+            <div class="morales morale_smile morale_low">
+                <input type="radio" name="workload" id="workload-low" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-low">
+                    <img alt="Low" />
+                    low
+                </label>
             </div>
+            <div class="morales morale_smile morale_okay">
+                <input type="radio" name="workload" id="workload-okay" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-okay">
+                    <img alt="Okay" />
+                    Okay
+                </label>
+            </div>
+            <div class="morales morale_smile morale_good">
+                <input type="radio" name="workload" id="workload-good" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-good">
+                    <img alt="Good" />
+                    Good
+                </label>
+            </div>
+            <div class="morales morale_smile morale_great">
+                <input type="radio" name="workload" id="workload-great" required />
+                <label class="btn radio-button d-inline-flex flex-column align-items-center bg-white" for="workload-great">
+                    <img alt="Great" />
+                    Great
+                </label>
+            </div>
+        </div>
+        <div class="form-group shadow-textarea my-5 mx-xl-5" id="commentworkload"></div>
 
-            <div class="form-group shadow-textarea mb-5 mx-xl-5">
-                <label for="FormElse" class="mb-5 pb-0"><h2 class="mb-3">Anything else?</h2></label>
-                <textarea class="form-control z-depth-1" id="FormElse" rows="6" placeholder="Is there anything else you would like to share with your leader? *Optional" maxlength="400" required></textarea>
-            </div>
+        <div class="form-group shadow-textarea mb-5 mx-xl-5">
+            <label for="FormHigh" class="mb-5 pb-0"><h2 class="mb-3">What was your high this week?</h2></label>
+            <textarea class="form-control z-depth-1" id="FormHigh" rows="6" placeholder="What was your personal or professional high this week? What's the one thing you accomplished at work this week?" maxlength="600" required></textarea>
+        </div>
+        <div class="form-group shadow-textarea mb-5 mx-xl-5">
+            <label for="FormLow" class="mb-5 pb-0"><h2 class="mb-3">What was your low this week?</h2></label>
+            <textarea class="form-control z-depth-1" id="FormLow" rows="6" placeholder="What was your personal or professional low this week?" maxlength="600" required></textarea>
+        </div>
 
-            <div class="mb-5">
-                <h2 class="w-50 d-inline-block">
-                    Date range
-                </h2>
-                <p><label for="inputdate" class="w-50 d-inline-block mx-xl-5    "> Choose date</label> <br>
-                    <input type="text" name="daterange" value="10/28/2021 - 11/04/2021"  class="w-50 d-inline-block" id="inputdate"/>
-            </div>
-            <h6 class="text-danger">All fields are required unless marked as optional</h6>
-            <p><input class="btn btn-secondary btn-lg btn-block w-50 d-inline-block" type="submit"
-                      value="Send weekly report"></p>
+        <div class="form-group shadow-textarea mb-5 mx-xl-5">
+            <label for="FormElse" class="mb-5 pb-0"><h2 class="mb-3">Anything else?</h2></label>
+            <textarea class="form-control z-depth-1" id="FormElse" rows="6" placeholder="Is there anything else you would like to share with your leader? *Optional" maxlength="400" required></textarea>
+        </div>
+
+        <div class="mb-5">
+            <h2 class="w-50 d-inline-block">Date range</h2>
+            <p>
+                <label for="inputdate" class="w-50 d-inline-block mx-xl-5">Choose date</label>
+                <br />
+                <input type="text" name="daterange" value="10/28/2021 - 11/04/2021" class="w-50 d-inline-block" id="inputdate" />
+            </p>
+        </div>
+
+        <h6 class="text-danger">All fields are required unless marked as optional</h6>
+        <p><input class="btn btn-secondary btn-lg btn-block w-50 d-inline-block" type="submit" value="Send weekly report" /></p>
     </form>
-    
 </div>
 
-
 <$- include('./src/templates/footer.html') -$>
-

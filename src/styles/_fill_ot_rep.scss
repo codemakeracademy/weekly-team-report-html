@@ -1,15 +1,13 @@
 .brush_img {
-  background-repeat: no-repeat; 
-  background-position-x: center; 
-  background-position-y: center; 
-  background-image: url('../images/brush.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url("../images/brush.png");
 }
 
 .body_color {
   background-color: #f5f7f8;
 }
-
-
 
 .morale_very_low {
   input:not(:checked) + label {
@@ -21,19 +19,15 @@
   input:hover + label {
     img {
       content: url("../images/smile_bad_big.png");
-
     }
   }
 
   input:checked + label {
     img {
       content: url("../images/smile_bad_big.png");
-
     }
-
   }
 }
-
 
 .morale_low {
   input:not(:checked) + label {
@@ -45,14 +39,12 @@
   input:hover + label {
     img {
       content: url("../images/smile_ducked_up_big.png");
-
     }
   }
 
   input:checked + label {
     img {
       content: url("../images/smile_ducked_up_big.png");
-
     }
   }
 }
@@ -67,14 +59,12 @@
   input:hover + label {
     img {
       content: url("../images/smile_sad_big.png");
-
     }
   }
 
   input:checked + label {
     img {
       content: url("../images/smile_sad_big.png");
-
     }
   }
 }
@@ -89,18 +79,15 @@
   input:hover + label {
     img {
       content: url("../images/smile_alright_big.png");
-
     }
   }
 
   input:checked + label {
     img {
       content: url("../images/smile_alright_big.png");
-
     }
   }
 }
-
 
 .morale_great {
   input:not(:checked) + label {
@@ -112,18 +99,15 @@
   input:hover + label {
     img {
       content: url("../images/smile_excelent_big.png");
-
     }
   }
 
   input:checked + label {
     img {
       content: url("../images/smile_excelent_big.png");
-
     }
   }
 }
-
 
 .morale_smile {
   width: 170px;
@@ -164,8 +148,8 @@
 }
 
 .help {
-  background-color: #FFD658;
-  color: #6B5616;
+  background-color: #ffd658;
+  color: #6b5616;
   z-index: 5;
   position: fixed;
   right: 5px;

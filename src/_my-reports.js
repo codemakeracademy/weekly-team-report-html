@@ -1,7 +1,7 @@
 try {
     const expandAll = document.querySelector('.expand-all');
     const collapses = document.querySelectorAll('.collapse');
-    expandAll.addEventListener('click', function(){
+    expandAll.addEventListener('click', function () {
         collapses.forEach(el => {
             el.classList.add('show');
         })
@@ -12,7 +12,7 @@ try {
     const btnReportsCollapses = document.querySelectorAll('.btn-reports-collapse');
     let cardHeaders = document.querySelectorAll('.card-header');
     btnReportsCollapses.forEach(el => {
-        el.addEventListener('click', function(){
+        el.addEventListener('click', function () {
             if (!el.parentNode.parentNode.parentNode.classList.contains('expanded')) {
                 el.parentNode.parentNode.parentNode.classList.add('expanded');
                 el.parentNode.parentNode.parentNode.querySelector('.period').classList.add('selected');
@@ -40,4 +40,4 @@ try {
             }
         })
     })
-} catch {}
+} catch { }
