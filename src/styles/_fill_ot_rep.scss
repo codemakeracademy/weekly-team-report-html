@@ -1,0 +1,164 @@
+.brush_img {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url("../images/brush.png");
+}
+
+.body_color {
+  background-color: #f5f7f8;
+}
+
+.morale_very_low {
+  input:not(:checked) + label {
+    img {
+      content: url("../images/smile_bad_big_grey.png");
+    }
+  }
+
+  input:hover + label {
+    img {
+      content: url("../images/smile_bad_big.png");
+    }
+  }
+
+  input:checked + label {
+    img {
+      content: url("../images/smile_bad_big.png");
+    }
+  }
+}
+
+.morale_low {
+  input:not(:checked) + label {
+    img {
+      content: url("../images/smile_ducked_up_big_grey.png");
+    }
+  }
+
+  input:hover + label {
+    img {
+      content: url("../images/smile_ducked_up_big.png");
+    }
+  }
+
+  input:checked + label {
+    img {
+      content: url("../images/smile_ducked_up_big.png");
+    }
+  }
+}
+
+.morale_okay {
+  input:not(:checked) + label {
+    img {
+      content: url("../images/smile_sad_big_grey.png");
+    }
+  }
+
+  input:hover + label {
+    img {
+      content: url("../images/smile_sad_big.png");
+    }
+  }
+
+  input:checked + label {
+    img {
+      content: url("../images/smile_sad_big.png");
+    }
+  }
+}
+
+.morale_good {
+  input:not(:checked) + label {
+    img {
+      content: url("../images/smile_alright_big_grey.png");
+    }
+  }
+
+  input:hover + label {
+    img {
+      content: url("../images/smile_alright_big.png");
+    }
+  }
+
+  input:checked + label {
+    img {
+      content: url("../images/smile_alright_big.png");
+    }
+  }
+}
+
+.morale_great {
+  input:not(:checked) + label {
+    img {
+      content: url("../images/smile_excelent_big_grey.png");
+    }
+  }
+
+  input:hover + label {
+    img {
+      content: url("../images/smile_excelent_big.png");
+    }
+  }
+
+  input:checked + label {
+    img {
+      content: url("../images/smile_excelent_big.png");
+    }
+  }
+}
+
+.morale_smile {
+  width: 170px;
+  height: 170px;
+  margin: 20px;
+  padding-top: 20px;
+  background-color: white;
+
+  img {
+    width: 100%;
+    border: 1px solid;
+    border-color: #f5f7f8;
+    border-radius: 50%;
+  }
+}
+
+.morales {
+  margin-top: 5px;
+
+  input {
+    display: none;
+  }
+}
+
+.feedback {
+  transform: rotate(-90deg) translateY(72%);
+  transform-origin: center;
+  background-color: #093d67;
+  color: white;
+  z-index: 5;
+  position: fixed;
+  right: 0px;
+  top: 40%;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 8px 15px;
+}
+
+.help {
+  background-color: #ffd658;
+  color: #6b5616;
+  z-index: 5;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px 20px;
+
+  & svg {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+<%# Задаём имя странички, которое передается в шаблон header_start.ejs %>
+<% let title= 'My Company'; %>
+<%# Также задаём цвет хэдера (необходимо для странички "Fill out your report") %>
+<% let bgcolor = '#313131'; %>
+<$- include('./src/templates/header_start.ejs') -$>
+
+<div class="header-info">
+    <div class="header-text">
+        <div class="font-weight-bold company-name">ANKO Technologies Corp</div>
+        <small>Joined November 2021</small>
+    </div>
+</div>
+
+<$- include('./src/templates/header_end.html') -$>
+
+<div class="mx-4">
+    <p class="h2 font-weight-bold">Edit ANKO Technologies Corp's information.</p>
+    <p>You may edit the company name, as well as deactivate/activate the Weekly Report Tool functionality. If you need to edit a team member's information, you can access that information by seeing the list of team members.</p>
+    <br />
+    <br />
+    <t class="font-weight-bold">RENAME ANKO TECHNOLOGIES CORP</t>
+    <hr />
+    <form>
+        <div class="form-group">
+            <label for="inputCompanyName" class="font-weight-bold">Change company name.</label>
+            <input type="text" class="form-control w-50" id="inputCompanyName" />
+        </div>
+        <a type="button" class="btn btn-outline-dark font-weight-bold">Save name change</a>
+    </form>
+    <br />
+    <br />
+    <t class="font-weight-bold">SEE A LIST OF ANKO TECHNOLOGIES CORP'S TEAM MEMBERS</t>
+    <hr />
+    <div>
+        <p>
+            If you need to edit a particular team member, you can see a complete list of team members and visit their profile to make edits.
+            <b>You will not be able to see a team member's weekly report.</b>
+        </p>
+        <a href="./team-members.html" type="button" class="btn btn-outline-dark font-weight-bold" href="./team-members.html">See all team members</a>
+    </div>
+</div>
+
+<$- include('./src/templates/footer.html') -$>

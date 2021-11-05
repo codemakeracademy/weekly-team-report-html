@@ -6,12 +6,14 @@
 @import "my-reports";
 @import "team-reports";
 @import "weekly-report-history";
-
+@import "fill_ot_rep";
+@import "my-company";
 
 html {
     min-height: 100%;
 }
-body, .wrapper {
+body,
+.wrapper {
     min-height: 100vh;
 }
 .bg-dark {
