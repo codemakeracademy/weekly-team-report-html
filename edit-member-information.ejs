@@ -3,88 +3,117 @@
 <%# Также задаём цвет хэдера (необходимо для странички "Fill out your report") %>
 <% let bgcolor = '#313131'; %>
 <$- include('./src/templates/header_start.ejs') -$>
+<$- include('./ejs-variables.ejs') -$> 
 <% let member_name = 'Anatoliy';%>
 <% let member_surname = 'Kolodkin';%>
 <% let member_position = 'CEO';%>
-
+<% let leaders_list = ['Nikolay Kapustin', 'Nina Mammadova', 'Natalia Starkova', 'Anton Tarkhanov', 'Alexandr Vovchuk']%>
+<%function delLeader(leader) {
+  leaders_list.splice(leader, 1);
+}%>
 
 <div class="header-info">
-  <div class="header-logo d-flex justify-content-center">
-      <div class="initials">AK</div>
-  </div>
-  <div class="header-text name">Anatoliy Kolodkin</div>
-  <div class="header-mail-text">
-      <a href="mailto:anatoliy@ankosoftware.com">anatoliy@ankosoftware.com</a>
-  </div>
+    <div class="header-logo d-flex justify-content-center">
+        <div class="initials">AK</div>
+    </div>
+    <div class="header-text name">Anatoliy Kolodkin</div>
+    <div class="header-mail-text">
+        <a href="mailto:anatoliy@ankosoftware.com">anatoliy@ankosoftware.com</a>
+    </div>
 </div>
 
 <$- include('./src/templates/header_end.html') -$>
-<div class="mb-5">
-  <h1>Edit <%= member_name %>'s information</h1>
-  <h6>You may assign leaders or team members to this person, as well as deactivate their account if they no longer work for your organization.</h6>
-</div>
-<div>
-  <h4>BASIC PROFILE INFORMATION</h4>
-  <form class="border-top mb-5">
-      <div class="mb-3">
-          <h5 class="bi-type-bold">First name</h5>
-          <input style="width: 20%; height: 20%" placeholder=<%= member_name%> >
-      </div>
-      <div class="mb-3">
-          <h5 class="bi-type-bold">Last name</h5>
-          <input style="width: 20%; height: 20%" placeholder=<%= member_surname%> />
-      </div>
-      <div class="mb-3">
-          <h5 class="bi-type-bold">Title</h5>
-          <input style="width: 20%; height: 20%" placeholder=<%= member_position%> />
-      </div>
-      <input type="submit" value="Save" class="btn btn-warning" />
-  </form>
-  <div>
-      <h4><%= member_name.toUpperCase()%> REPORTS TO THE FOLLOWING LEADER:</h4>
-      <div class="mb-5 border-top pt-4">
-          <div class="d-inline-flex flex-wrap">
-              <label class="text-light bg-dark p-2 rounded mr-2">Nikolay Kapustin</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Nina Mammadova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Natalia Starkova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Anton Tarhanov</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Vovchuk</label>
-          </div>
-          <br />
-          <button type="button" class="btn btn-outline-secondary">Edit Leader's</button>
-      </div>
-  </div>
 
-  <div>
-      <h4>THE FOLLOWING TEAM MEMBERS REPORT TO <%= member_name.toUpperCase()%>:</h4>
-      <div class="mb-5 border-top pt-4">
-          <div class="d-inline-flex flex-wrap">
-              <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Evseev</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Nikolay Kapustin</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Anna Kotova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Nina Mammadova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Natalia Starkova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Anton Tarkhanov</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Vovchuk</label>
-          </div>
-          <br />
-          <button type="button" class="btn btn-outline-secondary">Edit Leader's</button>
-      </div>
-  </div>
-</div>
+<div class="container">
+    <div class="mb-5">
+        <h1>Edit <%= member_name %>'s information</h1>
+        <h6>You may assign leaders or team members to this person, as well as deactivate their account if they no longer work for your organization.</h6>
+    </div>
+    <div>
+        <h4>BASIC PROFILE INFORMATION</h4>
+        <form class="border-top mb-5">
+            <div class="mb-3">
+                <h5 class="bi-type-bold">First name</h5>
+                <input style="width: 20%; height: 20%" placeholder="<%= member_name %>"/>
+            </div>
+            <div class="mb-3">
+                <h5 class="bi-type-bold">Last name</h5>
+                <input style="width: 20%; height: 20%" placeholder="<%= member_surname %>"/>
+            </div>
+            <div class="mb-3">
+                <h5 class="bi-type-bold">Title</h5>
+                <input style="width: 20%; height: 20%" placeholder="<%= member_position %>"/>
+            </div>
+            <input type="submit" value="Save" class="btn btn-warning" />
+        </form>
+        <div>
+            <h4><%= member_name.toUpperCase()%> REPORTS TO THE FOLLOWING LEADER:</h4>
+            <div class="mb-5 border-top pt-4">
+                <div class="d-inline-flex flex-wrap">
+                    <% for (let leader in leaders_list) {%>
+                        <label class="text-light bg-dark p-2 rounded mr-2"><%= leaders_list[leader]%></label>
+                    <%}%>
+                </div>
+                <br />
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modaleeditleader">Edit Leader(s)</button>
 
-<div>
-  <h4 class="border-bottom"><%= member_name.toUpperCase()%>'S INVITE LINK:</h4>
-  <h6>Share the following link to invite team members on <%= member_name%>'s behalf:</h6>
-  <div class="text-center">
-      <textarea rows="2" cols="50" disabled>
-https://www.figma.com/file/xs4FaSfzPijgSJ5R3aqrJB/Weekly-Report?node-id=5%3A17
-</textarea>
-  </div>
-  <div class="text-center">
-      <br />
-      <button type="button" class="btn btn-warning ml-3 align-items-center">Copy link</button>
-  </div>
+                <div class="modal fade" id="modaleeditleader" tabindex="-1" role="dialog" aria-labelledby="modaleeditleaderTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content p-2">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="modaleeditleaderTitle">Edit Leader(s)</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="mb-4">By default, the person who sent you the invite will receive your weekly report. You may also select the person you report to directly as an additional leader.</h6>
+                                <h6 class="mb-4">Pro Tip: You can change who sees your report in your profile settings.</h6>
+                                <div class="d-inline-flex flex-wrap mb-4">
+                                    <% for (let leader in leaders_list) {%>
+                                        <button type="close" class="text-light bg-dark p-2 mr-2 mb-2 rounded" onclick="delLeader(<%= leader%>)"><%= leaders_list[leader]%></button>
+                                    <%}%>
+                                </div>
+                                <textarea class="w-100" rows="3" cols="100"></textarea>
+                            </div>
+                            <div class="modal-footer pull-left">
+                                <button type="button" class="btn btn-warning">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>THE FOLLOWING TEAM MEMBERS REPORT TO <%= member_name.toUpperCase()%>:</h4>
+            <div class="mb-5 border-top pt-4">
+                <div class="d-inline-flex flex-wrap">
+                    <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Evseev</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Nikolay Kapustin</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Anna Kotova</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Nina Mammadova</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Natalia Starkova</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Anton Tarkhanov</label>
+                    <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Vovchuk</label>
+                </div>
+                <br />
+                <button type="button" class="btn btn-outline-secondary">Edit Member(s)</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h4 class="border-bottom"><%= member_name.toUpperCase()%>'S INVITE LINK:</h4>
+        <h6>Share the following link to invite team members on <%= member_name%>'s behalf:</h6>
+        <div class="text-center">
+            <textarea rows="2" cols="50" disabled>https://www.figma.com/file/xs4FaSfzPijgSJ5R3aqrJB/Weekly-Report?node-id=5%3A17</textarea>
+        </div>
+        <div class="text-center">
+            <br />
+            <button type="button" class="btn btn-warning ml-3 align-items-center">Copy link</button>
+        </div>
+    </div>
 </div>
 
 <$- include('./src/templates/footer.html') -$>
