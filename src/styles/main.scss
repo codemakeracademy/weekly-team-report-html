@@ -1,0 +1,39 @@
+@import "aside";
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+@import "nav";
+@import "header";
+@import "my-reports";
+@import "team-reports";
+@import "weekly-report-history";
+@import "fill_ot_rep";
+@import "my-company";
+@import "edit-member-information";
+
+html {
+    min-height: 100%;
+}
+body,
+.wrapper {
+    min-height: 100vh;
+}
+.bg-dark {
+    background-color: #323a3d !important;
+}
+main {
+    position: relative;
+    top: 0px;
+    left: 240px;
+    margin-right: 240px;
+    background-color: #f5f7f8;
+}
+.vh {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
