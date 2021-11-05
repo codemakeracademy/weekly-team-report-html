@@ -1,0 +1,19 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:3rem;
+  margin-bottom:0.7rem;
+}
+
+.tags > .input-group {
+  width: auto;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+.modal-content {
+  padding: 2rem;
+  border-top: 3px solid $warning;
+}
