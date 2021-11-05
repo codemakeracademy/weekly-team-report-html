@@ -1,0 +1,31 @@
+.accordion-item > .accordion-header > .accordion-button.collapsed{
+  color: black !important;
+  background-color: white !important;
+}
+.accordion-item > .accordion-header > .accordion-button:not(.collapsed){
+  color: gold !important;
+  background-color: black !important;
+}
+
+.modal-content{
+  height: 500px;
+}
+h3{
+  font-weight: $h3-font-weight;
+}
+label{
+  font-weight: $label-font-weigth;
+}
+.col-set{
+  background-color: $col-color;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+.btn-warning{
+  font-weight: bold;
+}
+div.scroll{
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
