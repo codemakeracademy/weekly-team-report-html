@@ -3,9 +3,14 @@
 <%# Также задаём цвет хэдера (необходимо для странички "Fill out your report") %>
 <% let bgcolor = '#313131'; %>
 <$- include('./src/templates/header_start.ejs') -$>
+<$- include('./ejs-variables.ejs') -$> 
 <% let member_name = 'Anatoliy';%>
 <% let member_surname = 'Kolodkin';%>
 <% let member_position = 'CEO';%>
+<% let leaders_list = ['Nikolay Kapustin', 'Nina Mammadova', 'Natalia Starkova', 'Anton Tarkhanov', 'Alexandr Vovchuk']%>
+<%function delLeader(leader) {
+  leaders_list.splice(leader, 1);
+}%>
 
 
 <div class="header-info">
@@ -44,14 +49,46 @@
       <h4><%= member_name.toUpperCase()%> REPORTS TO THE FOLLOWING LEADER:</h4>
       <div class="mb-5 border-top pt-4">
           <div class="d-inline-flex flex-wrap">
-              <label class="text-light bg-dark p-2 rounded mr-2">Nikolay Kapustin</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Nina Mammadova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Natalia Starkova</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Anton Tarhanov</label>
-              <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Vovchuk</label>
+            <% for (let leader in leaders_list) {%>
+                <label class="text-light bg-dark p-2 rounded mr-2"> <%= leaders_list[leader]%></label> <%}%>
           </div>
           <br />
-          <button type="button" class="btn btn-outline-secondary">Edit Leader's</button>
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modaleeditleader">Edit Leader(s)</button>
+      
+      
+      
+      
+          <div class="modal fade" id="modaleeditleader" tabindex="-1" role="dialog" aria-labelledby="modaleeditleaderTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content p-2">
+                      <div class="modal-header">
+                          <h2 class="modal-title" id="modaleeditleaderTitle">Edit Leader(s)</h2>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="mb-4">
+                                By default, the person who sent you the invite will receive your weekly report. You may also select the person you report to directly as an additional leader.
+                            </h6>
+                            <h6 class="mb-4">
+                                Pro Tip: You can change who sees your report in your profile settings.
+                            </h6>
+                            <div class="d-inline-flex  flex-wrap mb-4">
+                                <% for (let leader in leaders_list) {%>
+                                    <button type="close" class="text-light bg-dark p-2 mr-2 mb-2 rounded" onclick="delLeader(<%= leader%>)"><%= leaders_list[leader]%></button> <%}%>
+                            </div>
+                            <textarea class="w-100" rows="3" cols="100"></textarea>
+                        </div>
+                        <div class="modal-footer pull-left">
+                            <button type="button" class="btn btn-warning">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+      
+      
       </div>
   </div>
 
@@ -68,7 +105,7 @@
               <label class="text-light bg-dark p-2 rounded mr-2">Alexandr Vovchuk</label>
           </div>
           <br />
-          <button type="button" class="btn btn-outline-secondary">Edit Leader's</button>
+          <button type="button" class="btn btn-outline-secondary">Edit Member(s)</button>
       </div>
   </div>
 </div>
