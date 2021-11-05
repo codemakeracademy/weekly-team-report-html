@@ -1,7 +1,12 @@
+import $ from 'jquery';
+import 'moment';
+import 'daterangepicker';
 import './styles/main.scss';
 import './styles/normalize.css';
 import 'bootstrap';
 import './_my-reports';
+import './_fill-out-a-report';
+
 
 
 

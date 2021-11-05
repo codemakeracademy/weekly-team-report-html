@@ -20,34 +20,45 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      hash: true,
-      alwaysWriteToDisk: true,
-      template: './index.html'
+      template: './index.ejs'
     }),
     new HtmlWebpackPlugin({
       filename: 'team-reports.html',
-      hash: true,
-      alwaysWriteToDisk: true,
-      template: './team-reports.html'
+      template: './team-reports.ejs'
     }),
     new HtmlWebpackPlugin({
       filename: 'my-reports.html',
-      hash: true,
-      alwaysWriteToDisk: true,
-      template: './my-reports.html'
+      template: './my-reports.ejs'
     }),
     new HtmlWebpackPlugin({
       filename: 'weekly-report-history.html',
-      hash: true,
-      alwaysWriteToDisk: true,
-      template: './weekly-report-history.html'
+      template: './weekly-report-history.ejs'
     }),
-
+    new HtmlWebpackPlugin({
+      filename: 'fill-out-a-report.html',
+      template: './fill-out-a-report.ejs'
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
+      {
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
+        options: {
+          exposes: ["$", "jQuery"],
+        },
+      },
+      {
+        test: /\.ejs$/,
+        use: {
+          loader: 'ejs-templates-loader',
+          options: {
+            delimiter: '$'
+          }
+        }
+      },
       {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
@@ -69,6 +80,7 @@ const config = {
         test: /\.(html)$/,
         use: ['html-loader?interpolate']
       },
+      
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
@@ -76,7 +88,6 @@ const config = {
           filename: 'images/[hash][ext][query]'
         }
       },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
