@@ -20,7 +20,9 @@ article .page-title {
   font-size: 0.9rem;
   font-weight:500;
 }
-.page-text h2 {
+.page-text h2,
+.page-title h2 {
+
   font-weight:900;
 }
 
@@ -29,4 +31,7 @@ article .page-section {
 }
 .page-section a {
   font-weight: $font-weight-bold;
+}
+.page-section.reports-control .team .btn {
+  margin-bottom: 1rem;
 }
