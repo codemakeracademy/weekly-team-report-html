@@ -1,3 +1,37 @@
 article {
   background-color: $article-bg;
+  padding: $article-padding;
+  font-size: 0.9rem;
+  font-weight:500; 
+}
+
+article .title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-bottom: 0.2rem;;
+}
+
+article .page-title {
+  margin-right: 0px; 
+  margin-bottom: 4.5rem; 
+  padding-bottom: 0;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight:500;
+}
+.page-text h2,
+.page-title h2 {
+
+  font-weight:900;
+}
+
+article .page-section {
+  margin-bottom: 3.4rem;
+}
+.page-section a {
+  font-weight: $font-weight-bold;
+}
+.page-section.reports-control .team .btn {
+  margin-bottom: 1rem;
 }
