@@ -1,6 +1,19 @@
 aside{
-    position: sticky;
-    width: $aside-width;
-    height: 100%;
-    background-color: $aside-bg;
+
+  width: $aside-width;
+  background-color: $aside-bg;
+}
+.nav-pills{
+  .nav-link{
+    padding: $nav-pills-padding-y $nav-pills-padding-x;
+    &.active{
+      font-weight: $nav-pills-link-active-font-weight;
+    }
+  }
+}
+.link-highlight{
+  color: $yellow !important;
+}
+.link-highlight:hover{
+  color: $nav-link-hover-color !important;
 }

@@ -38,6 +38,26 @@ const config = {
       template: "weekly_report_history.html",
       filename: 'weekly_report_history.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "inviteYourTeam.html",
+      filename: 'inviteYourTeam.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "yourTeamMember.html",
+      filename: 'yourTeamMember.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'edit_member_dialog.html',
+      template: './edit_member_dialog.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'fill_out_report.html',
+      template: './fill_out_report.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'my_reports.html',
+      template: './my_reports.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'edit_member_information.html',
+      template: './edit_member_information.html'}),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -83,4 +103,5 @@ module.exports = () => {
     config.mode = "development";
   }
   return config;
+
 };

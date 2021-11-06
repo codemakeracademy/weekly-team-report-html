@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Webpack App</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Webpack App</title>
+</head>
+<body>
+<div class="d-flex h-100">
+    <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
+        <div class="justify-content-between d-flex flex-column vh-100">
+            <div class="">
+                <img class="w-100" src='src/images/logo.svg'/>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Launch Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pills" href="#">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-highlight" href="#">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="position-absolute top-0 start-15 w-85">
+        <div class="btn btn-primary position-fixed top-50 start-feedback"
+             style="height:40px; transform: rotate(270deg);">Feedback
+        </div>
+        <header class="bg-dark p-5 text-center text-light">
+            <h1>Invite Your Team</h1>
+        </header>
+        <div class="p-3">
+            <div class="form mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <strong>
+                            Success!Your team member has been invited to the Weekly Report Tool.
+                        </strong>
+                        <div>
+                            Once they accept your invitation,they'll be able to create their reports.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" form mx-auto mt-2"><p><i class="bi bi-caret-right-fill"></i> The team member didn't receive
+                your invite?</p></div>
+            <div class="form mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <strong> Enter the team member you'd like to invite. </strong>
+                        <p> Don't worry!You'll be able to add more team members later. </p>
+                        <strong>
+                            <div class="form-group">
+                                <label> First Name </label>
+                                <input class="form-control"/>
+                                <label> Last Name </label>
+                                <input class="form-control"/>
+                                <label> Email </label>
+                                <input class="form-control"/>
+                            </div>
+                        </strong>
+                        <button class="btn btn-warning fw-bold mt-3">Invite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn btn-warning btn-help rounded-pill position-fixed">
+            <i class="bi bi-question-circle"></i> Help
+        </div>
+    </main>
+</div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+</html>
