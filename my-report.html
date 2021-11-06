@@ -1,207 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Webpack App</title>
-  </head>
-  <body>
-    <div class="d-flex w-100 h-100">
-      <aside class="p-5 d-flex flex-column justify-content-between">
-        <div>
-          <h3 class="text-light mb-4">Weekly Report</h3>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Launch Guide</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Invite Your Team</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team Report</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Reports</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Fill out a Report</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Back to Elite</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Company</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><img src="src/img/Setting.png" alt="icon" />My Profile</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><img src="src/img/exit.png" alt="icon" />Sign Out</a
-              >
-            </li>
-          </ul>
-        </div>
-      </aside>
-      <main class="flex-grow-1">
-        <header class="p-5 text-center text-light">
-          <div class="d-flex round-large rounded-circle fs-3 m-auto">
-            <strong class="m-auto">AK</strong>
-          </div>
-          <h1>Anatoliy Kolodkin</h1>
-          <h6>anatoliy@ankosoftware.com</h6>
-        </header>
-        <article class="p-2 w-100 h-100">
-          <div class="p-5 pb-4 fs-6 text-center">
-            <strong>PAST WEEKLY REPORTS</strong>
-            <div class="mt-3 short-line mx-auto"></div>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Webpack App</title>
+</head>
 
-          <div class="accordion-group">
-            <div class="d-flex flex-row-reverse">
-              <button class="btn expand-button" type="button">
-                <strong> Expand All </strong>
-              </button>
-            </div>
-            <div class="accordion" id="accordionExample">
-              <div
-                class="
+<body>
+  <div class="d-flex w-100 h-100">
+    <aside class="p-5 fixed-bottom h-100 d-flex flex-column justify-content-between">
+      <div>
+        <h3 class="text-light mb-4">Weekly Report</h3>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Launch Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team Report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fill out a Report</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Back to Elite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Company</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="src/img/Setting.png" alt="icon" />My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="src/img/exit.png" alt="icon" />Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="flex-grow-1">
+
+      <div class="bable fixed-bottom">
+        Feedback
+      </div>
+      <div class="help-button fixed-bottom">
+        <img class="question-icon" src="src/img/question-mark-in-a-circle.png">
+        <span>Help<span>
+      </div>
+
+      <header class="p-5 text-center text-light">
+        <div class="d-flex round-large rounded-circle fs-3 m-auto">
+          <strong class="m-auto">AK</strong>
+        </div>
+        <h1>Anatoliy Kolodkin</h1>
+        <h6>anatoliy@ankosoftware.com</h6>
+      </header>
+      <article class="p-2 w-100 h-100">
+
+
+
+        <div class="p-5 pb-4 fs-6 text-center">
+          <strong>PAST WEEKLY REPORTS</strong>
+          <div class="mt-3 short-line mx-auto"></div>
+        </div>
+
+        <div class="accordion-group">
+          <div class="d-flex flex-row-reverse">
+            <button class="btn expand-button" type="button">
+              <strong> Expand All </strong>
+            </button>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="
                   accordion-item
                   rounded
                   d-flex
                   flex-row-reverse
                   accordion-header
                   shadow-sm
-                "
-              >
-                <div
-                  class="d-flex justify-content-between accordion-header-first"
-                >
-                  <p>Morale</p>
-                  <p>Stress</p>
-                  <p>WorkLoad</p>
-                </div>
+                ">
+              <div class="d-flex justify-content-between accordion-header-first">
+                <p>Morale</p>
+                <p>Stress</p>
+                <p>WorkLoad</p>
               </div>
+            </div>
 
-              <div class="accordion-item shadow-sm rounded">
-                <h5 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <div
-                      class="
+            <div class="accordion-item shadow-sm rounded">
+              <h5 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="
                         accordion-header-content
                         d-flex
                         justify-content-between
                         w-100
-                      "
-                    >
-                      <p class="m-auto ms-0">November 1 - November 7, 2021</p>
+                      ">
+                    <p class="m-auto ms-0">November 1 - November 7, 2021</p>
 
-                      <img
-                        src="src/img/smile-alright.png"
-                        class="smile-icon"
-                        alt="icon"
-                      />
-                      <img
-                        src="src/img/smile-ok.png"
-                        class="smile-icon"
-                        alt="icon"
-                      />
-                      <img
-                        src="src/img/smile-worry.png"
-                        class="smile-icon"
-                        alt="icon"
-                      />
-                    </div>
-                  </button>
-                </h5>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Weekly High<br />
-                      <small>Identified our goals and priorities</small>
-                    </p>
-                    <p>
-                      Weekly Low<br />
-                      <small>Cold weather</small>
-                    </p>
-                    <p>
-                      Anything else<br />
-                      <small
-                        >Looking forward to launching our new project</small
-                      >
-                    </p>
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-ok.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-worry.png" class="smile-icon" alt="icon" />
                   </div>
-                </div>
-              </div>
-
-              <div class="accordion-item shadow-sm rounded">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  <div
-                  class="
-                    accordion-header-content
-                    d-flex
-                    justify-content-between
-                    w-100
-                  "
-                >
-                  <p class="m-auto ms-0">November 8 - November 14, 2021</p>
-
-                  <img
-                    src="src/img/smile-alright.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-happy.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-bad.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                </div>
-              </button>
-            </h5>
-           
-              
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
+                </button>
+              </h5>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>
                     Weekly High<br />
@@ -213,62 +126,36 @@
                   </p>
                   <p>
                     Anything else<br />
-                    <small
-                      >Looking forward to launching our new project</small
-                    >
+                    <small>Looking forward to launching our new project</small>
                   </p>
-              </div>
                 </div>
               </div>
+            </div>
 
-              <div class="accordion-item shadow-sm rounded">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  <div
-                  class="
+            <div class="accordion-item shadow-sm rounded">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="
                     accordion-header-content
                     d-flex
                     justify-content-between
                     w-100
-                  "
-                >
-                  <p class="m-auto ms-0">November 15 - November 21, 2021</p>
+                  ">
+                    <p class="m-auto ms-0">November 8 - November 14, 2021</p>
 
-                  <img
-                    src="src/img/smile-ok.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-alright.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-worry.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                </div>
-              </button>
-            </h5>
-           
-              
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-happy.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-bad.png" class="smile-icon" alt="icon" />
+                  </div>
+                </button>
+                </h5>
+
+
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>
                     Weekly High<br />
@@ -280,61 +167,93 @@
                   </p>
                   <p>
                     Anything else<br />
-                    <small
-                      >Looking forward to launching our new project</small
-                    >
+                    <small>Looking forward to launching our new project</small>
                   </p>
-              </div>
                 </div>
               </div>
-              <div class="accordion-item shadow-sm rounded">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  <div
-                  class="
+            </div>
+
+            <div class="accordion-item shadow-sm rounded">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button  rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="
                     accordion-header-content
                     d-flex
                     justify-content-between
                     w-100
-                  "
-                >
-                  <p class="m-auto ms-0">November 22 - November 28, 2021</p>
+                  ">
+                    <p class="m-auto ms-0">November 15 - November 21, 2021</p>
 
-                  <img
-                    src="src/img/smile-alright.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-alright.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-alright.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
+                    <img src="src/img/smile-ok.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-worry.png" class="smile-icon" alt="icon" />
+                  </div>
+                </button>
+                </h5>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>
+                    <div class="d-inline-flex ok-smile-card">
+                      <img src="src/img/smile-ok.png" class="smile-icon" alt="icon" />
+                      <span>Morale</span>
+                    </div>
+                    <span class="fst-italic text-muted ">There were no comments added about morale</span>
+                  </div>
+                  <div>
+                    <div class="d-inline-flex alright-smile-card">
+                      <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                      <span>Stress</span>
+                    </div>
+                    <span class="fst-italic text-muted">There were no comments added about stress</span>
+                  </div>
+                  <div class="d-inline-flex worry-smile-card">
+                    <img src="src/img/smile-worry.png" class="smile-icon" alt="icon" />
+                    <span>Workload</span>
+                  </div>
+                  <span class="fst-italic text-muted">There were no comments added about workload</span>
+                  <p>
+                    Weekly High<br />
+                    <small>Identified our goals and priorities</small>
+                  </p>
+                  <p>
+                    Weekly Low<br />
+                    <small>Cold weather</small>
+                  </p>
+                  <p>
+                    Anything else<br />
+                    <small>Looking forward to launching our new project</small>
+                  </p>
                 </div>
-              </button>
-            </h5>
-           
-              
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
+              </div>
+            </div>
+
+            <div class="accordion-item shadow-sm rounded">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <div class="
+                    accordion-header-content
+                    d-flex
+                    justify-content-between
+                    w-100
+                  ">
+                    <p class="m-auto ms-0">November 22 - November 28, 2021</p>
+
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-alright.png" class="smile-icon" alt="icon" />
+                  </div>
+                </button>
+                </h5>
+
+
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>
                     Weekly High<br />
@@ -346,61 +265,36 @@
                   </p>
                   <p>
                     Anything else<br />
-                    <small
-                      >Looking forward to launching our new project</small
-                    >
+                    <small>Looking forward to launching our new project</small>
                   </p>
-              </div>
                 </div>
               </div>
-              <div class="accordion-item shadow-sm rounded">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  <div
-                  class="
+            </div>
+
+            <div class="accordion-item shadow-sm rounded">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <div class="
                     accordion-header-content
                     d-flex
                     justify-content-between
                     w-100
-                  "
-                >
-                  <p class="m-auto ms-0">November 29 - December 5, 2021</p>
+                  ">
+                    <p class="m-auto ms-0">November 29 - December 5, 2021</p>
 
-                  <img
-                    src="src/img/smile-happy.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-happy.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                  <img
-                    src="src/img/smile-happy.png"
-                    class="smile-icon"
-                    alt="icon"
-                  />
-                </div>
-              </button>
-            </h5>
-           
-              
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
+                    <img src="src/img/smile-happy.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-happy.png" class="smile-icon" alt="icon" />
+                    <img src="src/img/smile-happy.png" class="smile-icon" alt="icon" />
+                  </div>
+                </button>
+                </h5>
+
+
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>
                     Weekly High<br />
@@ -412,35 +306,34 @@
                   </p>
                   <p>
                     Anything else<br />
-                    <small
-                      >Looking forward to launching our new project</small
-                    >
+                    <small>Looking forward to launching our new project</small>
                   </p>
-              </div>
                 </div>
               </div>
             </div>
           </div>
-        </article>
-      </main>
-    </div>
-  </body>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
 
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("service-worker.js")
-          .then((registration) => {
-            console.log("Service Worker registered: ", registration);
-          })
-          .catch((registrationError) => {
-            console.error(
-              "Service Worker registration failed: ",
-              registrationError
-            );
-          });
-      });
-    }
-  </script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then((registration) => {
+          console.log("Service Worker registered: ", registration);
+        })
+        .catch((registrationError) => {
+          console.error(
+            "Service Worker registration failed: ",
+            registrationError
+          );
+        });
+    });
+  }
+</script>
+
 </html>
