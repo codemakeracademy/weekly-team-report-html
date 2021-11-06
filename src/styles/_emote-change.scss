@@ -1,0 +1,28 @@
+.emote-row{
+  .col{
+    background-color: $gray-100;
+  }
+}
+.emotes{
+  width: 85%;
+  height: 80%;
+}
+.custom-rb {
+  input:checked + label {
+    img.em1 {
+      content: url("/src/images/VeryLow-color.svg");
+    }
+    img.em2{
+      content: url("/src/images/Low-color.svg");
+    }
+    img.em3{
+      content: url("/src/images/Okay-color.svg");
+    }
+    img.em4{
+      content: url("/src/images/Goog-color.svg");
+    }
+    img.em5{
+      content: url("/src/images/Greate-color.svg");
+    }
+  }
+}
