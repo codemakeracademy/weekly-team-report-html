@@ -4,12 +4,6 @@ html,body{
   font-family: "Arial";
   background-color: $gray-200;
 }
-.link-hihgligth{
-  color: $yellow !important;
-}
-.link-hihgligth:hover{
-  color: $nav-link-hover-color !important;
-}
 .start-feedback{
   background-color: midnightblue !important;
   left: calc(100% - 65px);
