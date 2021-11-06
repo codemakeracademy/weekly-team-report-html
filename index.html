@@ -1,143 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Edit member information</title>
-    </head>
-    <body>
-        <div class="w-100 vh-100 position-relative">
-            <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
-                <div class="justify-content-between d-flex flex-column vh-100">
-                    <div class="">
-                        <img class="w-100" src='src/images/newlog.svg'/>
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Launch Guide</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Invite Your Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Team Reports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Reports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-hihgligth" href="#">Fill out a Report</a>
-                            </li>
-                        </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="w-100 vh-100">
+    <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
+        <div class="justify-content-between d-flex flex-column vh-100">
+            <div class="">
+                <img class="w-100" src='src/images/logo.svg' alt="Logo">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-pills" href="#">Launch Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-highlight" href="#">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="position-absolute top-0 start-15 w-85">
+        <div class="btn btn-primary position-fixed top-50 start-feedback"
+             style="height:40px; transform: rotate(270deg);">Feedback
+        </div>
+        <header class="bg-dark p-5 text-center text-light">
+            <h1>Launch Guide</h1>
+        </header>
+        <div class="p-3 bd-content">
+            <div class="card mb-3 px-5 p-4 bg-transparent border-0 card h-10 text-right" >
+                <div class="row g-0 p-main">
+                    <div class="col-md-8">
+                        <div class="card-body py-5">
+                            <h5 class="card-title fw-bold ">Invite Your Team</h5>
+                            <p class="card-text  fs-5">Click on the below and invite the team members who directly report
+                                to
+                                you.</p>
+                            <button class="btn btn-warning fw-bold">Invite Your Team</button>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Back to Elite</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Company</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
-                            </li>
-                        </ul>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <img src="src/images/launchGuide.svg" class="img-fluid rounded-start" alt="...">
+                        </div>
                     </div>
                 </div>
-            </aside>
-            <main class="position-absolute top-0 start-15 w-85">
-                <div class="btn btn-primary position-fixed top-50 start-feedback" style="height:40px; transform: rotate(270deg);">Feedback</div>
-                <header class="bg-dark p-4 text-center text-light">
-                    <div class="rounded p-3 m-auto">
-                        <p class="text-dark">AK</p>
-                    </div>
-                    <h1 class="fw-bold">Anatoliy Kolodkin</h1>
-                    <h6>anatoliy@ankosoftware.com</h6>
-                </header>
-                <div class="p-5">
-                    <h3 class="text-dark">Edit Anatloiy's information</h3>
-                    <p class="mb-5">You may assign leaders of team members to this person, as well as deactivate their account
-                    if they no longer work for your organization.</p>
-                    <h6 class="fw-bold">BASIC PROFILE INFORMATION</h6>
-                    <hr class="mt-0 mb-4">
-                    <div class="">
-                        <div class="mb-3">
-                            <label>First Name</label>
-                            <input class="form-control w-25"/>
+                <div class="card mb-3 border-0 bg-transparent  text-left ">
+                    <div class="row g-0 p-main">
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <img src="src/images/launchGuide1.svg" class="img-fluid rounded-start" alt="...">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label>Last Name</label>
-                            <input class="form-control w-35"/>
-                        </div>
-                        <div class="mb-3">
-                            <label>Title</label>
-                            <input class="form-control w-45"/>
-                        </div>
-                        <div class="btn btn-warning mb-5">Save</div>
-                    </div>
-                    <h6 class="fw-bold">ANATOLIY REPORTS TO THE FOLLOWING LEADERS:</h6>
-                    <hr class="mt-0 mb-4">
-                    <div class="container text-white text-center mb-3 p-0">
-                        <div class="row p-2">
-                            <div class="col-2 col-set p-2 m-1">Nikolay Kapustin</div>
-                            <div class="col-2 col-set p-2 m-1">Nina Mammadova</div>
-                            <div class="col-2 col-set p-2 m-1">Natalia Starkova</div>
-                            <div class="col-2 col-set p-2 m-1">Anton Tarkhanov</div>
-                            <div class="col-2 col-set p-2 m-1">Alexandr Vovchuk</div>
+                        <div class="col-md-8 gy-5">
+                            <div class="card-body py-5">
+                                <h5 class="card-title fw-bold  ">Encourage Your Team to Accept Your Invitation</h5>
+                                <p class="card-text fs-5 ">When they receive your invitation, team members will be prompted to
+                                    complete their
+                                    profiles. If a team member hasn't created their profile within 24 hours, follow up
+                                    with them!</p>
+                            </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-dark fw-bold m-0 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Edit Leader(s)
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <iframe class="w-100 h-100" src="edit_member_dialog.html"></iframe>
+                    <div class="card mb-3 border-0 bg-transparent  text-left ">
+                        <div class="row g-0 p-main">
+                            <div class="col-md-8">
+                                <div class="card-body py-5">
+                                    <h5 class="card-title fw-bold ">Remind Your Team</h5>
+                                    <p class="card-text fs-5">Every Friday, we'll automatically send your team members
+                                        an email reminding them to fill out their Weekly Report. But we also encourage
+                                        <b><i> you </i></b> to consistently
+                                        request their Weekly Report so they realize the importance of this new
+                                        habit.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="src/images/launchGuide2.svg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                        <div class="row g-0 p-main">
+                            <div class="col-md-4">
+                                <div class="card-body py-5">
+                                    <img src="src/images/launchGuide3.svg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-md-8 gy-5">
+                                <div class="card-body py-5">
+                                    <h5 class="card-title fw-bold ">Read Their Reports</h5>
+                                    <p class="card-text fs-5">
+                                        Set aside some time on Monday to read all the
+                                        reports. Then reach out to any team members who need to be acknowledged for
+                                        a success
+                                        or supported during a difficult time. (And yes, we'll send you a reminder to
+                                        read your
+                                        reports each week too.)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h6 class="fw-bold">THE FOLLOWING TEAM MEMBERS REPORT TO ANATOLIY</h6>
-                    <hr class="mt-0 mb-4">
-                    <div class="container text-white text-center mb-3 p-0">
-                        <div class="row p-2">
-                            <div class="col-2 col-set p-2 m-1">Alexander Evseev</div>
-                            <div class="col-2 col-set p-2 m-1">Nikolay Kapustin</div>
-                            <div class="col-2 col-set p-2 m-1">Anna Kotova</div>
-                            <div class="col-2 col-set p-2 m-1">Nina Mammadova</div>
-                            <div class="col-2 col-set p-2 m-1">Natalia Starkova</div>
-                            <div class="col-2 col-set p-2 m-1">Anton Tarkhanov</div>
-                            <div class="col-2 col-set p-2 m-1">Alexandr Vovchuk</div>
-                        </div>
-                    </div>
-                    <div class="btn btn-outline-dark fw-bold m-0 mb-5">Edit Member(s)</div>
-                    <h6 class="fw-bold">ANATOLIY'S INVITE LINK</h6>
-                    <hr class="mt-0 mb-4">
-                    <p>Share the following link to invite team members on Anatoliy's behalf.</p>
-                    <div class="text-center">
-                        <div class="form-control scroll w-35 m-auto">https://weeklyreport.entreleadership.com/accept/Jsfdg3276asasjh</div>
-                        <div class="btn btn-warning mt-3">Copy Link</div>
-                    </div>
                 </div>
-            </main>
+            </div>
+            <div class="btn btn-warning btn-help rounded-pill position-fixed">
+                <i class="bi bi-question-circle"></i> Help</div>
         </div>
-        <div class="btn btn-warning btn-help position-fixed"><i class="bi bi-question-circle"></i> Help</div>
-    </body>
-
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered: ", registration);
-                    })
-                    .catch((registrationError) => {
-                        console.error("Service Worker registration failed: ", registrationError);
-                    });
-            });
-        }
-    </script>
+    </main>
+</div>
+</body>
 </html>

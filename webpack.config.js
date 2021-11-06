@@ -19,8 +19,17 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './index.html'}),
+      template: "index.html",
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "inviteYourTeam.html",
+      filename: 'inviteYourTeam.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "yourTeamMember.html",
+      filename: 'yourTeamMember.html'
+    }),
     new HtmlWebpackPlugin({
       filename: 'edit_member_dialog.html',
       template: './edit_member_dialog.html'}),
@@ -62,7 +71,6 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
@@ -79,3 +87,6 @@ module.exports = () => {
   }
   return config;
 };
+
+
+
