@@ -10,3 +10,9 @@ aside{
     }
   }
 }
+.link-highlight{
+  color: $yellow !important;
+}
+.link-highlight:hover{
+  color: $nav-link-hover-color !important;
+}
