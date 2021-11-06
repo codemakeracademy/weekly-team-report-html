@@ -53,12 +53,14 @@
       </aside>
       <main class="flex-grow-1">
         <header class="p-5 text-center text-light">
-          <div class="d-flex round-large rounded-circle"><h3>AK</h3></div>
+          <div class="d-flex round-large rounded-circle fs-3 m-auto">
+            <strong class="m-auto">AK</strong>
+          </div>
           <h1>Anatoliy Kolodkin</h1>
           <h6>anatoliy@ankosoftware.com</h6>
         </header>
         <article class="p-2 w-100 h-100">
-          <div class="p-5 pb-4 text-center">
+          <div class="p-5 pb-4 fs-6 text-center">
             <strong>PAST WEEKLY REPORTS</strong>
             <div class="mt-3 short-line mx-auto"></div>
           </div>
@@ -74,14 +76,19 @@
                 class="
                   accordion-item
                   rounded
-                  accordion-header-first
                   d-flex
                   flex-row-reverse
+                  accordion-header
+                  shadow-sm
                 "
               >
-                <p class="small-text me-20">WorkLoad</p>
-                <p class="small-text">Stress</p>
-                <p class="small-text">Morale</p>
+                <div
+                  class="d-flex justify-content-between accordion-header-first"
+                >
+                  <p>Morale</p>
+                  <p>Stress</p>
+                  <p>WorkLoad</p>
+                </div>
               </div>
 
               <div class="accordion-item shadow-sm rounded">
@@ -105,17 +112,17 @@
                       <p class="m-auto ms-0">November 1 - November 7, 2021</p>
 
                       <img
-                        src="src/img/smile-happy.png"
+                        src="src/img/smile-alright.png"
                         class="smile-icon"
                         alt="icon"
                       />
                       <img
-                        src="src/img/smile-happy.png"
+                        src="src/img/smile-ok.png"
                         class="smile-icon"
                         alt="icon"
                       />
                       <img
-                        src="src/img/smile-happy.png"
+                        src="src/img/smile-worry.png"
                         class="smile-icon"
                         alt="icon"
                       />
@@ -157,7 +164,36 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    November 8 - November 14, 2021
+                  <div
+                  class="
+                    accordion-header-content
+                    d-flex
+                    justify-content-between
+                    w-100
+                  "
+                >
+                  <p class="m-auto ms-0">November 8 - November 14, 2021</p>
+
+                  <img
+                    src="src/img/smile-alright.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-happy.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-bad.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                </div>
+              </button>
+            </h5>
+           
+              
                   </button>
                 </h2>
                 <div
@@ -166,50 +202,221 @@
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
+                <div class="accordion-body">
+                  <p>
+                    Weekly High<br />
+                    <small>Identified our goals and priorities</small>
+                  </p>
+                  <p>
+                    Weekly Low<br />
+                    <small>Cold weather</small>
+                  </p>
+                  <p>
+                    Anything else<br />
+                    <small
+                      >Looking forward to launching our new project</small
+                    >
+                  </p>
+              </div>
                 </div>
               </div>
 
               <div class="accordion-item shadow-sm rounded">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingTwo">
                   <button
                     class="accordion-button collapsed rounded"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
+                    data-bs-target="#collapseTwo"
                     aria-expanded="false"
-                    aria-controls="collapseThree"
+                    aria-controls="collapseTwo"
                   >
-                    November 15 - November 21, 2021
+                  <div
+                  class="
+                    accordion-header-content
+                    d-flex
+                    justify-content-between
+                    w-100
+                  "
+                >
+                  <p class="m-auto ms-0">November 15 - November 21, 2021</p>
+
+                  <img
+                    src="src/img/smile-ok.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-alright.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-worry.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                </div>
+              </button>
+            </h5>
+           
+              
                   </button>
                 </h2>
                 <div
-                  id="collapseThree"
+                  id="collapseTwo"
                   class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
+                  aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
+                <div class="accordion-body">
+                  <p>
+                    Weekly High<br />
+                    <small>Identified our goals and priorities</small>
+                  </p>
+                  <p>
+                    Weekly Low<br />
+                    <small>Cold weather</small>
+                  </p>
+                  <p>
+                    Anything else<br />
+                    <small
+                      >Looking forward to launching our new project</small
+                    >
+                  </p>
+              </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow-sm rounded">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  <div
+                  class="
+                    accordion-header-content
+                    d-flex
+                    justify-content-between
+                    w-100
+                  "
+                >
+                  <p class="m-auto ms-0">November 22 - November 28, 2021</p>
+
+                  <img
+                    src="src/img/smile-alright.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-alright.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-alright.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                </div>
+              </button>
+            </h5>
+           
+              
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                <div class="accordion-body">
+                  <p>
+                    Weekly High<br />
+                    <small>Identified our goals and priorities</small>
+                  </p>
+                  <p>
+                    Weekly Low<br />
+                    <small>Cold weather</small>
+                  </p>
+                  <p>
+                    Anything else<br />
+                    <small
+                      >Looking forward to launching our new project</small
+                    >
+                  </p>
+              </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow-sm rounded">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed rounded"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  <div
+                  class="
+                    accordion-header-content
+                    d-flex
+                    justify-content-between
+                    w-100
+                  "
+                >
+                  <p class="m-auto ms-0">November 29 - December 5, 2021</p>
+
+                  <img
+                    src="src/img/smile-happy.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-happy.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                  <img
+                    src="src/img/smile-happy.png"
+                    class="smile-icon"
+                    alt="icon"
+                  />
+                </div>
+              </button>
+            </h5>
+           
+              
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                <div class="accordion-body">
+                  <p>
+                    Weekly High<br />
+                    <small>Identified our goals and priorities</small>
+                  </p>
+                  <p>
+                    Weekly Low<br />
+                    <small>Cold weather</small>
+                  </p>
+                  <p>
+                    Anything else<br />
+                    <small
+                      >Looking forward to launching our new project</small
+                    >
+                  </p>
+              </div>
                 </div>
               </div>
             </div>

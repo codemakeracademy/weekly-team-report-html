@@ -29,7 +29,15 @@
 }
 
 .accordion-header-first {
+  width: 225px;
   height: 40px;
+  margin: auto;
+  margin-right: calc(4.5rem + 28px);
+}
+
+.accordion-header-first > p {
+  margin: auto;
+  font-size: 14px;
 }
 
 .accordion-item {
@@ -41,14 +49,18 @@
 //   margin-right: 25px;
 // }
 .accordion-group {
-  margin-right: 10% !important;
-  margin-left: 10% !important;
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+  font-weight: 400;
 }
 
 .smile-icon {
   width: $smile-icon-width;
   height: $smile-icon-height;
   margin-right: 25px;
+  border-radius: 50%;
+  outline: solid 3px white;
+  box-shadow: 1px 1px 5px 3px $gray-400;
 }
 
 .expand-button {
@@ -62,11 +74,12 @@
 .round-large {
   color: $gray-1000;
   background-color: #d5d9db;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  border: solid white 1px;
+}
 
-  .small-text {
-    font-size: 0.9rem;
-    margin-right: 25px;
-  }
+.small-text {
+  font-size: 0.9rem;
+  margin-right: 25px;
 }
