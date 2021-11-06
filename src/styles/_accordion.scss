@@ -1,8 +1,72 @@
 .accordion {
-width: $accordion-width;
-padding:$accordion-padding-x $accordion-padding-y;
-};
-.accordion-header
-{
-    background-color: $accordion-color;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: $accordion-font-size;
+}
+
+.accordion-button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: $accordion-font-size;
+  max-height: 70px;
+  min-height: 70px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "Collapse ▼";
+  color: $gray-400;
+  font-size: 0.9rem;
+  width: 4.5rem;
+}
+
+.accordion-button::after {
+  content: "Expand ▲";
+  font-size: 0.9rem;
+  width: 4.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $gray-800;
+  color: $yellow-400;
+}
+
+.accordion-header-first {
+  height: 40px;
+}
+
+.accordion-item {
+  margin-top: 10px;
+  border: 0;
+}
+
+// .accordion-header-content {
+//   margin-right: 25px;
+// }
+.accordion-group {
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+}
+
+.smile-icon {
+  width: $smile-icon-width;
+  height: $smile-icon-height;
+  margin-right: 25px;
+}
+
+.expand-button {
+  background-color: $gray-1000;
+  color: $white-100;
+}
+.short-line {
+  border-bottom: solid 5px $yellow;
+  width: $short-line-width;
+}
+.round-large {
+  color: $gray-1000;
+  background-color: #d5d9db;
+  width: 60px;
+  height: 60px;
+
+  .small-text {
+    font-size: 0.9rem;
+    margin-right: 25px;
+  }
 }
