@@ -5,4 +5,3 @@ import $ from "jquery";
 import "bootstrap-datepicker";
 
 $('input[name="dates"]').daterangepicker();
-

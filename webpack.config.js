@@ -23,6 +23,22 @@ const config = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
+      template: "my_company.html",
+      filename: 'my_company.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "team_reports.html",
+      filename: 'team_reports.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "team_members.html",
+      filename: 'team_members.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "weekly_report_history.html",
+      filename: 'weekly_report_history.html'
+    }),
+    new HtmlWebpackPlugin({
       template: "inviteYourTeam.html",
       filename: 'inviteYourTeam.html'
     }),
@@ -42,6 +58,7 @@ const config = {
     new HtmlWebpackPlugin({
       filename: 'edit_member_information.html',
       template: './edit_member_information.html'}),
+
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -86,7 +103,5 @@ module.exports = () => {
     config.mode = "development";
   }
   return config;
+
 };
-
-
-
