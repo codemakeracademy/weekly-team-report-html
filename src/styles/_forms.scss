@@ -1,5 +1,5 @@
-form {
-  font-size: 90%;
+.form-control {
+  font-size: 0.9rem;
 }
 
 form .card-title {
@@ -7,12 +7,15 @@ form .card-title {
 }
 
 form .form-control {
-  font-size: 100%;
+  font-size: 0.9;
 }
 
 form .btn {
   font-weight: bold;
   padding-bottom: 0.5rem;
+}
+form .form-group .form-label {
+  margin-bottom: 0.2rem;
 }
 
 .form-group:not(:last-child) {
@@ -22,10 +25,15 @@ form .btn {
     font-weight: bold;
   }
 
-  .input-group.nbr .input-group-text {
-    background-color: transparent;
-    border-left: none;
-  }
-  .input-group.nbr .form-control {
-    border-right: none;
-  } 
+.form-group input.form-control {
+  border-color:$input-border-color;
+  border-top-style:solid;
+  border-left-style: solid;
+}
+input.form-control:focus,
+input.form-control:active {
+  border-color: $input-focus-border-color;
+}
+
+
+  

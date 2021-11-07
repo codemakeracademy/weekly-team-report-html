@@ -11,8 +11,40 @@ header {
 .nav-pills {
   .nav-link {
     padding: $nav-pills-padding-y $nav-pills-padding-x;
+
     &.active {
       font-weight: $nav-pills-link-active-font-weight;
     }
   }
+}
+
+
+header h1.header-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 3.4rem;
+  margin-top: 1rem;
+}
+
+header span.header-subtitle {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.header-avatar {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: silver;
+  border: 2px white solid;
+}
+
+.header-avatar>div {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  font-size: 200%;
+  font-weight: 700;
+  color: $gray-700;
 }
