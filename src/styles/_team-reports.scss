@@ -1,0 +1,47 @@
+.border-yellow {
+  border: 2px solid yellow;
+  border-radius: 1px;
+}
+
+.btn-disabled {
+  background: #212529 !important;
+  color: #8E999E !important;
+  border-radius: 1px;
+  margin-left: -4px;
+}
+.expand-all {
+  margin-top: -34px;
+}
+.color-gray {
+  color: #87898b;
+}
+
+header {
+  .behind{
+    margin-right: -10px;
+  }
+  .z-index-1 {
+    z-index: 1;
+  }
+  .z-index-2 {
+    z-index: 2;
+  }
+  .z-index-3 {
+    z-index: 3;
+  }
+  .z-index-4 {
+    z-index: 4;
+  }
+  .round-yellow {
+    background-color: #FCD214 !important
+  }
+
+  .round {
+    position: relative;
+    color: black;
+    background-color: #D5D9DB;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+  }
+}
