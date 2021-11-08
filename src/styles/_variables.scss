@@ -7,7 +7,7 @@
 $gray-800: #333a3d;
 $white-100: #f5f7f8;
 $gray-1000: #343434;
-
+$yellow: #ffcd39;
 //Navigation
 $nav-link-color: $white;
 $nav-link-hover-color: $yellow;
@@ -21,16 +21,15 @@ $nav-pills-padding-x: 20px;
 $header-bg: $gray-1000;
 
 //Aside
-$aside-width: 17rem;
+$aside-width: 300px;
 $aside-bg: $gray-800;
 
 //Article
 $article-bg: $white-100;
 $article-padding: 3rem 6.3rem;
 
-
 //Card
-$card-border-radius: .5rem;
+$card-border-radius: 0.5rem;
 
 //Forms
 $input-border-width: border-2;
@@ -41,10 +40,19 @@ $input-border-color: $gray-500;
 $list-group-item-padding-y: 0;
 
 //Accordion
-$accordion-width: 1505px;
-$accordion-padding-x: 40px;
-$accordion-padding-y: 70px;
 $accordion-color: $gray-1000;
+$accordion-font-size: 18px;
+
+$accordion-icon-transform: 0;
+$accordion-button-icon: none;
+$accordion-button-active-icon: none;
+
+//Smile icons
+$smile-icon-width: 50px;
+$smile-icon-height: 50px;
+
+//Short Line
+$short-line-width: 35px;
 
 //// Variables
 ////
