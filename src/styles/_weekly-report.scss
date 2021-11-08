@@ -1,0 +1,25 @@
+.round {
+  background-color: #d5d9db;
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  outline: solid 3px white;
+  box-shadow: 1px 1px 5px 3px $gray-400;
+}
+ul {
+  li {
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+.weekly-list {
+  height: 90px;
+}
+.header-first {
+  width: 700px;
+  height: 40px;
+  margin-left: 37%;
+}
+main {
+  margin-left: 300px;
+}

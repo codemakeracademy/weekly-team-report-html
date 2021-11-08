@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+</head>
+
+<body>
+    <div class="d-flex w-100 h-100">
+        <aside class="p-5 fixed-bottom h-100 d-flex flex-column justify-content-between">
+            <div>
+                <img alt="logo" src="src/img/logo.svg">
+                <ul class="pt-5 nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Launch Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Company</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/Setting.png" alt="icon">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/exit.png" alt="icon">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="flex-grow-1">
+            <header class="p-5 text-center text-light">
+                <h1>ANKO Technologies Corp</h1>
+                <p>Joined January 2020</p>
+            </header>
+            <article class="p-2 w-100 h-100">
+                <div class=" team-members row justify-content-md-center">
+                    <div class="col-md-9">
+                        <div class="p-5 pb-4 text-center">
+                            <strong>TEAM MEMBERS</strong>
+                            <div class="mt-3 short-line mx-auto"></div>
+                        </div>
+                        <ul class="list-group">
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AK</div>
+                                    <div class="m-3">Anatoliy Kolodkin</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AV</div>
+                                    <div class="m-3">Alexandr Vovchuk</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AK</div>
+                                    <div class="m-3">Anton Kazakevich</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">VK</div>
+                                    <div class="m-3">Victoria Knyazeva</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">VB</div>
+                                    <div class="m-3">Valeria Berezikova</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AE</div>
+                                    <div class="m-3">Aleksandr Evseev</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AK</div>
+                                    <div class="m-3">Anna Kotova</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                            <li
+                                class="shadow-sm rounded list-group-item mb-2 d-flex border-1 align-items-center justify-content-between text-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="round p-2 rounded-circle">AT</div>
+                                    <div class="m-3">Anton Tarkhanov</div>
+                                </div>
+                                <div>Edit</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+
+</html>
