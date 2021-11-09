@@ -1,0 +1,23 @@
+.team-members {
+  .list-group-item + .list-group-item {
+    border-top-width: 1px;
+  }
+  .short-line {
+    border-bottom: solid 5px #FCD214;
+    width: 35px;
+  }
+  .round {
+    background-color: #D5D9DB;
+    width: 40px;
+    height: 40px;
+  }
+  ul {
+    li {
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+
+

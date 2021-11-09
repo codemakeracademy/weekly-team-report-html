@@ -1,0 +1,37 @@
+.form-control {
+  font-size: 0.9rem;
+}
+
+form .card-title {
+  margin-bottom: 1rem;
+}
+
+form .form-control {
+  font-size: 0.9;
+  margin: auto;
+}
+
+form .btn {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+form .form-group .form-label {
+  margin-bottom: 0.2rem;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.form-group .form-label {
+  font-weight: bold;
+}
+
+.form-group input.form-control {
+  border-color: $input-border-color;
+  border-top-style: solid;
+  border-left-style: solid;
+}
+input.form-control:focus,
+input.form-control:active {
+  border-color: $input-focus-border-color;
+}

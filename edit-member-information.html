@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Edit Member Information</title>
+</head>
+
+<body>
+    <div class="d-flex w-100 h-100">
+        <aside class="p-5 d-flex flex-column fixed-bottom h-100  justify-content-between">
+            <div>
+                <img alt="logo" src="src/img/logo.svg">
+                <ul class="pt-5 nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Launch Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Company</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/Setting.png" alt="icon">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="src/img/exit.png" alt="icon">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="flex-grow-1">
+            <header class="p-5 text-center text-light">
+                <div class="mx-auto header-avatar">
+                    <div>AK</div>
+                </div>
+                <h1 class="header-title">Anatoliy Kolodkin</h1>
+                <span class="header-subtitle">anatoliy@ankosoftware.com</span>
+            </header>
+            <div class="btn btn-feedback position-absolute end-0 top-50">
+                Feedback
+            </div>
+            <div class="d-flex btn btn-warning btn-help rounded-pill position-absolute end-0 bottom-0">
+                <img class="help-img" src="src/img/Help.png" alt="help">
+                <div>
+                    Help
+                </div>
+            </div>
+            <article class="w-100">
+                <div class=" justify-content-md-center p-5">
+                    <div class="col-md-12 p-0">
+                        <div class="page-title">
+                            <h1>Edit Anatoliy's Information</h1>
+                            <p>You may assign leaders or team members to this person, as well as deactivate their
+                                account if they no longer work for your organization.</p>
+                        </div>
+                        <div class="page-section">
+                            <div class="title border-bottom">BASIC PROFILE INFORMATION</div>
+                            <form class="col-md-4">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input name="firstName" type="text" class="form-control border-2 shadow-none">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input name="lastName" type="text" class="form-control border-2 shadow-none">
+                                </div>
+                                <div class="form-group">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input name="title" type="text" class="form-control border-2 shadow-none">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-warning border-2 shadow-none">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page-section reports-control">
+                            <div class="title border-bottom">ANATOLIY REPORTS TO THE FOLLOWING LEADERS:</div>
+                            <div class="team">
+                                <a href="#" class="btn btn-dark shadow-none">Nikolai Kapustin</a>
+                                <a href="#" class="btn btn-dark shadow-none">Nina Mammadova</a>
+                                <a href="#" class="btn btn-dark shadow-none">Natalia Starkova</a>
+                                <a href="#" class="btn btn-dark shadow-none">Anton Tarkhanov</a>
+                                <a href="#" class="btn btn-dark shadow-none">Alexandr Vovchuk</a>
+                                <a href="#" class="btn btn-dark shadow-none">Aleksandr Evseev</a>
+                            </div>
+                            <a class="btn btn-outline-dark border-2 shadow-none" data-bs-toggle="modal"
+                                href="#exampleModalToggle" role="button">Edit Leader(s)</a>
+                        </div>
+                        <div class="page-section reports-control">
+                            <div class="title border-bottom">THE FOLLOWING TEAM MEMBERS REPORT TO ANATOLIY:</div>
+                            <div class="team">
+                                <a href="#" class="btn btn-dark shadow-none">Nikolai Kapustin</a>
+                                <a href="#" class="btn btn-dark shadow-none">Nina Mammadova</a>
+                                <a href="#" class="btn btn-dark shadow-none">Natalia Starkova</a>
+                                <a href="#" class="btn btn-dark shadow-none">Anton Tarkhanov</a>
+                                <a href="#" class="btn btn-dark shadow-none">Alexandr Vovchuk</a>
+                                <a href="#" class="btn btn-dark shadow-none">Aleksandr Evseev</a>
+                            </div>
+                            <a class="btn btn-outline-dark border-2 shadow-none" data-bs-toggle="modal"
+                                href="#exampleModalToggle" role="button">Edit Leader(s)</a>
+                        </div>
+                        <div class="page-section reports-control">
+                            <div class="title border-bottom">ANATOLIY'S INVITE LINK</div>
+                            <p>Share the following link to invite team members on Anatoliy's behalf.</p>
+                            <form class="text-center">
+                                <textarea rows="1" max-rows="1" wrap="off" class="col-md-6"
+                                    style="padding:10px; resize: none;">https://www.figma.com/file/xs4FaSfzPijgSJ5R3aqrJBxs4FaSfzPijgSJ5R3aqrJBxs4FaSfzPijgSJ5R3aqrJBxs4FaSfzPijgSJ5R3aqrJB/Weekly-Report?node-id=5%3A20</textarea>
+                                <div class="p-2"><button type="button" class="btn btn-warning shadow-none">Copy
+                                        Link</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="page-title">
+                        <h2>Edit Leader(s)</h2>
+                        <p>By default, the person who sent you the invite will receive your weekly report. You may also
+                            select the person you report to directly as an additional leader.</p>
+                        <p>Pro Tip: You can change who sees your report in your profile settings.</p>
+                    </div>
+                    <div class="tags">
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleks Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                        <div class="tag input-group mb-3">
+                            <span class="input-group-text btn-dark">Aleksandr Evseev</span>
+                            <button class="btn btn-dark shadow-none" type="button">&times;</button>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input name="members" type="text" class="form-control border-1 shadow-none">
+                        </div>
+                        <button class="btn btn-warning" data-bs-dismiss="modal">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
