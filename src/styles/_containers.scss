@@ -1,0 +1,34 @@
+.container-members {
+  width: 80%;
+  height: 550px;
+  min-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  background-color: $gray-200 !important;
+
+}
+
+.flex-item {
+  height: auto;
+  min-height: 40px;
+}
+
+.flex-item-low {
+  height: auto;
+  min-height: 40px;
+  background-color: &light;
+  margin-bottom: -1rem;
+}
+
+.container-content {
+  width: 80%;
+  height: auto;
+  min-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  background-color: $gray-200 !important;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My reports</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="w-100 vh-100 position-relative">
+        <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
+            <div class="justify-content-between d-flex flex-column vh-100">
+                <div class="">
+                    <img onclick="location.href='index.html'" class="w-100" src='src/images/logo.svg' alt="Logo">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Launch Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./inviteYourTeam.html">Invite Your Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team_reports.html">Team Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./my_reports.html">My Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-highlight" href="./fill_out_report.html">Fill out a Report</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Back to Elite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./my_company.html">My Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="position-absolute top-0 start-15 w-85">
+            <div class="btn btn-primary position-fixed top-50 start-feedback" style="height:40px; transform: rotate(270deg);">Feedback</div>
+            <header class="bg-dark p-4 text-center text-light">
+                <div class="rounded p-3 m-auto">
+                    <p class="text-dark">AK</p>
+                </div>
+                <h1 class="fw-bold">Anatoliy Kolodkin</h1>
+                <h6>anatoliy@ankosoftware.com</h6>
+            </header>
+            <div class="text-center mt-5">
+                <h5 class="fw-bold">PAST WEEKLY REPORTS</h5>
+                <hr class="m-auto mb-5" style="background-color: gold; opacity: inherit; height: 4px; width: 50px;">
+            </div>
+            <div class="w-75 mb-2 m-auto d-grid gap-2 d-flex justify-content-end">
+                <button class="btn btn-dark text-light" id="allexpanded">Expand All</button>
+                <script>
+                    $('#allexpanded').on('click', function () {
+                        $('#myAccordion .accordion-collapse').collapse('toggle');
+                    });
+                </script>
+            </div>
+            <div class="row w-75 m-auto p-3 pe-4 bg-white mb-1">
+                <div class="col-7"></div>
+                <div class="col-1">Morale</div>
+                <div class="col-1">Stress</div>
+                <div class="col-1">Workload</div>
+                <div class="col-2 "></div>
+            </div>
+            <div class="accordion w-75 m-auto" id="myAccordion">
+                <div class="accordion-item mb-1">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="ps-3 pe-3 accordion-button collapsed p-0" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <div class="row w-100">
+                                <div class="col-7 mt-4">May 3 - May 9, 2020</div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Goog-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Okay-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Low-color.svg"/></div>
+                                <div class="col-2 mt-4 text-end">Expand</div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-1">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="ps-3 pe-3 accordion-button collapsed p-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <div class="row w-100">
+                                <div class="col-7 mt-4">April 12 - April 18, 2020</div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Goog-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Low-color.svg"/></div>
+                                <div class="col-2 mt-4 text-end">Expand</div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-1">
+                    <h2 class="accordion-header" id="headingTre">
+                        <button type="button" class="ps-3 pe-3 accordion-button collapsed p-0" data-bs-toggle="collapse" data-bs-target="#collapseTre">
+                            <div class="row w-100">
+                                <div class="col-7 mt-4">February 16 - February 22, 2020</div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-2 mt-4 text-end">Expand</div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTre" class="accordion-collapse collapse p-5" data-bs-parent="#myAccordion">
+                        <div class="row mb-2" style="height: 100px;">
+                            <div class="col-1 h-100 p-0" style="background-color: mediumseagreen;"><img class="h-100" src="./src/images/Greate-color.svg"/></div>
+                            <div class="col-3 h-100" style="background-color: mediumseagreen;"> <h1 class="text-white mt-4">Morale</h1></div>
+                            <div class="col-7"> <p>There were no comments added about morale.</p></div>
+                        </div>
+                        <div class="row mb-2" style="height: 100px;">
+                            <div class="col-1 h-100 p-0" style="background-color: mediumseagreen;"><img class="h-100" src="./src/images/Greate-color.svg"/></div>
+                            <div class="col-3 h-100" style="background-color: mediumseagreen;"> <h1 class="text-white mt-4">Stress</h1></div>
+                            <div class="col-7"> <p>There were no comments added about stress.</p></div>
+                        </div>
+                        <div class="row mb-2" style="height: 100px;">
+                            <div class="col-1 h-100 p-0" style="background-color: mediumseagreen;"><img class="h-100" src="./src/images/Greate-color.svg"/></div>
+                            <div class="col-3 h-100" style="background-color: mediumseagreen;"> <h1 class="text-white mt-4">Workload</h1></div>
+                            <div class="col-7"> <p>There were no comments added about workload.</p></div>
+                        </div>
+                        <h5 class="pt-4">Weekly High</h5>
+                        <p class="pb-2">Identified our goal and priorities</p>
+                        <h5>Weekly Low</h5>
+                        <p class="pb-2">Cold weather</p>
+                        <h5>Anything Else</h5>
+                        <p class="pb-2">Looking forward to launching our first product</p>
+                    </div>
+                </div>
+                <div class="accordion-item mb-1">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button type="button" class="ps-3 pe-3 accordion-button collapsed p-0" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            <div class="row w-100">
+                                <div class="col-7 mt-4">February 9 - February 15, 2020</div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Goog-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Goog-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Goog-color.svg"/></div>
+                                <div class="col-2 mt-4 text-end">Expand</div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-1">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button type="button" class="ps-3 pe-3 accordion-button collapsed p-0" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            <div class="row w-100">
+                                <div class="col-7 mt-4">February 9 - February 15, 2020</div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-1"><img class="w-100" src="./src/images/Greate-color.svg"/></div>
+                                <div class="col-2 mt-4 text-end">Expand</div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="btn btn-warning btn-help position-fixed"><i class="bi bi-question-circle"></i> Help</div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+</html>

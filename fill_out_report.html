@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fill out a report</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+    <div class="w-100 vh-100 position-relative">
+        <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
+            <div class="justify-content-between d-flex flex-column vh-100">
+                <div class="">
+                    <img onclick="location.href='index.html'" class="w-100" src='src/images/logo.svg' alt="Logo">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Launch Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./inviteYourTeam.html">Invite Your Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team_reports.html">Team Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./my_reports.html">My Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link-highlight" href="./fill_out_report.html">Fill out a Report</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Back to Elite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./my_company.html">My Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="position-absolute top-0 start-15 w-85">
+            <div class="btn btn-primary position-fixed top-50 start-feedback" style="height:40px; transform: rotate(270deg);">Feedback</div>
+            <div class="p-5 text-center">
+                <img src="./src/images/header_string.svg" class="mb-4">
+                <p class="mb-5">Let your leader know where you're winning and struggling this week - in less than 10 minutes.</p>
+
+                <h3 class="fw-bolder mb-4">How was your moral this week?</h3>
+                <div class="container w-75 mb-5">
+                    <div class="row text-center emote-row">
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb" id="rb1" type="radio"/>
+                            <label for="rb1"><img class="emotes em1" src="./src/images/VeryLow-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb" id="rb2" type="radio"/>
+                            <label for="rb2"><img class="emotes em2" src="./src/images/Low-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb" id="rb3" type="radio"/>
+                            <label for="rb3"><img class="emotes em3" src="./src/images/Okay-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb" id="rb4" type="radio"/>
+                            <label for="rb4"><img class="emotes em4" src="./src/images/Goog-gray.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb" id="rb5" type="radio"/>
+                            <label for="rb5"><img class="emotes em5" src="./src/images/Greate-gray.svg"/></label>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="fw-bolder mb-4">How was your stress this week?</h3>
+                <div class="container w-75 mb-5">
+                    <div class="row text-center emote-row">
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb1" id="rb6" type="radio"/>
+                            <label for="rb6"><img class="emotes em1" src="./src/images/VeryLow-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb1" id="rb7" type="radio"/>
+                            <label for="rb7"><img class="emotes em2" src="./src/images/Low-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb1" id="rb8" type="radio"/>
+                            <label for="rb8"><img class="emotes em3" src="./src/images/Okay-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb1" id="rb9" type="radio"/>
+                            <label for="rb9"><img class="emotes em4" src="./src/images/Goog-gray.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb1" id="rb10" type="radio"/>
+                            <label for="rb10"><img class="emotes em5" src="./src/images/Greate-gray.svg"/></label>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="fw-bolder mb-4">How was your workload this week?</h3>
+                <div class="container w-75 mb-5">
+                    <div class="row text-center emote-row">
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb2" id="rb11" type="radio"/>
+                            <label for="rb11"><img class="emotes em1" src="./src/images/VeryLow-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb2" id="rb12" type="radio"/>
+                            <label for="rb12"><img class="emotes em2" src="./src/images/Low-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb2" id="rb13" type="radio"/>
+                            <label for="rb13"><img class="emotes em3" src="./src/images/Okay-grey.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb2" id="rb14" type="radio"/>
+                            <label for="rb14"><img class="emotes em4" src="./src/images/Goog-gray.svg"/></label>
+                        </div>
+                        <div class="custom-rb col m-2">
+                            <input class="d-none" name="rb2" id="rb15" type="radio"/>
+                            <label for="rb15"><img class="emotes em5" src="./src/images/Greate-gray.svg"/></label>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="fw-bolder mb-4">What was your high this week?</h3>
+                <textarea class="form-control w-75 m-auto mb-5" rows="6" maxlength="600" style="resize: none;" type="text" placeholder="What was your personal high this week? What's the one thing you accomplished at work this week?"></textarea>
+                <h3 class="fw-bolder mb-4">What was your low this week?</h3>
+                <textarea class="form-control w-75 m-auto mb-5" rows="6" maxlength="600" style="resize: none;" type="text" placeholder="What was your personal of professional low this week?"></textarea>
+                <h3 class="fw-bolder mb-4">Anything else?</h3>
+                <textarea class="form-control w-75 m-auto mb-5" rows="6" maxlength="400" style="resize: none;" type="text" placeholder="Is there anything else you would like to share with your leader? *Optional"></textarea>
+                <h3 class="fw-bolder mb-4">Date range</h3>
+                <div class="w-50 m-auto mb-5">
+                    <p class="text-start mb-1">Choose date</p>
+                    <input class="form-control" type="text" name="daterange" value="11/01/2021 - 11/07/2021" />
+                    <script>
+                        $(function() {
+                            $('input[name="daterange"]').daterangepicker({
+                                opens: 'left'
+                            }, function(start, end, label) {
+                                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                            });
+                        });
+                    </script>
+                </div>
+                <p class="text-danger fw-bold">All fields are required unless marked as optional.</p>
+                <div class="btn btn-light disabled fw-bold w-50">Send Weekly Report</div>
+            </div>
+        </main>
+    </div>
+<div class="btn btn-warning btn-help position-fixed"><i class="bi bi-question-circle"></i> Help</div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+</html>

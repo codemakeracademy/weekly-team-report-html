@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Weekly report history</title>
+    </head>
+    <body>
+        <div class="d-flex h-100 w-100">
+            <aside class="vh-100 p-2 position-fixed top-0 start-0 ">
+                <div class="justify-content-between d-flex flex-column vh-100">
+                    <div class="">
+                        <img onclick="location.href='index.html'" class="w-100" src='src/images/logo.svg'/>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Launch Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./inviteYourTeam.html">Invite Your Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./team_reports.html">Team Reports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./my_reports.html">My Reports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-highlight" href="./fill_out_report.html">Fill out a Report</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Back to Elite</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./my_company.html">My Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-box-arrow-left"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <main class="position-absolute flex-grow-1 w-85 start-15" style="background-color: #e9ecef">
+                <div class="btn btn-primary position-fixed top-50 start-feedback"
+                     style="height:40px; transform: rotate(270deg);">Feedback
+                </div>
+                <header class=" pb-2 bg-dark text-center text-light">
+                    <div class="list-group list-group-horizontal d-inline-flex py-3">
+                        <div class="radio-sett list-group-item p-0">
+                            <input onclick="location.href='./team_reports.html'" class="d-none" name="radiob" id="radio1" type="radio"/>
+                            <label class="p-1 pe-3 ps-3 border-set" for="radio1">Immediate Team</label>
+                        </div>
+                        <div class="radio-sett list-group-item p-0">
+                            <input onclick="location.href='./weekly_report_history.html'" class="d-none" checked name="radiob" id="radio2" type="radio"/>
+                            <label class="p-1 pe-3 ps-3 border-set" for="radio2">Extended Team</label>
+                        </div>
+                    </div>
+                    <h3>Weekly Report History</h3>
+                    <p>Get a bigger picture of how your team has been doing over time.</p>
+                </header>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="list-group list-group-horizontal d-inline-flex pt-3">
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" name="radiob1" id="radio3" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio3">Previous period: 5/16-5/22</label>
+                                </li>
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" name="radiob1" id="radio4" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio4">Current period: 5/23-5/29</label>
+                                </li>
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" checked name="radiob1" id="radio5" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio5">Older reports</label>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="list-group list-group-horizontal d-inline-flex pt-3">
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" checked name="radiob2" id="radio6" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio6">Overall</label>
+                                </li>
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" name="radiob2" id="radio7" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio7">Morale</label>
+                                </li>
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" name="radiob2" id="radio8" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio8">Stress</label>
+                                </li>
+                                <li class="bg-dark radio-sett list-group-item p-0">
+                                    <input class="d-none" name="radiob2" id="radio9" type="radio"/>
+                                    <label class="p-1 pe-3 ps-3 border-set" for="radio9">Workload</label>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-0 text-center ">
+                    <p class="text-center">EXTENDED TEAM AVERAGE</p>
+                    <hr class="m-auto mb-5" style="background-color: gold; opacity: inherit; height: 4px; width: 50px;"/>
+                </div>
+
+                <div class="d-flex container-content flex-column justify-content-between mb-5">
+
+                    <div class="px-2 d-flex flex-item-low justify-content-end" style="font-size: smaller;">
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">9w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem "> 8w ago </div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">7w ago </div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">6w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">5w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">4w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">3w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">2w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">1w ago</div>
+                        <div class="flex-shrink-0" style="padding-right: .75rem ">Current</div>
+                    </div>
+                    <div class="px-2 mb-5 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                        <div class="flex-grow-1 ms-3">Overall</div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/VeryLow-color.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Goog-color.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-center">EXTENDED TEAM</p>
+                        <hr class="m-auto mb-5" style="background-color: gold; opacity: inherit; height: 4px; width: 50px;"/>
+                    </div>
+                    <div>
+                        <div class="px-2 d-flex flex-item-low justify-content-end" style="font-size: smaller;">
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">9w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">8w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">7w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">6w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">5w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">4w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">3w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">2w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">1w ago</div>
+                            <div class="flex-shrink-0" style="padding-right: .75rem ">Current</div>
+                        </div>
+                        <div class="px-2 mb-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Aleksandr Evseev
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Goog-color.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Nikolai Kapustin
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Anna Kotova
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Okay-color.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/VeryLow-color.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Nina Mammadova
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Natalia Starkova
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center bg-light shadow-sm">
+                            <div class="flex-grow-1 ms-3">
+                                Anton Tarkanov
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 my-2 d-flex flex-item justify-content-between align-items-center shadow-sm bg-light">
+                            <div class="flex-grow-1 ms-3">
+                                Alexandr Vovchuk
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <img src="src/images/Grey.svg" class="img-weekly-report" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-warning btn-help position-fixed"><i
+                        class="bi bi-question-circle"></i>Help
+                </button>
+            </main>
+        </div>
+    </body>
+</html>
