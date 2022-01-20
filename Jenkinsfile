@@ -1,80 +1,22 @@
-pipeline {
-  parameters {
-    password (name: 'AWS_ACCESS_KEY_ID')
-    password (name: 'AWS_SECRET_ACCESS_KEY')
-  }
-  environment {
-    TF_WORKSPACE = 'dev' //Sets the Terraform Workspace
-    TF_IN_AUTOMATION = 'true'
-    AWS_ACCESS_KEY_ID = "${params.AWS_ACCESS_KEY_ID}"
-    AWS_SECRET_ACCESS_KEY = "${params.AWS_SECRET_ACCESS_KEY}"
-  }
-  stages {
-    stage('Terraform Init') {
-      steps {
-        sh "${env.TERRAFORM_HOME}/terraform init -input=false"
-      }
-    }
-    stage('Terraform Plan') {
-      steps {
-        sh "${env.TERRAFORM_HOME}/terraform plan -out=tfplan -input=false -var-file='dev.tfvars'"
-      }
-    }
-    stage('Terraform Apply') {
-      steps {
-        input 'Apply Plan'
-        sh "${env.TERRAFORM_HOME}/terraform apply -input=false tfplan"
-      }
-    }
-    stage('AWSpec Tests') {
-      steps {
-          sh '''#!/bin/bash -l
-bundle install --path ~/.gem
-bundle exec rake spec || true
-'''
+node {
+    def SONARQUBE_HOSTNAME = 'sonarqube'
 
-        junit(allowEmptyResults: true, testResults: '**/testResults/*.xml')
-      }
-    }
-  }
-}
-pipeline {
-  parameters {
-    password (name: 'AWS_ACCESS_KEY_ID')
-    password (name: 'AWS_SECRET_ACCESS_KEY')
-  }
-  environment {
-    TF_WORKSPACE = 'dev' //Sets the Terraform Workspace
-    TF_IN_AUTOMATION = 'true'
-    AWS_ACCESS_KEY_ID = "${params.AWS_ACCESS_KEY_ID}"
-    AWS_SECRET_ACCESS_KEY = "${params.AWS_SECRET_ACCESS_KEY}"
-  }
-  stages {
-    stage('Terraform Init') {
-      steps {
-        sh "${env.TERRAFORM_HOME}/terraform init -input=false"
-      }
-    }
-    stage('Terraform Plan') {
-      steps {
-        sh "${env.TERRAFORM_HOME}/terraform plan -out=tfplan -input=false -var-file='dev.tfvars'"
-      }
-    }
-    stage('Terraform Apply') {
-      steps {
-        input 'Apply Plan'
-        sh "${env.TERRAFORM_HOME}/terraform apply -input=false tfplan"
-      }
-    }
-    stage('AWSpec Tests') {
-      steps {
-          sh '''#!/bin/bash -l
-bundle install --path ~/.gem
-bundle exec rake spec || true
-'''
+    def GRADLE_HOME = tool name: 'gradle-4.10.2', type: 'hudson.plugins.gradle.GradleInstallation'
+    sh "${GRADLE_HOME}/bin/gradle tasks"
 
-        junit(allowEmptyResults: true, testResults: '**/testResults/*.xml')
+    stage('prep') {
+        git url: 'https://github.com/Shfarrukhb/weekly-team-report-html.git'                
+    }
+
+    stage('build') {
+        sh "${GRADLE_HOME}/bin/gradle build"
+    }
+
+    stage('sonar-scanner') {
+      def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+      withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
+        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOSTNAME}:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/main/ -Dsonar.tests=src/test/ -Dsonar.java.binaries=build/**/* -Dsonar.language=java"
       }
     }
-  }
+
 }
