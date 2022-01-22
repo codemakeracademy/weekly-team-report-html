@@ -106,3 +106,5 @@ dist
 # Visual Studio
 *.njsproj
 *.njsproj.*
+
+.idea
