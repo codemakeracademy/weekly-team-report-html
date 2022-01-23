@@ -10,7 +10,10 @@ pipeline {
     stage('Build') {
       steps {
         nodejs('NodeJS 17.4.0') {
+          sh 'npm ci'
+          sh 'rm package-lock.json'
           sh 'npm install -g npm'
+          sh 'npm install --save-dev webpack'
           sh 'npm run build'
         }
 
