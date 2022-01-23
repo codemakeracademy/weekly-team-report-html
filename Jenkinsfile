@@ -12,6 +12,7 @@ pipeline {
         nodejs('NodeJS 17.4.0') {
           sh 'npm install -g npm@8.3.2'
           sh 'npm run build'
+          sh 'npm install --save-dev webpack'
         }
 
       }
