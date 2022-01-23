@@ -9,8 +9,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''npm install
-npm tun build'''
+        sh "npm install"
+        sh "npm tun build"
       }
     }
 
