@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  
   stages {
     stage('Clone') {
       steps {
@@ -11,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         nodejs('NodeJS 17.4.0') {
-          sh 'npm install'
+          sh 'npm install -g npm@8.3.2'
           sh 'npm run build'
         }
 
@@ -23,18 +22,20 @@ pipeline {
         echo 'Build Done'
       }
     }
-    
+
     stage('Sonarqube') {
       environment {
-        scannerHome = tool 'SonarQubeScanner'
+        scannerHome = 'SonarQubeScanner'
       }
       steps {
         withSonarQubeEnv('sonarqube') {
-            sh "${scannerHome}/bin/sonar-scanner"
+          sh "${scannerHome}/bin/sonar-scanner"
         }
+
         timeout(time: 10, unit: 'MINUTES') {
-            waitForQualityGate abortPipeline: true
+          waitForQualityGate(abortPipeline: true)
         }
+
       }
     }
 
