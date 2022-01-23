@@ -9,8 +9,11 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'npm install'
-        sh 'npm run build'
+        nodejs('NodeJS 17.4.0') {
+          sh 'npm install'
+          sh 'npm run build'
+        }
+
       }
     }
 
