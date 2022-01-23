@@ -11,8 +11,8 @@ pipeline {
       steps {
         nodejs('NodeJS 17.4.0') {
           sh 'npm install -g npm'
-          sh 'npm audit fix'
-          sh 'npm install --save-dev webpack'
+//           sh 'npm audit fix'
+//           sh 'npm install --save-dev webpack'
           sh 'npm run build'
         }
 
