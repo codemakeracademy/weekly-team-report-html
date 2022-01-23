@@ -12,10 +12,6 @@ pipeline {
         }
         stage('terraform install and build') { 
             steps {
-              sh "apt-get update && sudo apt-get install -y gnupg software-properties-common curl"
-              sh "curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -"
-              sh "apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main""
-              sh "sudo apt-get update && sudo apt-get install terraform"
               sh "terraform init"
               sh "terraform plan"
               sh "terraform apply --auto-approve"
