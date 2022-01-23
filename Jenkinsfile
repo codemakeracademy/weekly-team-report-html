@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('prep') { 
             steps {
-             git url: 'https://github.com/Shfarrukhb/lab-devops-jenkins.git', branch:'main'
+             git url: 'https://github.com/Shfarrukhb/weekly-team-report-html.git', branch:'develop-team-1'
              sh "apt install npm -y"
              sh "npm install"
              sh "npm run build"
