@@ -11,8 +11,8 @@ pipeline {
       steps {
         nodejs('NodeJS 17.4.0') {
           sh 'rm package-lock.json'
-          sh 'npm ci'
           sh 'npm install -g npm'
+          sh 'npm ci'
           sh 'npm install --save-dev webpack'
           sh 'npm run build'
         }
