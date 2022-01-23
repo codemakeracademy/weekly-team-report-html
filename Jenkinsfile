@@ -25,12 +25,7 @@ pipeline {
               sh "sudo ./aws/install" 
                  //
              }
-         }
-        stage("List S3 buckets") {
-    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-key', usernameVariable: 'AKIAWGSFTBTO6BMB6FDX', passwordVariable: '3ptSYaHfOjUB5KEeGkq9LvNNiKepqQlyMPnr1YjU']]) {
-        AWS("--region=us-west-2 s3 ls")
-            }   
-        }
-    
+          }
+       }
     }
 }
