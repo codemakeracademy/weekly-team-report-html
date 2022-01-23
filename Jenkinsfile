@@ -5,7 +5,6 @@ pipeline {
             steps {
              git url: 'https://github.com/Shfarrukhb/weekly-team-report-html.git', branch:'develop-team-1'
              sh "curl -sL https://deb.nodesource.com/setup_12.x | bash -"
-             sh "apt install npm -y"
              sh "npm install"
              sh "npm run build"
                 // 
