@@ -9,10 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        nodejs('NodeJS 17.4.0') {
-          sh 'rm package-lock.json'
-          sh 'node --max-old-space-size=4098'
-          sh 'npm install -g node-gyp'
+        nodejs('NodeJS 14.18.3') {
           sh 'npm install'
           sh 'npm run build'
         }
