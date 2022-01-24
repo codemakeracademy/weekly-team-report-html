@@ -26,8 +26,9 @@ pipeline {
     stage('Sonarqube') {
       steps {
         withSonarQubeEnv('SonarQube') {
-          sh "Echo Hello world"
+          sh 'echo Hello world'
         }
+
       }
     }
 
