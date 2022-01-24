@@ -8,30 +8,16 @@ pipeline {
     }
 
     stage('Build') {
-      agent {
-        docker { image 'node:16.13.1-alpine' }
-      }
-      stages {
-        stage('Test') {
-          steps {
-            sh 'npm install'
-            sh 'npm run build'
-          }
+      steps {
+        nodejs('NodeJS 17.4.0') {
+          sh 'rm package-lock.json'
+          sh 'node --max-old-space-size=3072'
+          sh 'npm install -g npm'
+          sh 'npm update'
+          sh 'npm install webpack'
+          sh 'npm run build'
         }
       }
-      
-      
-//       steps {
-//         nodejs('NodeJS 17.4.0') {
-//           sh 'rm package-lock.json'
-//           sh 'node --max-old-space-size=2048'
-//           sh 'npm install'
-//           sh 'npm update'
-//           sh 'npm install webpack'
-//           sh 'npm run build'
-//         }
-
-//       }
     }
 
     stage('Done') {
