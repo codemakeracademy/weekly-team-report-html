@@ -4,24 +4,21 @@ pipeline {
     stage('Clone') {
       steps {
         git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
-        sh "curl -sL https://deb.nodesource.com/setup_12.x | bash -"
-        sh "npm install"
-        sh "npm run build"
       }
     }
 
-//     stage('Build') {
-//       agent {
-//         docker { image 'node:16.13.1-alpine' }
-//       }
-//       stages {
-//         stage('Test') {
-//           steps {
-//             sh 'npm install'
-//             sh 'npm run build'
-//           }
-//         }
-//       }
+    stage('Build') {
+      agent {
+        docker { image 'node:16.13.1-alpine' }
+      }
+      stages {
+        stage('Test') {
+          steps {
+            sh 'npm install'
+            sh 'npm run build'
+          }
+        }
+      }
       
       
 //       steps {
@@ -35,7 +32,7 @@ pipeline {
 //         }
 
 //       }
-//     }
+    }
 
     stage('Done') {
       steps {
