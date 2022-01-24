@@ -10,7 +10,7 @@ variable "region" {
 
 variable "bucket_name" {
   description = "(Required) Creates a unique bucket name"
-  default     = "ankodevopsfr"
+  default     = "ankodevopsfrmn"
 }
 
 variable "force_destroy" {
