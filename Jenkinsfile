@@ -8,13 +8,19 @@ pipeline {
     }
 
     stage('Build') {
-      steps {
-        nodejs('NodeJS 14.18.3') {
-          sh 'npm install'
-          sh 'npm run build'
-        }
-
-      }
+      agent {
+          docker { image 'node:16.13.1-alpine' }
+       }
+       steps {
+        sh 'npm install'
+        sh 'npm run build'
+       }
+//       steps {
+//         nodejs('NodeJS 14.18.3') {
+//           sh 'npm install'
+//           sh 'npm run build'
+//         }
+//       }
     }
 
     stage('Done') {
