@@ -10,7 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         nodejs('NodeJS 17.4.0') {
-          sh 'rm package-lock.json'
+          sh '''rm package-lock.json
+rm -r node-modules/'''
           sh 'node --max-old-space-size=3072'
           sh 'npm install'
           sh 'npm run build'
