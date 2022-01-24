@@ -11,8 +11,9 @@ pipeline {
       steps {
         nodejs('NodeJS 17.4.0') {
           sh 'rm package-lock.json'
-          sh 'npm install -g npm'
-          sh 'npm install --save-dev webpack'
+          sh 'npm install'
+          sh 'npm update'
+          sh 'npm install webpack'
           sh 'npm run build'
         }
 
@@ -35,7 +36,7 @@ pipeline {
         }
 
         timeout(time: 10, unit: 'MINUTES') {
-          waitForQualityGate(abortPipeline: true)
+          waitForQualityGate true
         }
 
       }
