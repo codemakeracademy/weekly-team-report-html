@@ -31,7 +31,7 @@ pipeline {
       }
       steps {
         withSonarQubeEnv('sonarqube') {
-          sh "${scannerHome}/bin/sonar-scanner"
+          sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=GS -Dsonar.language=java"
         }
 
         timeout(time: 10, unit: 'MINUTES') {
