@@ -4,7 +4,7 @@ provider "aws" {
       secret_key = "${var.secret_key}"
 }
 
-resource "aws_s3_bucket" "ankodevopsfr" {
+resource "aws_s3_bucket" "ankodevopsfrmn" {
   bucket                               = "${var.bucket_name}"
   force_destroy                        = "${var.force_destroy}"
   acl                                  = "public-read"
