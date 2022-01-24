@@ -11,6 +11,7 @@ pipeline {
       steps {
         nodejs('NodeJS 17.4.0') {
           sh 'rm package-lock.json'
+          sh 'node --max-old-space-size=2048'
           sh 'npm install'
           sh 'npm update'
           sh 'npm install webpack'
