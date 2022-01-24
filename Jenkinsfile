@@ -24,18 +24,10 @@ pipeline {
     }
 
     stage('Sonarqube') {
-      environment {
-        scannerHome = 'SonarQubeScanner'
-      }
       steps {
-        withSonarQubeEnv('sonarqube') {
-          sh "sonarqube/bin/sonar-scanner -e -Dsonar.host.url=http://54.214.67.119:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/main/ -Dsonar.language=js"
+        withSonarQubeEnv('SonarQube') {
+          sh "Echo Hello world"
         }
-
-        timeout(time: 10, unit: 'MINUTES') {
-          waitForQualityGate true
-        }
-
       }
     }
 
