@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "ankodevopsfr" {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
 origin {
-    domain_name = "${aws_s3_bucket.ankodevopsfr.bucket_regional_domain_name}"
+    domain_name = "${aws_s3_bucket.ankodevopsfrmn.bucket_regional_domain_name}"
     origin_id   = "my_first_origin"
 }
 enabled             = true
