@@ -13,10 +13,10 @@ pipeline {
           sh 'rm package-lock.json'
           sh 'node --max-old-space-size=3072'
           sh 'npm install -g npm'
-          sh 'npm update'
           sh 'npm install webpack'
           sh 'npm run build'
         }
+
       }
     }
 
