@@ -17,12 +17,6 @@ pipeline {
        }
     }
 
-    stage('Done') {
-      steps {
-        echo 'Build Done'
-      }
-    }
-
     stage('Sonarqube') {
       steps {
         script {
@@ -31,10 +25,6 @@ pipeline {
                 sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOST}:9000 -Dsonar.login=${sonarLogin} -Dsonar.password=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/ -Dsonar.language=js"
             }
         }
-
-//         withSonarQubeEnv('sonar') {
-//           sh 'echo Hello world'
-//         }
       }
     }
   }
