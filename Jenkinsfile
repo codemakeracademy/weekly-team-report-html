@@ -18,9 +18,9 @@ pipeline {
     }
 
     stage('Sonarqube') {
-      agent {
-          docker { image 'openjdk:11' }
-       }
+//       agent {
+//           docker { image 'openjdk:11' }
+//        }
       steps {
         script {
             def sonarqubeScannerHome = tool name: 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
