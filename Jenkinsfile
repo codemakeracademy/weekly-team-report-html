@@ -18,6 +18,9 @@ pipeline {
     }
 
     stage('Sonarqube') {
+      agent {
+          docker { image 'node:16.13.1-alpine' }
+       }
       steps {
         script {
             def sonarqubeScannerHome = tool name: 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
