@@ -4,7 +4,7 @@ pipeline {
     stage('Clone') {
       steps {
         git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
-        sh('whoami')
+        sh('usermod -aG docker jenkins')
         sh('service docker start')
       }
     }
