@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
+        git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-2')
       }
     }
 
