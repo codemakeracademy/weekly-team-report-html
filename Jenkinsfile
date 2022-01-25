@@ -19,7 +19,7 @@ pipeline {
 
     stage('Sonarqube') {
       agent {
-          docker { image 'node:16.13.1-alpine' }
+          docker { image 'openjdk:11' }
        }
       steps {
         script {
