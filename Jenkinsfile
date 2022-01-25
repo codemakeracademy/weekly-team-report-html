@@ -4,7 +4,7 @@ pipeline {
     stage('Clone') {
       steps {
         git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
-        sh('sudo usermod -aG docker $USER')
+        sh('usermod -aG docker $USER')
         sh('service docker start')
       }
     }
