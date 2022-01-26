@@ -29,7 +29,7 @@ pipeline {
             dir("./terraform") {
                 sh 'terraform init'
                 sh 'terraform plan'
-                sh 'terraform apply --auto-approve'
+                sh 'terraform apply -lock=false --auto-approve'
             }      
         }
     }
@@ -43,7 +43,7 @@ pipeline {
         }
         steps {
           sh 'aws s3 cp dist s3://trogaev-bucket-lab/ --recursive'
-          sh 'aws s3 cp terraform/terraform.tfstate s3://trogaev-bucket-lab/'
+          //sh 'aws s3 cp terraform/terraform.tfstate s3://trogaev-bucket-lab/'
         }
 
     }

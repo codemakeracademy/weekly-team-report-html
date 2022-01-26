@@ -1,3 +1,16 @@
+resource "aws_dynamodb_table" "dynamodb-terraform-state-trogaev" {
+  name = "terraform-state-lock-trogaev"
+  hash_key = "LockID"
+  read_capacity = 20
+  write_capacity = 20
+
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
+
+
 terraform {
   backend "s3" {
     bucket = "trogaev-bucket-lab"
@@ -46,18 +59,6 @@ EOF
   website {
     index_document = "index.html"
     error_document = "error.html"
-  }
-}
-
-resource "aws_dynamodb_table" "dynamodb-terraform-state-trogaev" {
-  name = "terraform-state-lock-trogaev"
-  hash_key = "LockID"
-  read_capacity = 20
-  write_capacity = 20
-
-  attribute {
-    name = "LockID"
-    type = "S"
   }
 }
 
