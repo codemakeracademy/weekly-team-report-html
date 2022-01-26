@@ -34,7 +34,7 @@ pipeline {
         }
     }
 
-    stege('copy to s3'){
+    stage('copy to s3'){
         agent {
             docker {
                 image 'amazon/aws-cli'
