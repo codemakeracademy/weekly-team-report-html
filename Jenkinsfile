@@ -42,7 +42,8 @@ pipeline {
             }
         }
         steps {
-            sh 'aws s3 cp dist s3://trogaev-bucket-lab/ --recursive'
+          sh 'aws s3 cp dist s3://trogaev-bucket-lab/ --recursive'
+          sh 'aws s3 cp terraform/terraform.tfstate s3://trogaev-bucket-lab/'
         }
 
     }
