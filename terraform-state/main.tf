@@ -9,6 +9,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-west-2"
+}
+
 resource "aws_dynamodb_table" "dynamodb-terraform-state-trogaev" {
   name = "terraform-state-lock-trogaev"
   hash_key = "LockID"
