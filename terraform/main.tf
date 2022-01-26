@@ -37,7 +37,7 @@ resource "aws_s3_bucket" "trogaev-bucket-lab" {
 EOF
 
   tags = {
-    Name        = "trogaev-bucket-1"
+    Name        = "trogaev-bucket-lab"
   }
 
   website {
