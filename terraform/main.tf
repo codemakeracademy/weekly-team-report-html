@@ -48,7 +48,7 @@ EOF
 
 resource "aws_cloudfront_distribution" "trogaev_distribution-lab" {
   origin {
-    domain_name = aws_s3_bucket.trogaev-bucket-1-lab.bucket_regional_domain_name
+    domain_name = aws_s3_bucket.trogaev-bucket-lab.bucket_regional_domain_name
     origin_id   = "trogaev-origin-lab"
 
     #s3_origin_config {
