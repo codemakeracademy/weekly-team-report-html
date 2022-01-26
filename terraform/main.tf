@@ -30,7 +30,7 @@ resource "aws_s3_bucket" "trogaev-bucket-lab" {
         "AWS": "*"
       },
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::trogaev-bucket-1/*"
+      "Resource": "arn:aws:s3:::trogaev-bucket-lab/*"
     }
   ]
 }
@@ -46,7 +46,7 @@ EOF
   }
 }
 
-resource "aws_cloudfront_distribution" "trogaev_distribution-lab" {
+resource "aws_cloudfront_distribution" "trogaev_distribution" {
   origin {
     domain_name = aws_s3_bucket.trogaev-bucket-lab.bucket_regional_domain_name
     origin_id   = "trogaev-origin-lab"
