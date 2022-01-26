@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
-  name = "terraform-state-lock-dynamo"
+  name = "terraform-state-lock-daniil"
   hash_key = "LockID"
   read_capacity = 20
   write_capacity = 20
@@ -19,7 +19,7 @@ terraform {
     bucket = "lab-sthree-daniil"
     key    = "terraform.tfstate"
     region = "us-west-2"
-    dynamodb_table = "terraform-state-lock-dynamo"
+    dynamodb_table = "terraform-state-lock-daniil"
     encrypt        = true
   }
 }

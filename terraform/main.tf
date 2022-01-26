@@ -45,6 +45,7 @@ resource "aws_cloudfront_distribution" "website_distribution" {
 
   enabled             = true
   is_ipv6_enabled     = true
+  comment             = "lab-cloudfront-daniil"
   default_root_object = "index.html"
 
   default_cache_behavior {
