@@ -1,11 +1,36 @@
+terraform {
+  backend "s3" {
+    bucket = var.domain_name
+    key    = "terraform.tfstate"
+    region = "us-west-2"
+    dynamodb_table = "terraform-state-lock-dynamo"
+    encrypt        = true
+  }
+}
+
 provider "aws" {
   region  = "us-west-2"
+}
+
+resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
+  name = "terraform-state-lock-dynamo"
+  hash_key = "LockID"
+  read_capacity = 20
+  write_capacity = 20
+
+  attribute {
+    name = "lab-dynomodb-daniil"
+    type = "S"
+  }
 }
 
 resource "aws_s3_bucket" "website_bucket" {
   bucket = var.domain_name
   acl = "public-read"
   policy = data.aws_iam_policy_document.website_policy.json
+  versioning {
+    enabled = true
+  }
   website {
     index_document = "index.html"
     error_document = "index.html"
