@@ -1,13 +1,13 @@
-#terraform {
-#  backend "s3" {
-#    bucket = "trogaev-bucket-1"
+terraform {
+  backend "s3" {
+    bucket = "trogaev-bucket-lab"
     #key    = "calabs/production/us-west-2/rslab/terraform.tfstate"
-#    key    = "terraform.tfstate"
-#    region = "us-west-2"
-#    dynamodb_table = "terraform-state-lock"
-#    encrypt        = true
-#  }
-#}
+    key    = "terraform.tfstate"
+    region = "us-west-2"
+    dynamodb_table = "terraform-state-lock"
+    encrypt        = true
+  }
+}
 
 provider "aws" {
   region  = "us-west-2" # Oregon
