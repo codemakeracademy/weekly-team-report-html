@@ -30,5 +30,34 @@ pipeline {
         }
       }
     }
+
+    stage('Terraform - Init S3') {
+
+		agent {
+            docker {
+                image 'hashicorp/terraform:latest'
+                args  '--entrypoint="" -u root -v /home/ec2-user/.aws:/root/.aws'
+            }
+        }
+        steps {
+            dir("./terraform") {
+                sh 'terraform init'
+                sh 'terraform apply --auto-approve'
+            }
+        }
+    }
+
+    stage('AWS - Upload to S3'){
+        agent {
+            docker {
+                image 'amazon/aws-cli'
+                args '--entrypoint="" -u root -v /home/ec2-user/.aws:/root/.aws'
+            }
+        }
+        steps {
+          sh 'aws s3 cp dist s3://lab-S3-daniil/ --recursive'
+//           sh 'aws s3 cp terraform/terraform.tfstate s3://lab-S3-daniil/'
+        }
+    }
   }
 }
