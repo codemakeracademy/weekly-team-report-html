@@ -29,6 +29,11 @@ pipeline {
             dir("./terraform") {
                 sh 'terraform init'
                 //sh 'terraform plan'
+                sh 'terraform apply--auto-approve'
+            }  
+            dir("./terraform-state") {
+                sh 'terraform init'
+                //sh 'terraform plan'
                 sh 'terraform apply -lock=false--auto-approve'
             }      
         }
