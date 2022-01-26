@@ -17,7 +17,7 @@ terraform {
     #key    = "calabs/production/us-west-2/rslab/terraform.tfstate"
     key    = "terraform.tfstate"
     region = "us-west-2"
-    dynamodb_table = "terraform-state-lock"
+    dynamodb_table = "terraform-state-lock-trogaev"
     encrypt        = true
   }
 }
