@@ -42,7 +42,7 @@ pipeline {
             }
         }
         steps {
-            sh 'aws s3 cp dist s3://trogaev-bucket-1/ --recursive'
+            sh 'aws s3 cp dist s3://trogaev-bucket-lab/ --recursive'
         }
 
     }
