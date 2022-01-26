@@ -3,6 +3,7 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
   hash_key = "LockID"
   read_capacity = 20
   write_capacity = 20
+  region = "us-west-2"
 
   attribute {
     name = "lab-dynomodb-daniil"
