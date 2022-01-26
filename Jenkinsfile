@@ -44,6 +44,10 @@ pipeline {
                 sh 'terraform init'
                 sh 'terraform apply --auto-approve'
             }
+            dir("./terraform/lock") {
+            	sh 'terraform init'
+                sh 'terraform apply --auto-approve'
+            }
         }
     }
 
@@ -56,7 +60,6 @@ pipeline {
         }
         steps {
           sh 'aws s3 cp dist s3://lab-sthree-daniil/ --recursive'
-//           sh 'aws s3 cp terraform/terraform.tfstate s3://lab-S3-daniil/'
         }
     }
   }
