@@ -46,7 +46,7 @@ pipeline {
             }
             dir("./terraform/lock") {
             	sh 'terraform init'
-                sh 'terraform apply --auto-approve'
+                sh 'terraform apply -lock=false --auto-approve'
             }
         }
     }
