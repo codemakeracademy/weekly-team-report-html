@@ -36,7 +36,7 @@ pipeline {
 		agent {
             docker {
                 image 'hashicorp/terraform:latest'
-                args  '--entrypoint="" -u root -v /home/ec2-user/.aws:/root/.aws'
+                args  '--entrypoint="" -v /home/ec2-user/.aws:/root/.aws'
             }
         }
         steps {
