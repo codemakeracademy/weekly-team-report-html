@@ -9,7 +9,7 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
   write_capacity = 20
 
   attribute {
-    name = "lab-dynomodb-daniil"
+    name = "LockID"
     type = "S"
   }
 }
