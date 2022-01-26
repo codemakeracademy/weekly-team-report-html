@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = var.domain_name
+    bucket = "lab-sthree-daniil"
     key    = "terraform.tfstate"
     region = "us-west-2"
     dynamodb_table = "terraform-state-lock-dynamo"
