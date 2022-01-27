@@ -22,7 +22,7 @@ pipeline {
            }
             steps {
                 sh 'ls -la'
-                sh 'cd weekly-team-report-html'
+                //sh 'cd weekly-team-report-html'
                 sh 'ls -la'
                 sh 'npm install'
                 sh 'npm run build'
