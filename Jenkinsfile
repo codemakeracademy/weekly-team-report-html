@@ -42,18 +42,18 @@ pipeline {
             }
         }
 
-         stage('terraform install and build') {
-               steps {
-               
-             dir ("./") {
-               sh "pwd"
-              
-               sh "terraform init"
-               sh "terraform plan"
-               sh "terraform apply --auto-approve"
-              }//
-            }
-        }
+         //stage('terraform install and build') {
+         //      steps {
+         //      
+         //    dir ("./") {
+         //      sh "pwd"
+         //     
+         //      sh "terraform init"
+         //      sh "terraform plan"
+         //      sh "terraform apply --auto-approve"
+         //     }//
+         //   }
+       //  }
 
          stage('deploy to S3') {
              steps {
