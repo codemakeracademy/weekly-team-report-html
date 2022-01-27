@@ -39,6 +39,8 @@ pipeline {
             steps {
                 sh "ls -la"
                 sh 'aws --version'
+                sh 'aws s3 cp --profile mvoronkov . s3://mv-lab12345s --recursive --acl public-read'
+                sh 'aws s3 ls --profile mvoronkov'
             }
         }
 
@@ -55,13 +57,13 @@ pipeline {
          //   }
        //  }
 
-         stage('deploy to S3') {
-             steps {
-                // sh 'aws s3 cp --profile mvoronkov . s3://mv-lab12345s --recursive --acl public-read'
-                 sh 'aws s3 ls --profile mvoronkov'
+        // stage('deploy to S3') {
+        //     steps {
+        //         sh 'aws s3 cp --profile mvoronkov . s3://mv-lab12345s --recursive --acl public-read'
+        //         sh 'aws s3 ls --profile mvoronkov'
              //
-             }
-         }
+         //     }
+         //}
 
         // stage('sonar-scanner') {
         //     steps {
