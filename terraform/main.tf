@@ -1,3 +1,14 @@
+terraform {
+  backend "s3" {
+    bucket = "trogaev-bucket-remote-state"
+    #key    = "calabs/production/us-west-2/rslab/terraform.tfstate"
+    key    = "terraform.tfstate"
+    region = "us-west-2"
+    dynamodb_table = "terraform-state-lock-trogaev"
+    encrypt        = true
+  }
+}
+
 provider "aws" {
   region  = "us-west-2" # Oregon
 #  profile = "PowerUserAccess-529396670287"
