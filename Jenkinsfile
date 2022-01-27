@@ -21,9 +21,6 @@ pipeline {
                 }
            }
             steps {
-                sh 'ls -la'
-                //sh 'cd weekly-team-report-html'
-                sh 'ls -la'
                 sh 'npm install'
                 sh 'npm run build'
             }
@@ -39,8 +36,8 @@ pipeline {
             steps {
                 sh "ls -la"
                 sh 'aws --version'
-                //sh 'aws s3 cp --profile mvoronkov . s3://mv-lab12345s --recursive --acl public-read'
-                sh 'aws s3 ls --profile mvoronkov'
+                sh 'aws s3 cp dist s3://mv-lab12345s/ --recursive --acl public-read'
+                //sh 'aws s3 ls --profile mvoronkov'
             }
         }
 
