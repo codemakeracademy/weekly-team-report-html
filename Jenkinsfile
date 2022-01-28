@@ -38,21 +38,26 @@ pipeline {
                 sh 'aws --version'
                 sh 'aws s3 cp dist s3://mv-lab12345s/ --recursive --acl public-read'
                 //sh 'aws s3 ls --profile mvoronkov'
+                sh 'aws s3api put-bucket-encryption \
+                    --bucket voronkov-bucket-remote-state \
+                    --server-side-encryption-configuration={\"Rules\":[{\"ApplyServerSideEncryptionByDefault\":{\"SSEAlgorithm\":\"AES256\"}}]}'
+                
+                 sh ''                                           
             }
         }
 
-         //stage('terraform install and build') {
-         //      steps {
-         //      
-         //    dir ("./") {
-         //      sh "pwd"
-         //     
-         //      sh "terraform init"
-         //      sh "terraform plan"
-         //      sh "terraform apply --auto-approve"
-         //     }//
-         //   }
-       //  }
+         stage('terraform install and build') {
+               steps {
+               
+             dir ("./") {
+               sh "pwd"
+              
+               sh "terraform init"
+               sh "terraform plan"
+               sh "terraform apply --auto-approve"
+              }
+            }
+         }
 
         // stage('deploy to S3') {
         //     steps {
