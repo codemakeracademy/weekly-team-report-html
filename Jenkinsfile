@@ -7,6 +7,12 @@ pipeline {
   //}
  
  stages {   
+ stage('prep') { 
+            steps {
+             git url: 'https://github.com/Shfarrukhb/weekly-report-html.git', branch: 'develop-team-1'
+                // 
+            }
+        }
      
   stage('sonar-scanner') {
         agent {
