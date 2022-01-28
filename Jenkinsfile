@@ -38,11 +38,11 @@ pipeline {
                 sh 'aws --version'
                 sh 'aws s3 cp dist s3://mv-lab12345s/ --recursive --acl public-read'
                 //sh 'aws s3 ls --profile mvoronkov'
-                sh 'aws s3api put-bucket-encryption \
-                    --bucket voronkov-bucket-remote-state \
-                    --server-side-encryption-configuration={\"Rules\":[{\"ApplyServerSideEncryptionByDefault\":{\"SSEAlgorithm\":\"AES256\"}}]}'
+                //sh 'aws s3api put-bucket-encryption \
+                //    --bucket voronkov-bucket-remote-state \
+                //    --server-side-encryption-configuration={\"Rules\":[{\"ApplyServerSideEncryptionByDefault\":{\"SSEAlgorithm\":\"AES256\"}}]}'
                 
-                 sh ''                                           
+                 //sh ''                                           
             }
         }
 
