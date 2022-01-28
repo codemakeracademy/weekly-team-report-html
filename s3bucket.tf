@@ -4,7 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 3.0"
   backend "s3" {
-    bucket = "RENAMEME!"
+    bucket = "voronkov-bucket-remote-state"
     key    = "calabs/production/us-west-2/rslab/terraform.tfstate"
     region = "us-west-2"
     dynamodb_table = "terraform-state-lock-voronkov"
