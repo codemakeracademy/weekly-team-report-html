@@ -10,9 +10,6 @@ resource "aws_s3_bucket" "ankodevopsfr" {
 website {
     index_document = "index.html"
     error_document = "error.html"
-tags {
-      Name = "Ankodevops_bucket"
-    }
   }
 }
 
