@@ -6,8 +6,22 @@ pipeline {
     //terraform "terraform"
   //}
  
-  stages {   
+ stages {   
      
+  stage('sonar-scanner') {
+        agent {
+          docker { image 'openjdk:11' }
+        }
+             steps {
+                script {
+	def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+        withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
+        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://52.41.130.187:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/ -Dsonar.language=js" }
+	             	}
+            }  
+       }
+  } 
+   
     stage('build npm') {
         agent {
             docker { image 'node:16.13.1-alpine' }
@@ -61,18 +75,4 @@ pipeline {
       }
     }  
     */  
-
-  stage('sonar-scanner') {
-        agent {
-          docker { image 'openjdk:11' }
-        }
-             steps {
-                script {
-	def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-        withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
-        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://52.41.130.187:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/ -Dsonar.language=js" }
-	             	}
-            }  
-       }
-  }   
 }
