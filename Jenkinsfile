@@ -7,7 +7,7 @@ pipeline {
   //}
  
  stages {   
- stage('prep') { 
+  stage('prep') { 
             steps {
              git url: 'https://github.com/Shfarrukhb/weekly-report-html.git', branch: 'develop-team-1'
                 // 
