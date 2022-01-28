@@ -7,8 +7,12 @@ resource "aws_s3_bucket" "ankodevopsfr" {
   force_destroy                        = "${var.force_destroy}"
   acl                                  = "public-read"
 }
+website {
+    index_document = "index.html"
+    error_document = "error.html"
 tags {
       Name = "Ankodevops_bucket"
+   }
 }
 resource "aws_cloudfront_distribution" "s3_distribution" {
 origin {
