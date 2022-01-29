@@ -19,19 +19,19 @@ provider "aws" {
   token      = "IQoJb3JpZ2luX2VjEL7//////////wEaCXVzLWVhc3QtMSJGMEQCIDosZjvWlPXewKmokeMSJ4izNNyXuNbGo1ch6wDetPAqAiAJVe9v2oywcDq5J/yM0E2TGKS+4dcFED8OZAD7GsElXiqEAwjn//////////8BEAAaDDUyOTM5NjY3MDI4NyIMcaVCD5xEa0suMKuiKtgCT4JtkPRxkbCMqqtMl9mn9SjsaN6lno3E/sZU2t2as1o1aXu4fo4TcaRzRZlXr7TyNV+1gubQItOeD+ovvphPw+vWfIWY7ZLYkCxB/+8QG3PqYYSSfiwmxifHdOAr/tBbRd5GzhIfgiJmkfd2CE4w6IY6NnBWHFt9wQm8R7C+Mr1LSDuk7wjRJ9Erhb3A2uhZJ1LPnPBFmFKeNqPB8Bh43XJ0xVoMkQ6lCwnzeLmcbKMF4Oi2vp46b/USyP+n06QXdoq+X2u7ufyYrI84MhxJVAOO9Ic9PGu3vDk9Y0m4l6LInizt9kFbaT4pFsFHs4mPvQbxPMNSzNoUsJKRwVZiF3LBvrzyq2wP/id5PHM3Z2VjO/aL0rtKM+0iCpv9HUUN2WNQXhvWraVRgxtmoG/5yBQyELNCdkrL854J2KOYqaT2pq8o+TmWOUb2cx9jwM73Q9vqdFEplcQwuK3TjwY6pwFrad47Xf2A37usxa7KfQqJBJ26qR7B9zu+cqhRcBIGMPWrx2YM9mI6OQgZYVf0ZdRgDqBHwm1WnkKuIzWB9NiRjHKpf2uZZViESC1BxQSgP46rH+l2hmc+/1TLY35s2SjC1aGuld3eR0oJgtT5Iu+EqTT4t0oJLbRtIUKjI0nYKUmkSV859s+cd57L/WbUiT9audujxmB5oD+eUTAg6h/SsxxgXofdqA=="
   region = "us-west-2"
 }
-resource "aws_s3_bucket" "bucket" {
-  bucket = "mv-lab12345s"
-  policy = file("policy.json")
-  acl = "public-read"
-  
-  tags = {
-    Name = "mv-bucket"
-  }
-  website {
-      index_document = "index.html"
-      error_document = "/error/index.html"
-  }
-}
+#resource "aws_s3_bucket" "bucket" {
+#  bucket = "mv-lab12345s"
+ # policy = file("policy.json")
+ # acl = "public-read"
+ # 
+  #tags = {
+ #   Name = "mv-bucket"
+ # }
+ # website {
+  #    index_document = "index.html"
+ #     error_document = "/error/index.html"
+ # }
+#}
 
 #resource "aws_cloudfront_distribution" "s3_distribution" {
  # origin {
@@ -70,7 +70,7 @@ resource "aws_s3_bucket" "bucket" {
 #      }
 #  }
 #}
-resource "aws_dynamodb_table" "dynamodb-terraform-state" {
+resource "aws_dynamodb_table" "dynamodb-terraform-state1" {
   name = "terraform-state-lock-voronkov"
   hash_key = "LockID"
   read_capacity = 20
