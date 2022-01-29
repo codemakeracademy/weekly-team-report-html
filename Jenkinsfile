@@ -1,5 +1,11 @@
 pipeline {
   agent any
+ 
+  //tools {
+    //nodejs "node"
+    //terraform "terraform"
+  //}
+ 
   stages {   
      
     stage('build npm') {
@@ -11,34 +17,53 @@ pipeline {
             sh 'npm run build'
         }
     } 
+
     stage('terraform s3') {
         agent {
             docker { 
                 image 'hashicorp/terraform:latest'
-                args  '--entrypoint="" -u root -v /home/ec2-user/.aws:/root/.aws'
+                args  '--entrypoint=""'
             }
         }
         steps {
-            {
+            dir("./terraform") {
                 sh 'terraform init'
-                //sh 'terraform plan'
+                sh 'terraform plan'
                 sh 'terraform apply --auto-approve'
-            }       
+            }  
+            //dir("./terraform-state") {
+                //sh 'terraform init'
+                //sh 'terraform plan'
+                //sh 'terraform apply -lock=false --auto-approve'
+            //}      
         }
     }
+
     stage('copy to s3'){
         agent {
             docker {
                 image 'amazon/aws-cli'
-                args '--entrypoint="" -u root -v /home/ec2-user/.aws:/root/.aws'
+                args '--entrypoint=""'
             }
         }
         steps {
-          sh 'aws s3 cp dist s3://ankdevopsfr/ --recursive'
-          //sh 'aws s3 cp terraform/terraform.tfstate s3://ankodevopsfr/'
+          sh 'aws s3 cp dist s3://ankodevopsfr/ --recursive'
+          //sh 'aws s3 cp terraform/terraform.tfstate s3://trogaev-bucket-lab/'
         }
-    } 
+
+    }
+    /*
+    stage('copy to s3') {
+      steps {
+        sh 'pwd'
+        sh 'ls -a'
+        sh 'docker run --rm -v /home/ec2-user/.aws:/root/.aws -v /home/ec2-user/jenkins_home/workspace/test@2:/aws amazon/aws-cli s3 cp dist s3://trogaev-bucket-1/ --recursive'
+      }
+    }  
+    */  
+
     stage("build & SonarQube analysis") {
+      agent any
       steps {
         script {
           def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
@@ -47,6 +72,7 @@ pipeline {
           }
         }
       }
+
     } 
   }   
 }
