@@ -70,7 +70,7 @@ provider "aws" {
 #      }
 #  }
 #}
-resource "aws_dynamodb_table" "dynamodb-terraform-state1" {
+resource "aws_dynamodb_table" "dynamodb-terraform-state" {
   name = "terraform-state-lock-voronkov"
   hash_key = "LockID"
   read_capacity = 20
@@ -79,6 +79,9 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state1" {
   attribute {
     name = "LockID"
     type = "S"
+    tags = {
+    Name        = "voronkov-bucket-remote-state-DDB"
+  }
   }
 }
 
