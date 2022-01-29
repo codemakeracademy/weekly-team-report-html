@@ -82,16 +82,16 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state" {
   }
 }
 
-resource "aws_s3_bucket" "bucket-remote-state" {
-  bucket = "voronkov-bucket-remote-state"
-  acl    = "public-read"
-
-  versioning {
-    enabled = true
-  }
-
-  tags = {
-    Name        = "voronkov-bucket-remote-state"
-  }
-
-}
+#resource "aws_s3_bucket" "bucket-remote-state" {
+#  bucket = "voronkov-bucket-remote-state"
+#  acl    = "public-read"
+#
+#  versioning {
+#    enabled = true
+#  }
+#
+#  tags = {
+#    Name        = "voronkov-bucket-remote-state"
+#  }
+#
+#}
