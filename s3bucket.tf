@@ -70,20 +70,20 @@ provider "aws" {
 #      }
 #  }
 #}
-resource "aws_dynamodb_table" "dynamodb-terraform-state" {
-  name = "terraform-state-lock-voronkov"
-  hash_key = "LockID"
-  read_capacity = 20
-  write_capacity = 20
+#resource "aws_dynamodb_table" "dynamodb-terraform-state" {
+ # name = "terraform-state-lock-voronkov"
+ # hash_key = "LockID"
+ # read_capacity = 20
+ # write_capacity = 20
 
-  attribute {
-    name = "LockID"
-    type = "S"
-    tags = {
-    Name        = "voronkov-bucket-remote-state"
-  }
-  }
-}
+ # attribute {
+ #   name = "LockID"
+  #  type = "S"
+ #   tags = {
+  #  Name        = "voronkov-bucket-remote-state"
+  #}
+ # }
+#}
 
 resource "aws_s3_bucket" "bucket-remote-state" {
   bucket = "voronkov-bucket-remote-state"
