@@ -9,7 +9,7 @@ terraform {
     bucket = "voronkov-bucket-remote-state"
     key    = "calabs/production/us-west-2/rslab/terraform.tfstate"
     region = "us-west-2"
-    #dynamodb_table = "terraform-state-lock-voronkov"
+    dynamodb_table = "terraform-state-lock-voronkov"
     encrypt        = true
       }
 }
