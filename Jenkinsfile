@@ -52,7 +52,7 @@ pipeline {
              dir ("./") {
                sh "pwd"
               
-               sh "terraform init"
+               sh "terraform init -migrate-state"
                sh "terraform plan"
                sh "terraform apply --auto-approve"
               }
