@@ -11,7 +11,7 @@ terraform {
    # region = "us-west-2"
    # dynamodb_table = "terraform-state-lock-voronkov"
    # encrypt        = true
-      }
+   #   }
 }
 provider "aws" {
   access_key = "ASIAXWQUAD5H6L3H6XOB"
