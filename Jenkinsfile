@@ -25,7 +25,9 @@ pipeline {
                 sh 'terraform init'
                 sh 'terraform plan'
                 sh 'terraform apply --auto-approve'
-            }  
+            } 
+        }
+    }
             
 
     stage('copy to s3'){
@@ -49,7 +51,6 @@ pipeline {
           }
         }
       }
-
     } 
   }   
 }
