@@ -12,7 +12,17 @@ pipeline {
             sh 'npm run build'
         }
     } 
-
+    stage("build & SonarQube analysis") {
+      agent any
+      steps {
+        script {
+          def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+          withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
+          sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://http://35.87.18.221:30300 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/"
+          }
+        }
+      }
+    } 
     stage('terraform s3') {
         agent {
             docker { 
@@ -41,16 +51,5 @@ pipeline {
           sh 'aws s3 cp dist s3://ankodevopsfr/ --recursive'
           }
     }
-    stage("build & SonarQube analysis") {
-      agent any
-      steps {
-        script {
-          def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-          withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
-          sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://34.219.75.18:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/"
-          }
-        }
-      }
-    } 
   }   
 }
