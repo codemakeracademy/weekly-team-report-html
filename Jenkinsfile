@@ -30,6 +30,7 @@ pipeline {
     stage('node') {
       steps {
         container('node') {
+          dir("./")
           sh 'npm install'
           sh 'npm run build'
         }
