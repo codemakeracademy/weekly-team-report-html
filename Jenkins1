@@ -1,0 +1,69 @@
+pipeline {
+  agent {
+    kubernetes {
+      yaml '''
+        apiVersion: v1
+        kind: Pod
+        spec:
+          containers:
+          - name: node
+            image: node:16.13.1-alpine
+            command:
+            - cat
+            tty: true
+          - name: terraform
+            image: hashicorp/terraform:latest
+            command:
+            - cat
+            tty: true
+          - name: cli
+            image: amazon/aws-cli
+            command:
+            - cat
+            tty: true
+        '''
+    }
+  }
+  stages {
+    stage('node') {
+      steps {
+        container('node') {
+          sh 'npm install'
+          sh 'npm run build'
+        }
+      }
+    }
+   
+   stage("build & SonarQube analysis") {
+      agent any
+      steps {
+        script {
+          def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+          withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
+          sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://http://35.87.18.221:30300 -Dsonar.login=${sonarLogin} -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/"
+          }
+        }
+      }
+    } 
+    
+    stage('terraform') {
+      steps {
+        container('terraform') {
+            dir("./terraform") {
+                sh 'terraform init'
+                sh 'terraform plan'
+                sh 'terraform apply --auto-approve'
+            }  
+        }
+      }
+    }
+    
+    stage('cli') {
+      steps {
+        container('cli') {
+          sh 'aws s3 cp dist s3://frbucket/ --recursive'
+        }
+      }
+    }
+  }
+}
