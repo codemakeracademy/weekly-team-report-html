@@ -20,7 +20,7 @@ origin {
 }
 enabled             = true
   is_ipv6_enabled     = true
-  comment             = "Some comment"
+  comment             = "fr-cdn"
   default_root_object = "mypic"
 default_cache_behavior {
     allowed_methods  = ["HEAD", "GET"]
