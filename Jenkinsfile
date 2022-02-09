@@ -58,16 +58,4 @@ pipeline {
   }
 }
 
-#         stage('sonar-scanner') {
-#             steps {
-#                 script {
-#                     def SONARQUBE_HOSTNAME = 'sonarqube'
-#                     def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-#                     withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
-#                         sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOSTNAME}:30001 -Dsonar.login='admin' -Dsonar.password='admin' -Dsonar.projectName=WebApp -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/ -Dsonar.java.binaries=build/**/*"
-#                     }
-#                 }
-#             }
-#         }
-    
-#}
+
