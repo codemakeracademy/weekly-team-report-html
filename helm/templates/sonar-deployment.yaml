@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sonar-deployment
+  namespace: {{.Values.namespace}}
+  labels:
+    app: sonar-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sonar-app
+  template:
+    metadata:
+      labels:
+        app: sonar-app
+    spec:
+      containers:
+      - image: sonarqube:7.1
+        name: sonar-app
+        env:
+        - name: SONARQUBE_JDBC_USERNAME
+          value: sonar
+        - name: SONARQUBE_JDBC_PASSWORD
+          value: sonarpasswd
+        - name: SONARQUBE_JDBC_URL
+          value: jdbc:postgresql://postgres-service:5432/sonar
+        ports:
+        - containerPort: 9000
+        - containerPort: 9092

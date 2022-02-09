@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+  namespace: {{.Values.namespace}}
+  labels:
+    app: jenkins-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins-app
+  template:
+    metadata:
+      labels:
+        app: jenkins-app
+    spec:
+      containers: 
+      - image: jenkins/jenkins:lts
+      #- image: localhost:32000/jenkins-dood:v4
+        #imagePullPolicy: Never
+        name: jenkins-app
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /var/jenkins_home
+          name: fileshare
+      volumes:
+      - name: fileshare
+        persistentVolumeClaim:
+          claimName: fileshare

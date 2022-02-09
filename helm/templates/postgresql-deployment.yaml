@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-deployment
+  namespace: {{.Values.namespace}}
+  labels:
+    app: postgres-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres-app
+  template:
+    metadata:
+      labels:
+        app: postgres-app
+    spec:
+      containers:
+      - image: postgres:9.6
+        name: postgres-app
+        env:
+        - name: POSTGRES_USER
+          value: sonar
+        - name: POSTGRES_PASSWORD
+          value: sonarpasswd
+        ports:
+        - containerPort: 5432
