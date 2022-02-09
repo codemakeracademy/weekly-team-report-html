@@ -8,10 +8,10 @@ pipeline {
         kind: Pod
         spec:
           containers:
-          - name: node
-            image: node:16.13.1-alpine
-            command: ["cat"]
-            tty: true
+       //   - name: node
+       //     image: node:16.13.1-alpine
+       //     command: ["cat"]
+       //     tty: true
           - name: terraform
             image: hashicorp/terraform:latest
             command: ["cat"]
