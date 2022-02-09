@@ -23,9 +23,8 @@ pipeline {
     }
   }
   
-  options {
-        skipDefaultCheckout true
-    }
+  
+    
   stages {
     stage('node') {
       steps {
