@@ -1,0 +1,61 @@
+pipeline {
+  agent {
+    kubernetes {
+      yaml '''
+        apiVersion: v1
+        kind: Pod
+        spec:
+          containers:
+          - name: node
+            image: node:16.13.1-alpine
+          - name: openjdk
+            image: openjdk:11
+          - name: terraform
+            image: hashicorp/terraform:latest
+          - name: cli
+            image: amazon/aws-cli
+        '''
+    }
+  }
+
+  stages {
+
+    stage('Clone') {
+      steps {
+        git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
+      }
+    }
+
+    stage('Build') {
+       steps {
+           container('node') {
+             sh 'npm install'
+             sh 'npm run build'
+           }
+       }
+    }
+
+    stage('terraform') {
+      steps {
+        container('terraform') {
+            dir("./terraform") {
+                sh 'terraform init'
+                sh 'terraform apply --auto-approve'
+            }
+            dir("./terraform/lock") {
+            	sh 'terraform init'
+                sh 'terraform apply -lock=false --auto-approve'
+            }
+        }
+      }
+    }
+
+    stage('cli') {
+      steps {
+        container('cli') {
+          sh 'aws s3 cp dist s3://lab-sthree-daniil/ --recursive'
+        }
+      }
+    }
+  }
+}
