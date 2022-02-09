@@ -4,7 +4,7 @@ variable "region" {
 
 variable "bucket_name" {
   description = "(Required) Creates a unique bucket name"
-  default     = "frbucket"
+  default     = "fr-bucket-26"
 }
 
 variable "force_destroy" {
