@@ -56,7 +56,7 @@ pipeline {
       }
     }
   }
-}
+
 
          stage('sonar-scanner') {
              steps {
