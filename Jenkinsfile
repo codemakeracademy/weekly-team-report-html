@@ -9,17 +9,17 @@ pipeline {
           - name: node
             image: node:16.13.1-alpine
             command:
-            - cat
+            - sleep
             tty: true
           - name: terraform
             image: hashicorp/terraform:latest
             command:
-            - cat
+            - sleep
             tty: true
           - name: cli
             image: amazon/aws-cli
             command:
-            - cat
+            - sleep
             tty: true
         '''
     }
