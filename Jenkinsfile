@@ -8,7 +8,7 @@ pipeline {
         spec:
           containers:
           - name: node
-            image: node:16.13.1-alpine
+            image: node:16
             command: ["cat"]
             tty: true
           - name: terraform
