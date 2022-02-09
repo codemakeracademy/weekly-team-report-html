@@ -9,17 +9,17 @@ pipeline {
           - name: node
             image: node:16.13.1-alpine
             command:
-            - sleep
+            - cat
             tty: true
           - name: terraform
             image: hashicorp/terraform:latest
             command:
-            - sleep
+            - cat
             tty: true
           - name: cli
             image: amazon/aws-cli
             command:
-            - sleep
+            - cat
             tty: true
         '''
     }
@@ -38,8 +38,6 @@ pipeline {
       steps {
         container('terraform') {
             dir("./") {
-                sh 'pwd'
-                sh 'ls -la'
                 sh 'terraform init'
                 sh 'terraform plan'
                 sh 'terraform apply --auto-approve'
@@ -57,5 +55,6 @@ pipeline {
     }
   }
 }
+    
 
 
