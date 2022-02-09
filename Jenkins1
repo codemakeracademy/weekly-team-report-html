@@ -25,7 +25,7 @@ pipeline {
     }
   }
   stages {
-    stage('node') {
+    stage('npm part') {
       steps {
         container('node') {
           sh 'npm install'
@@ -34,7 +34,7 @@ pipeline {
       }
     }
    
-   stage("build & SonarQube analysis") {
+   stage("sonar part") {
       agent any
       steps {
         script {
@@ -46,7 +46,7 @@ pipeline {
       }
     } 
     
-    stage('terraform') {
+    stage('terraform part') {
       steps {
         container('terraform') {
             dir("./terraform") {
@@ -58,7 +58,7 @@ pipeline {
       }
     }
     
-    stage('cli') {
+    stage('upload') {
       steps {
         container('cli') {
           sh 'aws s3 cp dist s3://frbucket/ --recursive'
