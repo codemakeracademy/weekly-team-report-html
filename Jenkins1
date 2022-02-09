@@ -61,7 +61,7 @@ pipeline {
     stage('upload') {
       steps {
         container('cli') {
-          sh 'aws s3 cp dist s3://frbucket/ --recursive'
+          sh 'aws s3 cp dist s3://fr-bucket-26/ --recursive'
         }
       }
     }
