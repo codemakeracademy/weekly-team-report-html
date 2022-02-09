@@ -1,14 +1,16 @@
 pipeline {
   agent {
     kubernetes {
-      label 'build-service-pod'
-            defaultContainer 'jnlp'
+      
       yaml '''
         apiVersion: v1
         kind: Pod
         spec:
           containers:
-          
+          - name: node
+            image: node:16.13.1-alpine
+            command: ["cat"]
+            tty: true
           - name: terraform
             image: hashicorp/terraform:latest
             command: ["cat"]
