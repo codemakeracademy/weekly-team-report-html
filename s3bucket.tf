@@ -69,7 +69,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       restriction_type = "none"
       }
   }
-}
+
 resource "aws_dynamodb_table" "dynamodb-terraform-state" {
   name = "terraform-state-lock-voronkov"
   hash_key = "LockID"
