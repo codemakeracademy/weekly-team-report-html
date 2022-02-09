@@ -8,12 +8,24 @@ pipeline {
           containers:
           - name: node
             image: node:16.13.1-alpine
+            command:
+            - cat
+            tty: true
           - name: openjdk
             image: openjdk:11
+            command:
+            - cat
+            tty: true
           - name: terraform
             image: hashicorp/terraform:latest
+            command:
+            - cat
+            tty: true
           - name: cli
             image: amazon/aws-cli
+            command:
+            - cat
+            tty: true
         '''
     }
   }
