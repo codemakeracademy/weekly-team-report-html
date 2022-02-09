@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres-deployment
-  namespace: lab
+  namespace: {{.Values.namespace}}
   labels:
     app: postgres-app
 spec:
