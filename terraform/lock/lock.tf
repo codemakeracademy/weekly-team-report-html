@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "us-west-1"
 }
 
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
@@ -18,7 +18,7 @@ terraform {
   backend "s3" {
     bucket = "lab-sthree-daniil"
     key    = "terraform.tfstate"
-    region = "us-west-2"
+    region = "us-west-1"
     dynamodb_table = "terraform-state-lock-daniil"
     encrypt        = true
   }
