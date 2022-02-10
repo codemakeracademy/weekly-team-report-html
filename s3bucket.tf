@@ -79,10 +79,11 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state" {
   attribute {
     name = "LockID"
     type = "S"
+  }
     tags = {
-    Name        = "voronkov-bucket-remote-state"
+      Name        = "voronkov-bucket-remote-state"
   }
-  }
+  
 }
 
 resource "aws_s3_bucket" "bucket-remote-state" {
