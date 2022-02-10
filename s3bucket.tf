@@ -14,9 +14,9 @@ terraform {
   #    }
 }
 provider "aws" {
-  access_key = "ASIAXWQUAD5H7T3VEWOP"
-  secret_key = "EUFI4xSWUycSGQWlLPh7zO/rWSIhdcktzaOfyd2X"
-  token      = "IQoJb3JpZ2luX2VjEMX//////////wEaCXVzLWVhc3QtMSJGMEQCIBKihMpwFxKTdkQo/vxssGDuF+DVQ0HS5ba4KBJKV0kjAiB+R7XmDSISlLb/XSxEDApTOIhl6sGihCj1VNKpmH0ScCqEAwj+//////////8BEAAaDDUyOTM5NjY3MDI4NyIMoP2xTekEeTCVifWcKtgCcP6b2XYuxhb9hMkAhKYbHiDafvHjg3cdTkvBtY+on3tzIHP7hohDp7EiVznOFg8yGWRNEzIiBmhym993qlUOIa95TlzqcYPv/+pUAPz+Iw25EoH/cwgLZklA8myIOhSwouw2RHJ1CEucdg63vF0rTPU0fXB1Wrsu/irhr+DBeEt2QGJIeo2WHJWd1Sj2rEJA02FZc11BoDw0JjqugSpE2JdmqL4LrTGZQHKgfDltCcNr8tnDJSM7xahFn7M66p9TUCwCq6j+KeykYz75vMjDbw4NGambcTDL7C+qs2IC0ejNmRC+S5qyV87+M3bvip08futkUoIOdJohP/9RURZFipMCC5aNZJOFEJjZirU60ZSFaTYA0XBfb363WLeOwC2JW2KZPfnIaUGYZaBDcvm5t1nJBMM13aaBxOqRaJ2BCXJ6VLgs9eIp+R8vcEuI9x2UCRUGrggXRQsw7IqNkAY6pwEFup8z6TLxYPzgn/xd9/+L7wSj3zQvrFsEDZBNwNGgEPHX3mPqxfo0uT+eYaaJzsJtBosy8cCUg/TPd6xVgqAohoaG5MeH4pBVdqxnt9KzAItZLGKIitSSlsn8nNspfMDXuBqOiBRztdIO2NlF4imHo6AxUFIASUBfpaijqOfyI4KXX2dDbVx+J51LaavcrDBRip6Jpi/JNIDswrgq+Q8mV520WYyFjQ=="
+  access_key = "ASIAXWQUAD5HZGUAX66F"
+  secret_key = "tlXiu5PwrcrnY0QWhuRDbKyExXjntkICQcul/+dq"
+  token      = "IQoJb3JpZ2luX2VjEN3//////////wEaCXVzLWVhc3QtMSJHMEUCICeK6PIQikBdmjo4otzOH3/k+7rqCC7BAvFL7qU/RWtOAiEAp6+LWYwCgAyCAI7LgdM+rygYsD9kHGv8oVGcN4g0WQgq+wIIJhAAGgw1MjkzOTY2NzAyODciDLEh4cMlWVpepfboKirYAj6g4wOsVYsmylr3NZA4vb4AHDWnKSrCaqlaC5ONcWYxMgzx2c0C2IKIt1I9Z3p4ZPGhHiwC/JfEqQCtdi3X0Zew5CGfNl0oTWFRunhd4l0kDbzmGmh5pNVqT9qbyXtoOGfPI0SMDbzEheJ3S/i4TfoI7nlbqN83hR8/5OhkqNVJ9AWT3629KExOrEIBYvxrNFIOuHFuM+n+v1fVm6boya+0WFgnIRaoq6PXkliuyRjzXmbPzig7uDNYHoJPfrVAxoe965yd3D+AX+PZyukCvlo6HMJ+G4U6EkmFIe+D17EUhYxeA0r3EhgOuuAbiUkI/Le1TzauiWc3yPmYoaj+F01K/p9vhfWU+nOZmJgWIPRpUTFDckGxrpoTEVjqWukjpguefvDVnNpadNwWRoKFDRD49pWGCIuakMTwySDnxJY4oGEexIZrluNbvcDeydSeIfiVpkXHVOsQMI2wkpAGOqYBqZnvxbAvSp4DBPggYu+nEFn2tG/H/r/2QMgIE8dGMQzUkwr5FFmdA0F1QzJBle/7ABI0vTUsfwlnpnfioMW3f44rCj4PJ3Y79yd5Jn/kbypwtgGmwWR5JPK4T0s7ocH2TzmFZMXRJM6Wwfaz9ovRl4LA4+fNpJMDnLkeceI3tpR6DeU0/S+a34dcUYJzUeXF4RFpnsp4Hi/H+emc3S21F2x8G2dmdw=="
   region = "us-west-2"
 }
 resource "aws_s3_bucket" "bucket" {
