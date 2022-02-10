@@ -19,23 +19,23 @@ provider "aws" {
   token      = "IQoJb3JpZ2luX2VjEN3//////////wEaCXVzLWVhc3QtMSJHMEUCICeK6PIQikBdmjo4otzOH3/k+7rqCC7BAvFL7qU/RWtOAiEAp6+LWYwCgAyCAI7LgdM+rygYsD9kHGv8oVGcN4g0WQgq+wIIJhAAGgw1MjkzOTY2NzAyODciDLEh4cMlWVpepfboKirYAj6g4wOsVYsmylr3NZA4vb4AHDWnKSrCaqlaC5ONcWYxMgzx2c0C2IKIt1I9Z3p4ZPGhHiwC/JfEqQCtdi3X0Zew5CGfNl0oTWFRunhd4l0kDbzmGmh5pNVqT9qbyXtoOGfPI0SMDbzEheJ3S/i4TfoI7nlbqN83hR8/5OhkqNVJ9AWT3629KExOrEIBYvxrNFIOuHFuM+n+v1fVm6boya+0WFgnIRaoq6PXkliuyRjzXmbPzig7uDNYHoJPfrVAxoe965yd3D+AX+PZyukCvlo6HMJ+G4U6EkmFIe+D17EUhYxeA0r3EhgOuuAbiUkI/Le1TzauiWc3yPmYoaj+F01K/p9vhfWU+nOZmJgWIPRpUTFDckGxrpoTEVjqWukjpguefvDVnNpadNwWRoKFDRD49pWGCIuakMTwySDnxJY4oGEexIZrluNbvcDeydSeIfiVpkXHVOsQMI2wkpAGOqYBqZnvxbAvSp4DBPggYu+nEFn2tG/H/r/2QMgIE8dGMQzUkwr5FFmdA0F1QzJBle/7ABI0vTUsfwlnpnfioMW3f44rCj4PJ3Y79yd5Jn/kbypwtgGmwWR5JPK4T0s7ocH2TzmFZMXRJM6Wwfaz9ovRl4LA4+fNpJMDnLkeceI3tpR6DeU0/S+a34dcUYJzUeXF4RFpnsp4Hi/H+emc3S21F2x8G2dmdw=="
   region = "us-west-2"
 }
-resource "aws_s3_bucket" "bucket" {
-  bucket = "mv-lab12345s"
-  policy = file("policy.json")
-  acl = "public-read"
+#resource "aws_s3_bucket" "bucket" {
+#  bucket = "mv-lab12345s"
+#  policy = file("policy.json")
+#  acl = "public-read"
   
-  tags = {
-    Name = "mv-bucket"
-  }
-  website {
-      index_document = "index.html"
-      error_document = "/error/index.html"
-  }
-}
+#  tags = {
+#    Name = "mv-bucket"
+#  }
+#  website {
+#      index_document = "index.html"
+#      error_document = "/error/index.html"
+#  }
+#}
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-   domain_name = "mv-lab1234.s3.us-west-2.amazonaws.com"
+   domain_name = "mv-lab12345s.s3.us-west-2.amazonaws.com"
  origin_id   = "website"
   }
   viewer_certificate {
@@ -70,21 +70,21 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       }
   }
 }
-resource "aws_dynamodb_table" "dynamodb-terraform-state" {
-  name = "terraform-state-lock-voronkov"
-  hash_key = "LockID"
-  read_capacity = 20
-  write_capacity = 20
+#resource "aws_dynamodb_table" "dynamodb-terraform-state" {
+#  name = "terraform-state-lock-voronkov"
+#  hash_key = "LockID"
+#  read_capacity = 20
+#  write_capacity = 20
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-    tags = {
-      Name        = "voronkov-bucket-remote-state"
-  }
+#  attribute {
+#    name = "LockID"
+#    type = "S"
+#  }
+#    tags = {
+#      Name        = "voronkov-bucket-remote-state"
+#  }
   
-}
+#}
 
 resource "aws_s3_bucket" "bucket-remote-state" {
   bucket = "voronkov-bucket-remote-state"
