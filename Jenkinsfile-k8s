@@ -1,0 +1,88 @@
+pipeline {
+  agent {
+    kubernetes {
+      yaml '''
+        apiVersion: v1
+        kind: Pod
+        spec:
+          containers:
+          - name: node
+            image: node:16.13.1-alpine
+            command:
+            - cat
+            tty: true
+          - name: openjdk
+            image: openjdk:11
+            command:
+            - cat
+            tty: true
+          - name: terraform
+            image: hashicorp/terraform:latest
+            command:
+            - cat
+            tty: true
+          - name: cli
+            image: amazon/aws-cli
+            command:
+            - cat
+            tty: true
+        '''
+    }
+  }
+
+  stages {
+
+    stage('Clone') {
+      steps {
+        git(url: 'https://github.com/DanielKhan-v1/weekly-team-report-html', branch: 'develop-team-1')
+      }
+    }
+
+    stage('Build') {
+       steps {
+           container('node') {
+             sh 'npm install'
+             sh 'npm run build'
+           }
+       }
+    }
+
+    stage('SonarQube test') {
+       steps {
+           container('openjdk') {
+             script {
+               def sonarqubeScannerHome = tool name: 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+               withCredentials([string(credentialsId: 'sonarLoginID', variable: 'sonarLogin'), string(credentialsId: 'SonarQubeHost', variable: 'SONARQUBE_HOST')])
+               {
+                 sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOST}:30090 -Dsonar.login=${sonarLogin} -Dsonar.password=${sonarLogin} -Dsonar.projectName=WeeklyTeam -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/"
+               }
+             }
+           }
+       }
+    }
+
+
+    stage('terraform') {
+      steps {
+        container('terraform') {
+            dir("./terraform") {
+                sh 'terraform init'
+                sh 'terraform apply --auto-approve'
+            }
+            dir("./terraform/lock") {
+            	sh 'terraform init'
+                sh 'terraform apply -lock=false --auto-approve'
+            }
+        }
+      }
+    }
+
+    stage('cli') {
+      steps {
+        container('cli') {
+          sh 'aws s3 cp dist s3://lab-sthree-daniil/ --recursive'
+        }
+      }
+    }
+  }
+}
