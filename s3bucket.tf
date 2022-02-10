@@ -91,7 +91,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 #  acl    = "public-read"
 
 #  versioning {
-    enabled = true
+#    enabled = true
 #  }
 
 #  tags = {
