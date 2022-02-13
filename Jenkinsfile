@@ -36,27 +36,28 @@ pipeline {
       }
     }
     
-    stage('terraform') {
-      steps {
-        container('terraform') {
-            dir("./") {
-                sh 'terraform init'
-                sh 'terraform plan'
-                sh 'terraform apply --auto-approve'
-            }  
-        }
-      }
-    }
-    
+        
     stage('cli') {
       steps {
         container('cli') {
-          sh 'aws s3 cp dist s3://mv-lab12345s/ --recursive --acl public-read'
+          sh 'aws ecr get-login-password --region us-west-2 > mytoken.txt'
         }
       }
     }
+
+
+    stage('docker build') {
+      steps{
+        container('docker') {
+          sh 'docker version'
+
+          sh 'docker login --username AWS --password-stdin < mytoken.txt 529396670287.dkr.ecr.us-west-2.amazonaws.com'
+          sh 'docker build -t 529396670287.dkr.ecr.us-west-2.amazonaws.com/mv_front:v1 .'
+          //sh 'docker tag weekly-team-report-html:v1 529396670287.dkr.ecr.us-west-2.amazonaws.com/trogaev-ecr:v1'
+          sh 'docker push 529396670287.dkr.ecr.us-west-2.amazonaws.com/mv_front:v1'
+        }
+      }
+    }
+
   }
 }
-    
-
-
